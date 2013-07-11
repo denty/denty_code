@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="我的订单" android:gravity="center"/>
+<TextView
+	android:id="@+id/Username"
+	android:text="User_name"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+></TextView>
+<TextView
+	android:id="@+id/locate"
+	android:text="locate"
+	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+></TextView>
+<Button android:text="提交订单" android:id="@+id/Button_send" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button><LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<ListView
+	android:id="@+id/Mylist"
+	android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+></ListView>
+</LinearLayout>
+
+</LinearLayout>
