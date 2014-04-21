@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC0E2DAB18F7C77C004E3DE5 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2D9E18F7C77C004E3DE5 /* GMGridView.m */; };
+		EC0E2DAC18F7C77C004E3DE5 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA118F7C77C004E3DE5 /* GMGridViewCell.m */; };
+		EC0E2DAD18F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA318F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m */; };
+		EC0E2DAE18F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA518F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
+		EC0E2DAF18F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA718F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m */; };
+		EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */; };
+		EC1624CB1900F283003B4365 /* UIImage+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1624CA1900F283003B4365 /* UIImage+additions.m */; };
+		EC1624CF19012D95003B4365 /* SWSnapshotStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1624CE19012D95003B4365 /* SWSnapshotStackView.m */; };
+		EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1624D119012E26003B4365 /* LocalAlbumViewController.m */; };
+		EC1624D419012E26003B4365 /* LocalAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */; };
+		EC188A0E18F63D08009D6238 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EC188A0D18F63D08009D6238 /* test.png */; };
+		EC22AA8118F513AB005B6982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8018F513AB005B6982 /* Foundation.framework */; };
+		EC22AA8318F513AB005B6982 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8218F513AB005B6982 /* CoreGraphics.framework */; };
+		EC22AA8518F513AB005B6982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8418F513AB005B6982 /* UIKit.framework */; };
+		EC22AA8718F513AB005B6982 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8618F513AB005B6982 /* CoreData.framework */; };
+		EC22AA8D18F513AB005B6982 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC22AA8B18F513AB005B6982 /* InfoPlist.strings */; };
+		EC22AA8F18F513AB005B6982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AA8E18F513AB005B6982 /* main.m */; };
+		EC22AA9318F513AB005B6982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AA9218F513AB005B6982 /* AppDelegate.m */; };
+		EC22AA9618F513AB005B6982 /* MagicPuzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC22AA9418F513AB005B6982 /* MagicPuzzle.xcdatamodeld */; };
+		EC22AA9818F513AB005B6982 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC22AA9718F513AB005B6982 /* Images.xcassets */; };
+		EC22AA9F18F513AB005B6982 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA9E18F513AB005B6982 /* XCTest.framework */; };
+		EC22AAA018F513AB005B6982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8018F513AB005B6982 /* Foundation.framework */; };
+		EC22AAA118F513AB005B6982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8418F513AB005B6982 /* UIKit.framework */; };
+		EC22AAA218F513AB005B6982 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8618F513AB005B6982 /* CoreData.framework */; };
+		EC22AAAA18F513AB005B6982 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC22AAA818F513AB005B6982 /* InfoPlist.strings */; };
+		EC22AAAC18F513AB005B6982 /* MagicPuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AAAB18F513AB005B6982 /* MagicPuzzleTests.m */; };
+		EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AAB718F51447005B6982 /* PuzzleViewController.m */; };
+		EC22AABA18F51447005B6982 /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC22AAB818F51447005B6982 /* PuzzleViewController.xib */; };
+		EC4961BB18FBDB6600EDEAED /* ChooseLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */; };
+		EC4961BC18FBDB6600EDEAED /* ChooseLabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */; };
+		EC4961BD18FBDB6600EDEAED /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B118FBDB6600EDEAED /* Menu.png */; };
+		EC4961BE18FBDB6600EDEAED /* Menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B218FBDB6600EDEAED /* Menu@2x.png */; };
+		EC4961BF18FBDB6600EDEAED /* PanningSwitch.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B318FBDB6600EDEAED /* PanningSwitch.png */; };
+		EC4961C018FBDB6600EDEAED /* PanningSwitch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B418FBDB6600EDEAED /* PanningSwitch@2x.png */; };
+		EC4961C118FBDB6600EDEAED /* PuzzleComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B518FBDB6600EDEAED /* PuzzleComplete.png */; };
+		EC4961C218FBDB6600EDEAED /* PuzzleComplete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B618FBDB6600EDEAED /* PuzzleComplete@2x.png */; };
+		EC4961C318FBDB6600EDEAED /* PuzzleComplete_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B718FBDB6600EDEAED /* PuzzleComplete_iPhone.png */; };
+		EC4961C418FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */; };
+		EC4961C518FBDB6600EDEAED /* Wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B918FBDB6600EDEAED /* Wood.jpg */; };
+		EC4961C618FBDB6600EDEAED /* Wood@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC22AAA318F513AB005B6982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC22AA7518F513AB005B6982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC22AA7C18F513AB005B6982;
+			remoteInfo = MagicPuzzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC0E2D9C18F7C77C004E3DE5 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
+		EC0E2D9D18F7C77C004E3DE5 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridView.h; sourceTree = "<group>"; };
+		EC0E2D9E18F7C77C004E3DE5 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridView.m; sourceTree = "<group>"; };
+		EC0E2D9F18F7C77C004E3DE5 /* GMGridViewCell+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridViewCell+Extended.h"; sourceTree = "<group>"; };
+		EC0E2DA018F7C77C004E3DE5 /* GMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewCell.h; sourceTree = "<group>"; };
+		EC0E2DA118F7C77C004E3DE5 /* GMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewCell.m; sourceTree = "<group>"; };
+		EC0E2DA218F7C77C004E3DE5 /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
+		EC0E2DA318F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewLayoutStrategies.m; sourceTree = "<group>"; };
+		EC0E2DA418F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		EC0E2DA518F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		EC0E2DA618F7C77C004E3DE5 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		EC0E2DA718F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		EC0E2DA918F7C77C004E3DE5 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		EC1624C91900F283003B4365 /* UIImage+additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+additions.h"; sourceTree = "<group>"; };
+		EC1624CA1900F283003B4365 /* UIImage+additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+additions.m"; sourceTree = "<group>"; };
+		EC1624CD19012D95003B4365 /* SWSnapshotStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSnapshotStackView.h; sourceTree = "<group>"; };
+		EC1624CE19012D95003B4365 /* SWSnapshotStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSnapshotStackView.m; sourceTree = "<group>"; };
+		EC1624D019012E26003B4365 /* LocalAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAlbumViewController.h; sourceTree = "<group>"; };
+		EC1624D119012E26003B4365 /* LocalAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAlbumViewController.m; sourceTree = "<group>"; };
+		EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalAlbumViewController.xib; sourceTree = "<group>"; };
+		EC188A0D18F63D08009D6238 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		EC22AA7D18F513AB005B6982 /* MagicPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC22AA8018F513AB005B6982 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC22AA8218F513AB005B6982 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC22AA8418F513AB005B6982 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC22AA8618F513AB005B6982 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EC22AA8A18F513AB005B6982 /* MagicPuzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicPuzzle-Info.plist"; sourceTree = "<group>"; };
+		EC22AA8C18F513AB005B6982 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC22AA8E18F513AB005B6982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC22AA9018F513AB005B6982 /* MagicPuzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicPuzzle-Prefix.pch"; sourceTree = "<group>"; };
+		EC22AA9118F513AB005B6982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC22AA9218F513AB005B6982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC22AA9518F513AB005B6982 /* MagicPuzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MagicPuzzle.xcdatamodel; sourceTree = "<group>"; };
+		EC22AA9718F513AB005B6982 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC22AA9D18F513AB005B6982 /* MagicPuzzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicPuzzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC22AA9E18F513AB005B6982 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC22AAA718F513AB005B6982 /* MagicPuzzleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicPuzzleTests-Info.plist"; sourceTree = "<group>"; };
+		EC22AAA918F513AB005B6982 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC22AAAB18F513AB005B6982 /* MagicPuzzleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicPuzzleTests.m; sourceTree = "<group>"; };
+		EC22AAB618F51447005B6982 /* PuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
+		EC22AAB718F51447005B6982 /* PuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
+		EC22AAB818F51447005B6982 /* PuzzleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleViewController.xib; sourceTree = "<group>"; };
+		EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChooseLabel.png; sourceTree = "<group>"; };
+		EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChooseLabel@2x.png"; sourceTree = "<group>"; };
+		EC4961B118FBDB6600EDEAED /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		EC4961B218FBDB6600EDEAED /* Menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu@2x.png"; sourceTree = "<group>"; };
+		EC4961B318FBDB6600EDEAED /* PanningSwitch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PanningSwitch.png; sourceTree = "<group>"; };
+		EC4961B418FBDB6600EDEAED /* PanningSwitch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PanningSwitch@2x.png"; sourceTree = "<group>"; };
+		EC4961B518FBDB6600EDEAED /* PuzzleComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PuzzleComplete.png; sourceTree = "<group>"; };
+		EC4961B618FBDB6600EDEAED /* PuzzleComplete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PuzzleComplete@2x.png"; sourceTree = "<group>"; };
+		EC4961B718FBDB6600EDEAED /* PuzzleComplete_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PuzzleComplete_iPhone.png; sourceTree = "<group>"; };
+		EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PuzzleComplete_iPhone@2x.png"; sourceTree = "<group>"; };
+		EC4961B918FBDB6600EDEAED /* Wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wood.jpg; sourceTree = "<group>"; };
+		EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood@2x.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC22AA7A18F513AB005B6982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC22AA8318F513AB005B6982 /* CoreGraphics.framework in Frameworks */,
+				EC22AA8718F513AB005B6982 /* CoreData.framework in Frameworks */,
+				EC22AA8518F513AB005B6982 /* UIKit.framework in Frameworks */,
+				EC22AA8118F513AB005B6982 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC22AA9A18F513AB005B6982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC22AA9F18F513AB005B6982 /* XCTest.framework in Frameworks */,
+				EC22AAA218F513AB005B6982 /* CoreData.framework in Frameworks */,
+				EC22AAA118F513AB005B6982 /* UIKit.framework in Frameworks */,
+				EC22AAA018F513AB005B6982 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC0E2D9A18F7C77C004E3DE5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EC1624CC19012D95003B4365 /* ImageViewHoder */,
+				EC1624C81900F244003B4365 /* MPImage */,
+				EC0E2D9B18F7C77C004E3DE5 /* GMGridView */,
+				EC0E2DA818F7C77C004E3DE5 /* Toast */,
+			);
+			name = lib;
+			path = MagicPuzzle/lib;
+			sourceTree = "<group>";
+		};
+		EC0E2D9B18F7C77C004E3DE5 /* GMGridView */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E2D9C18F7C77C004E3DE5 /* GMGridView-Constants.h */,
+				EC0E2D9D18F7C77C004E3DE5 /* GMGridView.h */,
+				EC0E2D9E18F7C77C004E3DE5 /* GMGridView.m */,
+				EC0E2D9F18F7C77C004E3DE5 /* GMGridViewCell+Extended.h */,
+				EC0E2DA018F7C77C004E3DE5 /* GMGridViewCell.h */,
+				EC0E2DA118F7C77C004E3DE5 /* GMGridViewCell.m */,
+				EC0E2DA218F7C77C004E3DE5 /* GMGridViewLayoutStrategies.h */,
+				EC0E2DA318F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m */,
+				EC0E2DA418F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.h */,
+				EC0E2DA518F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m */,
+				EC0E2DA618F7C77C004E3DE5 /* UIView+GMGridViewAdditions.h */,
+				EC0E2DA718F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m */,
+			);
+			path = GMGridView;
+			sourceTree = "<group>";
+		};
+		EC0E2DA818F7C77C004E3DE5 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E2DA918F7C77C004E3DE5 /* UIView+Toast.h */,
+				EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		EC1624C81900F244003B4365 /* MPImage */ = {
+			isa = PBXGroup;
+			children = (
+				EC1624C91900F283003B4365 /* UIImage+additions.h */,
+				EC1624CA1900F283003B4365 /* UIImage+additions.m */,
+			);
+			name = MPImage;
+			path = GMGridView/MPImage;
+			sourceTree = "<group>";
+		};
+		EC1624CC19012D95003B4365 /* ImageViewHoder */ = {
+			isa = PBXGroup;
+			children = (
+				EC1624CD19012D95003B4365 /* SWSnapshotStackView.h */,
+				EC1624CE19012D95003B4365 /* SWSnapshotStackView.m */,
+			);
+			name = ImageViewHoder;
+			path = Toast/ImageViewHoder;
+			sourceTree = "<group>";
+		};
+		EC22AA7418F513AB005B6982 = {
+			isa = PBXGroup;
+			children = (
+				EC0E2D9A18F7C77C004E3DE5 /* lib */,
+				EC22AA8818F513AB005B6982 /* MagicPuzzle */,
+				EC22AAA518F513AB005B6982 /* MagicPuzzleTests */,
+				EC22AA7F18F513AB005B6982 /* Frameworks */,
+				EC22AA7E18F513AB005B6982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC22AA7E18F513AB005B6982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AA7D18F513AB005B6982 /* MagicPuzzle.app */,
+				EC22AA9D18F513AB005B6982 /* MagicPuzzleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC22AA7F18F513AB005B6982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AA8018F513AB005B6982 /* Foundation.framework */,
+				EC22AA8218F513AB005B6982 /* CoreGraphics.framework */,
+				EC22AA8418F513AB005B6982 /* UIKit.framework */,
+				EC22AA8618F513AB005B6982 /* CoreData.framework */,
+				EC22AA9E18F513AB005B6982 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC22AA8818F513AB005B6982 /* MagicPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				ECE7884218F548D9003EE822 /* res */,
+				EC22AAB518F51414005B6982 /* PuzzleView */,
+				EC22AA9118F513AB005B6982 /* AppDelegate.h */,
+				EC22AA9218F513AB005B6982 /* AppDelegate.m */,
+				EC22AA9718F513AB005B6982 /* Images.xcassets */,
+				EC22AA9418F513AB005B6982 /* MagicPuzzle.xcdatamodeld */,
+				EC22AA8918F513AB005B6982 /* Supporting Files */,
+			);
+			path = MagicPuzzle;
+			sourceTree = "<group>";
+		};
+		EC22AA8918F513AB005B6982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AA8A18F513AB005B6982 /* MagicPuzzle-Info.plist */,
+				EC22AA8B18F513AB005B6982 /* InfoPlist.strings */,
+				EC22AA8E18F513AB005B6982 /* main.m */,
+				EC22AA9018F513AB005B6982 /* MagicPuzzle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC22AAA518F513AB005B6982 /* MagicPuzzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AAAB18F513AB005B6982 /* MagicPuzzleTests.m */,
+				EC22AAA618F513AB005B6982 /* Supporting Files */,
+			);
+			path = MagicPuzzleTests;
+			sourceTree = "<group>";
+		};
+		EC22AAA618F513AB005B6982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AAA718F513AB005B6982 /* MagicPuzzleTests-Info.plist */,
+				EC22AAA818F513AB005B6982 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC22AAB518F51414005B6982 /* PuzzleView */ = {
+			isa = PBXGroup;
+			children = (
+				EC22AAB618F51447005B6982 /* PuzzleViewController.h */,
+				EC22AAB718F51447005B6982 /* PuzzleViewController.m */,
+				EC22AAB818F51447005B6982 /* PuzzleViewController.xib */,
+				EC1624D019012E26003B4365 /* LocalAlbumViewController.h */,
+				EC1624D119012E26003B4365 /* LocalAlbumViewController.m */,
+				EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */,
+			);
+			path = PuzzleView;
+			sourceTree = "<group>";
+		};
+		EC4961AE18FBDB6600EDEAED /* PNGs */ = {
+			isa = PBXGroup;
+			children = (
+				EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */,
+				EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */,
+				EC4961B118FBDB6600EDEAED /* Menu.png */,
+				EC4961B218FBDB6600EDEAED /* Menu@2x.png */,
+				EC4961B318FBDB6600EDEAED /* PanningSwitch.png */,
+				EC4961B418FBDB6600EDEAED /* PanningSwitch@2x.png */,
+				EC4961B518FBDB6600EDEAED /* PuzzleComplete.png */,
+				EC4961B618FBDB6600EDEAED /* PuzzleComplete@2x.png */,
+				EC4961B718FBDB6600EDEAED /* PuzzleComplete_iPhone.png */,
+				EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */,
+				EC4961B918FBDB6600EDEAED /* Wood.jpg */,
+				EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */,
+			);
+			path = PNGs;
+			sourceTree = "<group>";
+		};
+		ECE7884218F548D9003EE822 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				EC4961AE18FBDB6600EDEAED /* PNGs */,
+				EC188A0D18F63D08009D6238 /* test.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC22AA7C18F513AB005B6982 /* MagicPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC22AAAF18F513AB005B6982 /* Build configuration list for PBXNativeTarget "MagicPuzzle" */;
+			buildPhases = (
+				EC22AA7918F513AB005B6982 /* Sources */,
+				EC22AA7A18F513AB005B6982 /* Frameworks */,
+				EC22AA7B18F513AB005B6982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicPuzzle;
+			productName = MagicPuzzle;
+			productReference = EC22AA7D18F513AB005B6982 /* MagicPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC22AA9C18F513AB005B6982 /* MagicPuzzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC22AAB218F513AB005B6982 /* Build configuration list for PBXNativeTarget "MagicPuzzleTests" */;
+			buildPhases = (
+				EC22AA9918F513AB005B6982 /* Sources */,
+				EC22AA9A18F513AB005B6982 /* Frameworks */,
+				EC22AA9B18F513AB005B6982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC22AAA418F513AB005B6982 /* PBXTargetDependency */,
+			);
+			name = MagicPuzzleTests;
+			productName = MagicPuzzleTests;
+			productReference = EC22AA9D18F513AB005B6982 /* MagicPuzzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC22AA7518F513AB005B6982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = denty;
+				TargetAttributes = {
+					EC22AA9C18F513AB005B6982 = {
+						TestTargetID = EC22AA7C18F513AB005B6982;
+					};
+				};
+			};
+			buildConfigurationList = EC22AA7818F513AB005B6982 /* Build configuration list for PBXProject "MagicPuzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC22AA7418F513AB005B6982;
+			productRefGroup = EC22AA7E18F513AB005B6982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC22AA7C18F513AB005B6982 /* MagicPuzzle */,
+				EC22AA9C18F513AB005B6982 /* MagicPuzzleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC22AA7B18F513AB005B6982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4961BC18FBDB6600EDEAED /* ChooseLabel@2x.png in Resources */,
+				EC4961BD18FBDB6600EDEAED /* Menu.png in Resources */,
+				EC1624D419012E26003B4365 /* LocalAlbumViewController.xib in Resources */,
+				EC4961C518FBDB6600EDEAED /* Wood.jpg in Resources */,
+				EC4961C418FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png in Resources */,
+				EC4961C118FBDB6600EDEAED /* PuzzleComplete.png in Resources */,
+				EC22AA8D18F513AB005B6982 /* InfoPlist.strings in Resources */,
+				EC4961BB18FBDB6600EDEAED /* ChooseLabel.png in Resources */,
+				EC4961C018FBDB6600EDEAED /* PanningSwitch@2x.png in Resources */,
+				EC22AABA18F51447005B6982 /* PuzzleViewController.xib in Resources */,
+				EC4961BF18FBDB6600EDEAED /* PanningSwitch.png in Resources */,
+				EC4961BE18FBDB6600EDEAED /* Menu@2x.png in Resources */,
+				EC4961C218FBDB6600EDEAED /* PuzzleComplete@2x.png in Resources */,
+				EC4961C318FBDB6600EDEAED /* PuzzleComplete_iPhone.png in Resources */,
+				EC4961C618FBDB6600EDEAED /* Wood@2x.jpg in Resources */,
+				EC22AA9818F513AB005B6982 /* Images.xcassets in Resources */,
+				EC188A0E18F63D08009D6238 /* test.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC22AA9B18F513AB005B6982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC22AAAA18F513AB005B6982 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC22AA7918F513AB005B6982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E2DAF18F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m in Sources */,
+				EC0E2DAE18F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
+				EC22AA9618F513AB005B6982 /* MagicPuzzle.xcdatamodeld in Sources */,
+				EC0E2DAD18F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m in Sources */,
+				EC22AA9318F513AB005B6982 /* AppDelegate.m in Sources */,
+				EC0E2DAC18F7C77C004E3DE5 /* GMGridViewCell.m in Sources */,
+				EC0E2DAB18F7C77C004E3DE5 /* GMGridView.m in Sources */,
+				EC1624CB1900F283003B4365 /* UIImage+additions.m in Sources */,
+				EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */,
+				EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */,
+				EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */,
+				EC22AA8F18F513AB005B6982 /* main.m in Sources */,
+				EC1624CF19012D95003B4365 /* SWSnapshotStackView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC22AA9918F513AB005B6982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC22AAAC18F513AB005B6982 /* MagicPuzzleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC22AAA418F513AB005B6982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC22AA7C18F513AB005B6982 /* MagicPuzzle */;
+			targetProxy = EC22AAA318F513AB005B6982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC22AA8B18F513AB005B6982 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC22AA8C18F513AB005B6982 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC22AAA818F513AB005B6982 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC22AAA918F513AB005B6982 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC22AAAD18F513AB005B6982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC22AAAE18F513AB005B6982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC22AAB018F513AB005B6982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPuzzle/MagicPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "MagicPuzzle/MagicPuzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC22AAB118F513AB005B6982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPuzzle/MagicPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "MagicPuzzle/MagicPuzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC22AAB318F513AB005B6982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicPuzzle.app/MagicPuzzle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPuzzle/MagicPuzzle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MagicPuzzleTests/MagicPuzzleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EC22AAB418F513AB005B6982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicPuzzle.app/MagicPuzzle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicPuzzle/MagicPuzzle-Prefix.pch";
+				INFOPLIST_FILE = "MagicPuzzleTests/MagicPuzzleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC22AA7818F513AB005B6982 /* Build configuration list for PBXProject "MagicPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC22AAAD18F513AB005B6982 /* Debug */,
+				EC22AAAE18F513AB005B6982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC22AAAF18F513AB005B6982 /* Build configuration list for PBXNativeTarget "MagicPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC22AAB018F513AB005B6982 /* Debug */,
+				EC22AAB118F513AB005B6982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC22AAB218F513AB005B6982 /* Build configuration list for PBXNativeTarget "MagicPuzzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC22AAB318F513AB005B6982 /* Debug */,
+				EC22AAB418F513AB005B6982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC22AA9418F513AB005B6982 /* MagicPuzzle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC22AA9518F513AB005B6982 /* MagicPuzzle.xcdatamodel */,
+			);
+			currentVersion = EC22AA9518F513AB005B6982 /* MagicPuzzle.xcdatamodel */;
+			path = MagicPuzzle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC22AA7518F513AB005B6982 /* Project object */;
+}
