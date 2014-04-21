@@ -116,8 +116,8 @@
 - (void)setImage:(UIImage *)image
 {
   // Release previous image, assign and retain new image
-  [m_image release];
-  m_image = [image retain];
+//  [m_image release];
+//  m_image = [image retain];
  
   // If an image is provided, perform some pre-calculations to assist
   // drawing that remain constant for a given image
@@ -236,9 +236,9 @@
 
 - (void)dealloc 
 {
-  [m_image release], m_image = nil;
+//  [m_image release], m_image = nil;
   
-  [super dealloc];
+//  [super dealloc];
 }
 
 
