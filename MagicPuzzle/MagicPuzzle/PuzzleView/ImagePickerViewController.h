@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoverFlowView.h"
+@protocol ImagePickerSendIndexDelegate <NSObject>
 
-@interface ImagePickerViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+- (NSInteger)sendIndexOfImage:(NSInteger) index;
 
+@end
+@interface ImagePickerViewController : UIViewController <CoverFlowViewActionDelegate>
+@property id<ImagePickerSendIndexDelegate> sendIndexDelegate;
 @end

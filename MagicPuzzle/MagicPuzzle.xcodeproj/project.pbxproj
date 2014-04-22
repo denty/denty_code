@@ -15,12 +15,10 @@
 		EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */; };
 		EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1624D119012E26003B4365 /* LocalAlbumViewController.m */; };
 		EC1624D419012E26003B4365 /* LocalAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */; };
-		EC188A0E18F63D08009D6238 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = EC188A0D18F63D08009D6238 /* test.png */; };
 		EC1BA11C1904BED400EC6FD3 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BA11A1904BED400EC6FD3 /* ImagePickerViewController.m */; };
 		EC1BA11D1904BED400EC6FD3 /* ImagePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1BA11B1904BED400EC6FD3 /* ImagePickerViewController.xib */; };
 		EC1BA1211904C31C00EC6FD3 /* SWSnapshotStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BA1201904C31C00EC6FD3 /* SWSnapshotStackView.m */; };
 		EC1BA1251904C32900EC6FD3 /* UIImage+additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BA1241904C32900EC6FD3 /* UIImage+additions.m */; };
-		EC1BA1291904C39800EC6FD3 /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BA1281904C39800EC6FD3 /* AWCollectionViewDialLayout.m */; };
 		EC22AA8118F513AB005B6982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8018F513AB005B6982 /* Foundation.framework */; };
 		EC22AA8318F513AB005B6982 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8218F513AB005B6982 /* CoreGraphics.framework */; };
 		EC22AA8518F513AB005B6982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC22AA8418F513AB005B6982 /* UIKit.framework */; };
@@ -38,6 +36,8 @@
 		EC22AAAC18F513AB005B6982 /* MagicPuzzleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AAAB18F513AB005B6982 /* MagicPuzzleTests.m */; };
 		EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC22AAB718F51447005B6982 /* PuzzleViewController.m */; };
 		EC22AABA18F51447005B6982 /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC22AAB818F51447005B6982 /* PuzzleViewController.xib */; };
+		EC2DCBDB19051F6100AE202D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2DCBDA19051F6100AE202D /* iCarousel.m */; };
+		EC2DCBDE19051FF800AE202D /* CoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2DCBDD19051FF800AE202D /* CoverFlowView.m */; };
 		EC4961BB18FBDB6600EDEAED /* ChooseLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */; };
 		EC4961BC18FBDB6600EDEAED /* ChooseLabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */; };
 		EC4961BD18FBDB6600EDEAED /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B118FBDB6600EDEAED /* Menu.png */; };
@@ -50,8 +50,102 @@
 		EC4961C418FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */; };
 		EC4961C518FBDB6600EDEAED /* Wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B918FBDB6600EDEAED /* Wood.jpg */; };
 		EC4961C618FBDB6600EDEAED /* Wood@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */; };
-		EC992F731904F818004BA25C /* ImagePickerCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC992F721904F818004BA25C /* ImagePickerCollectionCell.m */; };
-		EC992F751904FB1D004BA25C /* ImagePickerCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC992F741904FB1D004BA25C /* ImagePickerCollectionCell.xib */; };
+		ECF91470190641BE00366F4B /* All seeing eye_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91410190641BD00366F4B /* All seeing eye_puzzle.jpg */; };
+		ECF91471190641BE00366F4B /* Amsterdam bikes_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91411190641BD00366F4B /* Amsterdam bikes_puzzle.jpg */; };
+		ECF91472190641BE00366F4B /* Amsterdam signs_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91412190641BD00366F4B /* Amsterdam signs_puzzle.jpg */; };
+		ECF91473190641BE00366F4B /* Buddah Bellin_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91413190641BD00366F4B /* Buddah Bellin_puzzle.jpg */; };
+		ECF91474190641BE00366F4B /* Buddah_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91414190641BD00366F4B /* Buddah_puzzle.jpg */; };
+		ECF91475190641BE00366F4B /* Bulldog_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91415190641BD00366F4B /* Bulldog_puzzle.jpg */; };
+		ECF91476190641BE00366F4B /* Butterfly_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91416190641BD00366F4B /* Butterfly_puzzle.jpg */; };
+		ECF91477190641BE00366F4B /* Car_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91417190641BD00366F4B /* Car_puzzle.jpg */; };
+		ECF91478190641BE00366F4B /* Chess_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91418190641BD00366F4B /* Chess_puzzle.jpg */; };
+		ECF91479190641BE00366F4B /* Chines chess_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91419190641BD00366F4B /* Chines chess_puzzle.jpg */; };
+		ECF9147A190641BE00366F4B /* Colors_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141A190641BD00366F4B /* Colors_puzzle.jpg */; };
+		ECF9147B190641BE00366F4B /* Copia di All seeing eye_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141B190641BD00366F4B /* Copia di All seeing eye_puzzle_thumb.jpg */; };
+		ECF9147C190641BE00366F4B /* Copia di Amsterdam bikes_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141C190641BD00366F4B /* Copia di Amsterdam bikes_puzzle_thumb.jpg */; };
+		ECF9147D190641BE00366F4B /* Copia di Amsterdam signs_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141D190641BD00366F4B /* Copia di Amsterdam signs_puzzle_thumb.jpg */; };
+		ECF9147E190641BE00366F4B /* Copia di Buddah Bellin_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141E190641BD00366F4B /* Copia di Buddah Bellin_puzzle_thumb.jpg */; };
+		ECF9147F190641BE00366F4B /* Copia di Buddah_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9141F190641BD00366F4B /* Copia di Buddah_puzzle_thumb.jpg */; };
+		ECF91480190641BE00366F4B /* Copia di Bulldog_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91420190641BD00366F4B /* Copia di Bulldog_puzzle_thumb.jpg */; };
+		ECF91481190641BE00366F4B /* Copia di Butterfly_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91421190641BD00366F4B /* Copia di Butterfly_puzzle_thumb.jpg */; };
+		ECF91482190641BE00366F4B /* Copia di Car_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91422190641BD00366F4B /* Copia di Car_puzzle_thumb.jpg */; };
+		ECF91483190641BE00366F4B /* Copia di Chess_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91423190641BD00366F4B /* Copia di Chess_puzzle_thumb.jpg */; };
+		ECF91484190641BE00366F4B /* Copia di Chines chess_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91424190641BD00366F4B /* Copia di Chines chess_puzzle_thumb.jpg */; };
+		ECF91485190641BE00366F4B /* Copia di Colors_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91425190641BD00366F4B /* Copia di Colors_puzzle_thumb.jpg */; };
+		ECF91486190641BE00366F4B /* Copia di Drops_puzzle_thumb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ECF91426190641BD00366F4B /* Copia di Drops_puzzle_thumb.JPG */; };
+		ECF91487190641BE00366F4B /* Copia di Duck_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91427190641BD00366F4B /* Copia di Duck_puzzle_thumb.jpg */; };
+		ECF91488190641BE00366F4B /* Copia di Earth music_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91428190641BD00366F4B /* Copia di Earth music_puzzle_thumb.jpg */; };
+		ECF91489190641BE00366F4B /* Copia di Earth_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91429190641BE00366F4B /* Copia di Earth_puzzle_thumb.jpg */; };
+		ECF9148A190641BE00366F4B /* Copia di Fishing_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142A190641BE00366F4B /* Copia di Fishing_puzzle_thumb.jpg */; };
+		ECF9148B190641BE00366F4B /* Copia di Flower_puzzle_thumb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142B190641BE00366F4B /* Copia di Flower_puzzle_thumb.JPG */; };
+		ECF9148C190641BE00366F4B /* Copia di Fontana di trevi_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142C190641BE00366F4B /* Copia di Fontana di trevi_puzzle_thumb.jpg */; };
+		ECF9148D190641BE00366F4B /* Copia di Fractal leaf_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142D190641BE00366F4B /* Copia di Fractal leaf_puzzle_thumb.jpg */; };
+		ECF9148E190641BE00366F4B /* Copia di Girl_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142E190641BE00366F4B /* Copia di Girl_puzzle_thumb.jpg */; };
+		ECF9148F190641BE00366F4B /* Copia di Girls 2_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9142F190641BE00366F4B /* Copia di Girls 2_puzzle_thumb.jpg */; };
+		ECF91490190641BE00366F4B /* Copia di Girls_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91430190641BE00366F4B /* Copia di Girls_puzzle_thumb.jpg */; };
+		ECF91491190641BE00366F4B /* Copia di Hippo_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91431190641BE00366F4B /* Copia di Hippo_puzzle_thumb.jpg */; };
+		ECF91492190641BE00366F4B /* Copia di Horses_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91432190641BE00366F4B /* Copia di Horses_puzzle_thumb.jpg */; };
+		ECF91493190641BE00366F4B /* Copia di Hulk_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91433190641BE00366F4B /* Copia di Hulk_puzzle_thumb.jpg */; };
+		ECF91494190641BE00366F4B /* Copia di Kiwi_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91434190641BE00366F4B /* Copia di Kiwi_puzzle_thumb.jpg */; };
+		ECF91495190641BE00366F4B /* Copia di Lego_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91435190641BE00366F4B /* Copia di Lego_puzzle_thumb.jpg */; };
+		ECF91496190641BE00366F4B /* Copia di Lion_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91436190641BE00366F4B /* Copia di Lion_puzzle_thumb.jpg */; };
+		ECF91497190641BE00366F4B /* Copia di Matrioska_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91437190641BE00366F4B /* Copia di Matrioska_puzzle_thumb.jpg */; };
+		ECF91498190641BE00366F4B /* Copia di Micetto furbetto_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91438190641BE00366F4B /* Copia di Micetto furbetto_puzzle_thumb.jpg */; };
+		ECF91499190641BE00366F4B /* Copia di Micio mafioso_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91439190641BE00366F4B /* Copia di Micio mafioso_puzzle_thumb.jpg */; };
+		ECF9149A190641BE00366F4B /* Copia di Micio matto_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143A190641BE00366F4B /* Copia di Micio matto_puzzle_thumb.jpg */; };
+		ECF9149B190641BE00366F4B /* Copia di Micio pigrotto_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143B190641BE00366F4B /* Copia di Micio pigrotto_puzzle_thumb.jpg */; };
+		ECF9149C190641BE00366F4B /* Copia di Mother board_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143C190641BE00366F4B /* Copia di Mother board_puzzle_thumb.jpg */; };
+		ECF9149D190641BE00366F4B /* Copia di Mountains_puzzle_thumb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143D190641BE00366F4B /* Copia di Mountains_puzzle_thumb.JPG */; };
+		ECF9149E190641BE00366F4B /* Copia di Nano_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143E190641BE00366F4B /* Copia di Nano_puzzle_thumb.jpg */; };
+		ECF9149F190641BE00366F4B /* Copia di Nice view_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9143F190641BE00366F4B /* Copia di Nice view_puzzle_thumb.jpg */; };
+		ECF914A0190641BE00366F4B /* Copia di Obiettivo_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91440190641BE00366F4B /* Copia di Obiettivo_puzzle_thumb.jpg */; };
+		ECF914A1190641BE00366F4B /* Copia di Old car_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91441190641BE00366F4B /* Copia di Old car_puzzle_thumb.jpg */; };
+		ECF914A2190641BE00366F4B /* Copia di Pane_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91442190641BE00366F4B /* Copia di Pane_puzzle_thumb.jpg */; };
+		ECF914A3190641BE00366F4B /* Copia di Pasta_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91443190641BE00366F4B /* Copia di Pasta_puzzle_thumb.jpg */; };
+		ECF914A4190641BE00366F4B /* Copia di Pencils_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91444190641BE00366F4B /* Copia di Pencils_puzzle_thumb.jpg */; };
+		ECF914A5190641BE00366F4B /* Copia di Pizza_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91445190641BE00366F4B /* Copia di Pizza_puzzle_thumb.jpg */; };
+		ECF914A6190641BE00366F4B /* Copia di PlayStation_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91446190641BE00366F4B /* Copia di PlayStation_puzzle_thumb.jpg */; };
+		ECF914A7190641BE00366F4B /* Copia di Rectil_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91447190641BE00366F4B /* Copia di Rectil_puzzle_thumb.jpg */; };
+		ECF914A8190641BE00366F4B /* Copia di The_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91448190641BE00366F4B /* Copia di The_puzzle_thumb.jpg */; };
+		ECF914A9190641BE00366F4B /* Copia di Tiger_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91449190641BE00366F4B /* Copia di Tiger_puzzle_thumb.jpg */; };
+		ECF914AA190641BE00366F4B /* Copia di Yellow_puzzle_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144A190641BE00366F4B /* Copia di Yellow_puzzle_thumb.jpg */; };
+		ECF914AB190641BE00366F4B /* Drops_puzzle.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144B190641BE00366F4B /* Drops_puzzle.JPG */; };
+		ECF914AC190641BE00366F4B /* Duck_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144C190641BE00366F4B /* Duck_puzzle.jpg */; };
+		ECF914AD190641BE00366F4B /* Earth music_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144D190641BE00366F4B /* Earth music_puzzle.jpg */; };
+		ECF914AE190641BE00366F4B /* Earth_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144E190641BE00366F4B /* Earth_puzzle.jpg */; };
+		ECF914AF190641BE00366F4B /* Fishing_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9144F190641BE00366F4B /* Fishing_puzzle.jpg */; };
+		ECF914B0190641BE00366F4B /* Flower_puzzle.JPG in Resources */ = {isa = PBXBuildFile; fileRef = ECF91450190641BE00366F4B /* Flower_puzzle.JPG */; };
+		ECF914B1190641BE00366F4B /* Fontana di trevi_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91451190641BE00366F4B /* Fontana di trevi_puzzle.jpg */; };
+		ECF914B2190641BE00366F4B /* Fractal leaf_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91452190641BE00366F4B /* Fractal leaf_puzzle.jpg */; };
+		ECF914B3190641BE00366F4B /* Girl_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91453190641BE00366F4B /* Girl_puzzle.jpg */; };
+		ECF914B4190641BE00366F4B /* Girls 2_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91454190641BE00366F4B /* Girls 2_puzzle.jpg */; };
+		ECF914B5190641BE00366F4B /* Girls_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91455190641BE00366F4B /* Girls_puzzle.jpg */; };
+		ECF914B6190641BE00366F4B /* Hippo_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91456190641BE00366F4B /* Hippo_puzzle.jpg */; };
+		ECF914B7190641BE00366F4B /* Horses_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91457190641BE00366F4B /* Horses_puzzle.jpg */; };
+		ECF914B8190641BE00366F4B /* Hulk_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91458190641BE00366F4B /* Hulk_puzzle.jpg */; };
+		ECF914B9190641BE00366F4B /* Kiwi_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91459190641BE00366F4B /* Kiwi_puzzle.jpg */; };
+		ECF914BA190641BE00366F4B /* Lego_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145A190641BE00366F4B /* Lego_puzzle.jpg */; };
+		ECF914BB190641BE00366F4B /* Lion_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145B190641BE00366F4B /* Lion_puzzle.jpg */; };
+		ECF914BC190641BE00366F4B /* Matrioska_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145C190641BE00366F4B /* Matrioska_puzzle.jpg */; };
+		ECF914BD190641BE00366F4B /* Micetto furbetto_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145D190641BE00366F4B /* Micetto furbetto_puzzle.jpg */; };
+		ECF914BE190641BE00366F4B /* Micio mafioso_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145E190641BE00366F4B /* Micio mafioso_puzzle.jpg */; };
+		ECF914BF190641BE00366F4B /* Micio matto_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9145F190641BE00366F4B /* Micio matto_puzzle.jpg */; };
+		ECF914C0190641BE00366F4B /* Micio pigrotto_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91460190641BE00366F4B /* Micio pigrotto_puzzle.jpg */; };
+		ECF914C1190641BE00366F4B /* Mother board_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91461190641BE00366F4B /* Mother board_puzzle.jpg */; };
+		ECF914C2190641BE00366F4B /* Mountains_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91462190641BE00366F4B /* Mountains_puzzle.jpg */; };
+		ECF914C3190641BE00366F4B /* Nano_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91463190641BE00366F4B /* Nano_puzzle.jpg */; };
+		ECF914C4190641BE00366F4B /* Nice view_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91464190641BE00366F4B /* Nice view_puzzle.jpg */; };
+		ECF914C5190641BE00366F4B /* Obiettivo_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91465190641BE00366F4B /* Obiettivo_puzzle.jpg */; };
+		ECF914C6190641BE00366F4B /* Old car_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91466190641BE00366F4B /* Old car_puzzle.jpg */; };
+		ECF914C7190641BE00366F4B /* Pane_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91467190641BE00366F4B /* Pane_puzzle.jpg */; };
+		ECF914C8190641BE00366F4B /* Pasta_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91468190641BE00366F4B /* Pasta_puzzle.jpg */; };
+		ECF914C9190641BE00366F4B /* Pencils_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF91469190641BE00366F4B /* Pencils_puzzle.jpg */; };
+		ECF914CA190641BE00366F4B /* Pizza_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146A190641BE00366F4B /* Pizza_puzzle.jpg */; };
+		ECF914CB190641BE00366F4B /* PlayStation_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146B190641BE00366F4B /* PlayStation_puzzle.jpg */; };
+		ECF914CC190641BE00366F4B /* Rectil_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146C190641BE00366F4B /* Rectil_puzzle.jpg */; };
+		ECF914CD190641BE00366F4B /* The_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146D190641BE00366F4B /* The_puzzle.jpg */; };
+		ECF914CE190641BE00366F4B /* Tiger_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146E190641BE00366F4B /* Tiger_puzzle.jpg */; };
+		ECF914CF190641BE00366F4B /* Yellow_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF9146F190641BE00366F4B /* Yellow_puzzle.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +176,6 @@
 		EC1624D019012E26003B4365 /* LocalAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAlbumViewController.h; sourceTree = "<group>"; };
 		EC1624D119012E26003B4365 /* LocalAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAlbumViewController.m; sourceTree = "<group>"; };
 		EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalAlbumViewController.xib; sourceTree = "<group>"; };
-		EC188A0D18F63D08009D6238 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		EC1BA1191904BED400EC6FD3 /* ImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
 		EC1BA11A1904BED400EC6FD3 /* ImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
 		EC1BA11B1904BED400EC6FD3 /* ImagePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerViewController.xib; sourceTree = "<group>"; };
@@ -90,8 +183,6 @@
 		EC1BA1201904C31C00EC6FD3 /* SWSnapshotStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSnapshotStackView.m; sourceTree = "<group>"; };
 		EC1BA1231904C32900EC6FD3 /* UIImage+additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+additions.h"; sourceTree = "<group>"; };
 		EC1BA1241904C32900EC6FD3 /* UIImage+additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+additions.m"; sourceTree = "<group>"; };
-		EC1BA1271904C39800EC6FD3 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
-		EC1BA1281904C39800EC6FD3 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
 		EC22AA7D18F513AB005B6982 /* MagicPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22AA8018F513AB005B6982 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC22AA8218F513AB005B6982 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +204,10 @@
 		EC22AAB618F51447005B6982 /* PuzzleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleViewController.h; sourceTree = "<group>"; };
 		EC22AAB718F51447005B6982 /* PuzzleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleViewController.m; sourceTree = "<group>"; };
 		EC22AAB818F51447005B6982 /* PuzzleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleViewController.xib; sourceTree = "<group>"; };
+		EC2DCBD919051F6100AE202D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		EC2DCBDA19051F6100AE202D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		EC2DCBDC19051FF800AE202D /* CoverFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowView.h; sourceTree = "<group>"; };
+		EC2DCBDD19051FF800AE202D /* CoverFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowView.m; sourceTree = "<group>"; };
 		EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChooseLabel.png; sourceTree = "<group>"; };
 		EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChooseLabel@2x.png"; sourceTree = "<group>"; };
 		EC4961B118FBDB6600EDEAED /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
@@ -125,9 +220,102 @@
 		EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PuzzleComplete_iPhone@2x.png"; sourceTree = "<group>"; };
 		EC4961B918FBDB6600EDEAED /* Wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wood.jpg; sourceTree = "<group>"; };
 		EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood@2x.jpg"; sourceTree = "<group>"; };
-		EC992F711904F818004BA25C /* ImagePickerCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerCollectionCell.h; sourceTree = "<group>"; };
-		EC992F721904F818004BA25C /* ImagePickerCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerCollectionCell.m; sourceTree = "<group>"; };
-		EC992F741904FB1D004BA25C /* ImagePickerCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerCollectionCell.xib; sourceTree = "<group>"; };
+		ECF91410190641BD00366F4B /* All seeing eye_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "All seeing eye_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91411190641BD00366F4B /* Amsterdam bikes_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amsterdam bikes_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91412190641BD00366F4B /* Amsterdam signs_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amsterdam signs_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91413190641BD00366F4B /* Buddah Bellin_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Buddah Bellin_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91414190641BD00366F4B /* Buddah_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Buddah_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91415190641BD00366F4B /* Bulldog_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bulldog_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91416190641BD00366F4B /* Butterfly_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Butterfly_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91417190641BD00366F4B /* Car_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Car_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91418190641BD00366F4B /* Chess_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Chess_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91419190641BD00366F4B /* Chines chess_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chines chess_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF9141A190641BD00366F4B /* Colors_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Colors_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9141B190641BD00366F4B /* Copia di All seeing eye_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di All seeing eye_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9141C190641BD00366F4B /* Copia di Amsterdam bikes_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Amsterdam bikes_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9141D190641BD00366F4B /* Copia di Amsterdam signs_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Amsterdam signs_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9141E190641BD00366F4B /* Copia di Buddah Bellin_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Buddah Bellin_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9141F190641BD00366F4B /* Copia di Buddah_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Buddah_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91420190641BD00366F4B /* Copia di Bulldog_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Bulldog_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91421190641BD00366F4B /* Copia di Butterfly_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Butterfly_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91422190641BD00366F4B /* Copia di Car_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Car_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91423190641BD00366F4B /* Copia di Chess_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Chess_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91424190641BD00366F4B /* Copia di Chines chess_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Chines chess_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91425190641BD00366F4B /* Copia di Colors_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Colors_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91426190641BD00366F4B /* Copia di Drops_puzzle_thumb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Drops_puzzle_thumb.JPG"; sourceTree = "<group>"; };
+		ECF91427190641BD00366F4B /* Copia di Duck_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Duck_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91428190641BD00366F4B /* Copia di Earth music_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Earth music_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91429190641BE00366F4B /* Copia di Earth_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Earth_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9142A190641BE00366F4B /* Copia di Fishing_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Fishing_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9142B190641BE00366F4B /* Copia di Flower_puzzle_thumb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Flower_puzzle_thumb.JPG"; sourceTree = "<group>"; };
+		ECF9142C190641BE00366F4B /* Copia di Fontana di trevi_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Fontana di trevi_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9142D190641BE00366F4B /* Copia di Fractal leaf_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Fractal leaf_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9142E190641BE00366F4B /* Copia di Girl_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Girl_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9142F190641BE00366F4B /* Copia di Girls 2_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Girls 2_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91430190641BE00366F4B /* Copia di Girls_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Girls_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91431190641BE00366F4B /* Copia di Hippo_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Hippo_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91432190641BE00366F4B /* Copia di Horses_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Horses_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91433190641BE00366F4B /* Copia di Hulk_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Hulk_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91434190641BE00366F4B /* Copia di Kiwi_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Kiwi_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91435190641BE00366F4B /* Copia di Lego_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Lego_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91436190641BE00366F4B /* Copia di Lion_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Lion_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91437190641BE00366F4B /* Copia di Matrioska_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Matrioska_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91438190641BE00366F4B /* Copia di Micetto furbetto_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Micetto furbetto_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91439190641BE00366F4B /* Copia di Micio mafioso_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Micio mafioso_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9143A190641BE00366F4B /* Copia di Micio matto_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Micio matto_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9143B190641BE00366F4B /* Copia di Micio pigrotto_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Micio pigrotto_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9143C190641BE00366F4B /* Copia di Mother board_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Mother board_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9143D190641BE00366F4B /* Copia di Mountains_puzzle_thumb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Mountains_puzzle_thumb.JPG"; sourceTree = "<group>"; };
+		ECF9143E190641BE00366F4B /* Copia di Nano_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Nano_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9143F190641BE00366F4B /* Copia di Nice view_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Nice view_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91440190641BE00366F4B /* Copia di Obiettivo_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Obiettivo_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91441190641BE00366F4B /* Copia di Old car_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Old car_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91442190641BE00366F4B /* Copia di Pane_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Pane_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91443190641BE00366F4B /* Copia di Pasta_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Pasta_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91444190641BE00366F4B /* Copia di Pencils_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Pencils_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91445190641BE00366F4B /* Copia di Pizza_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Pizza_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91446190641BE00366F4B /* Copia di PlayStation_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di PlayStation_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91447190641BE00366F4B /* Copia di Rectil_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Rectil_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91448190641BE00366F4B /* Copia di The_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di The_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF91449190641BE00366F4B /* Copia di Tiger_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Tiger_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9144A190641BE00366F4B /* Copia di Yellow_puzzle_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Copia di Yellow_puzzle_thumb.jpg"; sourceTree = "<group>"; };
+		ECF9144B190641BE00366F4B /* Drops_puzzle.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Drops_puzzle.JPG; sourceTree = "<group>"; };
+		ECF9144C190641BE00366F4B /* Duck_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Duck_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9144D190641BE00366F4B /* Earth music_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Earth music_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF9144E190641BE00366F4B /* Earth_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9144F190641BE00366F4B /* Fishing_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fishing_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91450190641BE00366F4B /* Flower_puzzle.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Flower_puzzle.JPG; sourceTree = "<group>"; };
+		ECF91451190641BE00366F4B /* Fontana di trevi_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fontana di trevi_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91452190641BE00366F4B /* Fractal leaf_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fractal leaf_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91453190641BE00366F4B /* Girl_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girl_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91454190641BE00366F4B /* Girls 2_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Girls 2_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91455190641BE00366F4B /* Girls_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girls_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91456190641BE00366F4B /* Hippo_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hippo_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91457190641BE00366F4B /* Horses_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Horses_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91458190641BE00366F4B /* Hulk_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hulk_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91459190641BE00366F4B /* Kiwi_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kiwi_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9145A190641BE00366F4B /* Lego_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lego_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9145B190641BE00366F4B /* Lion_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lion_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9145C190641BE00366F4B /* Matrioska_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Matrioska_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9145D190641BE00366F4B /* Micetto furbetto_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Micetto furbetto_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF9145E190641BE00366F4B /* Micio mafioso_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Micio mafioso_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF9145F190641BE00366F4B /* Micio matto_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Micio matto_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91460190641BE00366F4B /* Micio pigrotto_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Micio pigrotto_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91461190641BE00366F4B /* Mother board_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mother board_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91462190641BE00366F4B /* Mountains_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountains_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91463190641BE00366F4B /* Nano_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Nano_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91464190641BE00366F4B /* Nice view_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nice view_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91465190641BE00366F4B /* Obiettivo_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Obiettivo_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91466190641BE00366F4B /* Old car_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Old car_puzzle.jpg"; sourceTree = "<group>"; };
+		ECF91467190641BE00366F4B /* Pane_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pane_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91468190641BE00366F4B /* Pasta_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pasta_puzzle.jpg; sourceTree = "<group>"; };
+		ECF91469190641BE00366F4B /* Pencils_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pencils_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146A190641BE00366F4B /* Pizza_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pizza_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146B190641BE00366F4B /* PlayStation_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PlayStation_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146C190641BE00366F4B /* Rectil_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rectil_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146D190641BE00366F4B /* The_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = The_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146E190641BE00366F4B /* Tiger_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tiger_puzzle.jpg; sourceTree = "<group>"; };
+		ECF9146F190641BE00366F4B /* Yellow_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yellow_puzzle.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +347,7 @@
 		EC0E2D9A18F7C77C004E3DE5 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				EC1BA1261904C39800EC6FD3 /* ImageVIewPicker */,
+				EC2DCBD819051F6100AE202D /* iCarousel */,
 				EC1BA1221904C32900EC6FD3 /* MPImage */,
 				EC1BA11E1904C31C00EC6FD3 /* ImageViewHoder */,
 				EC0E2D9B18F7C77C004E3DE5 /* GMGridView */,
@@ -213,15 +401,6 @@
 				EC1BA1241904C32900EC6FD3 /* UIImage+additions.m */,
 			);
 			path = MPImage;
-			sourceTree = "<group>";
-		};
-		EC1BA1261904C39800EC6FD3 /* ImageVIewPicker */ = {
-			isa = PBXGroup;
-			children = (
-				EC1BA1271904C39800EC6FD3 /* AWCollectionViewDialLayout.h */,
-				EC1BA1281904C39800EC6FD3 /* AWCollectionViewDialLayout.m */,
-			);
-			path = ImageVIewPicker;
 			sourceTree = "<group>";
 		};
 		EC22AA7418F513AB005B6982 = {
@@ -302,7 +481,6 @@
 		EC22AAB518F51414005B6982 /* PuzzleView */ = {
 			isa = PBXGroup;
 			children = (
-				EC992F701904F703004BA25C /* Cell */,
 				EC22AAB618F51447005B6982 /* PuzzleViewController.h */,
 				EC22AAB718F51447005B6982 /* PuzzleViewController.m */,
 				EC22AAB818F51447005B6982 /* PuzzleViewController.xib */,
@@ -312,8 +490,19 @@
 				EC1BA1191904BED400EC6FD3 /* ImagePickerViewController.h */,
 				EC1BA11A1904BED400EC6FD3 /* ImagePickerViewController.m */,
 				EC1BA11B1904BED400EC6FD3 /* ImagePickerViewController.xib */,
+				EC2DCBDC19051FF800AE202D /* CoverFlowView.h */,
+				EC2DCBDD19051FF800AE202D /* CoverFlowView.m */,
 			);
 			path = PuzzleView;
+			sourceTree = "<group>";
+		};
+		EC2DCBD819051F6100AE202D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DCBD919051F6100AE202D /* iCarousel.h */,
+				EC2DCBDA19051F6100AE202D /* iCarousel.m */,
+			);
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 		EC4961AE18FBDB6600EDEAED /* PNGs */ = {
@@ -335,23 +524,117 @@
 			path = PNGs;
 			sourceTree = "<group>";
 		};
-		EC992F701904F703004BA25C /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				EC992F711904F818004BA25C /* ImagePickerCollectionCell.h */,
-				EC992F721904F818004BA25C /* ImagePickerCollectionCell.m */,
-				EC992F741904FB1D004BA25C /* ImagePickerCollectionCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		ECE7884218F548D9003EE822 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				ECF9140F190641BD00366F4B /* puzzlePic */,
 				EC4961AE18FBDB6600EDEAED /* PNGs */,
-				EC188A0D18F63D08009D6238 /* test.png */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		ECF9140F190641BD00366F4B /* puzzlePic */ = {
+			isa = PBXGroup;
+			children = (
+				ECF91410190641BD00366F4B /* All seeing eye_puzzle.jpg */,
+				ECF91411190641BD00366F4B /* Amsterdam bikes_puzzle.jpg */,
+				ECF91412190641BD00366F4B /* Amsterdam signs_puzzle.jpg */,
+				ECF91413190641BD00366F4B /* Buddah Bellin_puzzle.jpg */,
+				ECF91414190641BD00366F4B /* Buddah_puzzle.jpg */,
+				ECF91415190641BD00366F4B /* Bulldog_puzzle.jpg */,
+				ECF91416190641BD00366F4B /* Butterfly_puzzle.jpg */,
+				ECF91417190641BD00366F4B /* Car_puzzle.jpg */,
+				ECF91418190641BD00366F4B /* Chess_puzzle.jpg */,
+				ECF91419190641BD00366F4B /* Chines chess_puzzle.jpg */,
+				ECF9141A190641BD00366F4B /* Colors_puzzle.jpg */,
+				ECF9141B190641BD00366F4B /* Copia di All seeing eye_puzzle_thumb.jpg */,
+				ECF9141C190641BD00366F4B /* Copia di Amsterdam bikes_puzzle_thumb.jpg */,
+				ECF9141D190641BD00366F4B /* Copia di Amsterdam signs_puzzle_thumb.jpg */,
+				ECF9141E190641BD00366F4B /* Copia di Buddah Bellin_puzzle_thumb.jpg */,
+				ECF9141F190641BD00366F4B /* Copia di Buddah_puzzle_thumb.jpg */,
+				ECF91420190641BD00366F4B /* Copia di Bulldog_puzzle_thumb.jpg */,
+				ECF91421190641BD00366F4B /* Copia di Butterfly_puzzle_thumb.jpg */,
+				ECF91422190641BD00366F4B /* Copia di Car_puzzle_thumb.jpg */,
+				ECF91423190641BD00366F4B /* Copia di Chess_puzzle_thumb.jpg */,
+				ECF91424190641BD00366F4B /* Copia di Chines chess_puzzle_thumb.jpg */,
+				ECF91425190641BD00366F4B /* Copia di Colors_puzzle_thumb.jpg */,
+				ECF91426190641BD00366F4B /* Copia di Drops_puzzle_thumb.JPG */,
+				ECF91427190641BD00366F4B /* Copia di Duck_puzzle_thumb.jpg */,
+				ECF91428190641BD00366F4B /* Copia di Earth music_puzzle_thumb.jpg */,
+				ECF91429190641BE00366F4B /* Copia di Earth_puzzle_thumb.jpg */,
+				ECF9142A190641BE00366F4B /* Copia di Fishing_puzzle_thumb.jpg */,
+				ECF9142B190641BE00366F4B /* Copia di Flower_puzzle_thumb.JPG */,
+				ECF9142C190641BE00366F4B /* Copia di Fontana di trevi_puzzle_thumb.jpg */,
+				ECF9142D190641BE00366F4B /* Copia di Fractal leaf_puzzle_thumb.jpg */,
+				ECF9142E190641BE00366F4B /* Copia di Girl_puzzle_thumb.jpg */,
+				ECF9142F190641BE00366F4B /* Copia di Girls 2_puzzle_thumb.jpg */,
+				ECF91430190641BE00366F4B /* Copia di Girls_puzzle_thumb.jpg */,
+				ECF91431190641BE00366F4B /* Copia di Hippo_puzzle_thumb.jpg */,
+				ECF91432190641BE00366F4B /* Copia di Horses_puzzle_thumb.jpg */,
+				ECF91433190641BE00366F4B /* Copia di Hulk_puzzle_thumb.jpg */,
+				ECF91434190641BE00366F4B /* Copia di Kiwi_puzzle_thumb.jpg */,
+				ECF91435190641BE00366F4B /* Copia di Lego_puzzle_thumb.jpg */,
+				ECF91436190641BE00366F4B /* Copia di Lion_puzzle_thumb.jpg */,
+				ECF91437190641BE00366F4B /* Copia di Matrioska_puzzle_thumb.jpg */,
+				ECF91438190641BE00366F4B /* Copia di Micetto furbetto_puzzle_thumb.jpg */,
+				ECF91439190641BE00366F4B /* Copia di Micio mafioso_puzzle_thumb.jpg */,
+				ECF9143A190641BE00366F4B /* Copia di Micio matto_puzzle_thumb.jpg */,
+				ECF9143B190641BE00366F4B /* Copia di Micio pigrotto_puzzle_thumb.jpg */,
+				ECF9143C190641BE00366F4B /* Copia di Mother board_puzzle_thumb.jpg */,
+				ECF9143D190641BE00366F4B /* Copia di Mountains_puzzle_thumb.JPG */,
+				ECF9143E190641BE00366F4B /* Copia di Nano_puzzle_thumb.jpg */,
+				ECF9143F190641BE00366F4B /* Copia di Nice view_puzzle_thumb.jpg */,
+				ECF91440190641BE00366F4B /* Copia di Obiettivo_puzzle_thumb.jpg */,
+				ECF91441190641BE00366F4B /* Copia di Old car_puzzle_thumb.jpg */,
+				ECF91442190641BE00366F4B /* Copia di Pane_puzzle_thumb.jpg */,
+				ECF91443190641BE00366F4B /* Copia di Pasta_puzzle_thumb.jpg */,
+				ECF91444190641BE00366F4B /* Copia di Pencils_puzzle_thumb.jpg */,
+				ECF91445190641BE00366F4B /* Copia di Pizza_puzzle_thumb.jpg */,
+				ECF91446190641BE00366F4B /* Copia di PlayStation_puzzle_thumb.jpg */,
+				ECF91447190641BE00366F4B /* Copia di Rectil_puzzle_thumb.jpg */,
+				ECF91448190641BE00366F4B /* Copia di The_puzzle_thumb.jpg */,
+				ECF91449190641BE00366F4B /* Copia di Tiger_puzzle_thumb.jpg */,
+				ECF9144A190641BE00366F4B /* Copia di Yellow_puzzle_thumb.jpg */,
+				ECF9144B190641BE00366F4B /* Drops_puzzle.JPG */,
+				ECF9144C190641BE00366F4B /* Duck_puzzle.jpg */,
+				ECF9144D190641BE00366F4B /* Earth music_puzzle.jpg */,
+				ECF9144E190641BE00366F4B /* Earth_puzzle.jpg */,
+				ECF9144F190641BE00366F4B /* Fishing_puzzle.jpg */,
+				ECF91450190641BE00366F4B /* Flower_puzzle.JPG */,
+				ECF91451190641BE00366F4B /* Fontana di trevi_puzzle.jpg */,
+				ECF91452190641BE00366F4B /* Fractal leaf_puzzle.jpg */,
+				ECF91453190641BE00366F4B /* Girl_puzzle.jpg */,
+				ECF91454190641BE00366F4B /* Girls 2_puzzle.jpg */,
+				ECF91455190641BE00366F4B /* Girls_puzzle.jpg */,
+				ECF91456190641BE00366F4B /* Hippo_puzzle.jpg */,
+				ECF91457190641BE00366F4B /* Horses_puzzle.jpg */,
+				ECF91458190641BE00366F4B /* Hulk_puzzle.jpg */,
+				ECF91459190641BE00366F4B /* Kiwi_puzzle.jpg */,
+				ECF9145A190641BE00366F4B /* Lego_puzzle.jpg */,
+				ECF9145B190641BE00366F4B /* Lion_puzzle.jpg */,
+				ECF9145C190641BE00366F4B /* Matrioska_puzzle.jpg */,
+				ECF9145D190641BE00366F4B /* Micetto furbetto_puzzle.jpg */,
+				ECF9145E190641BE00366F4B /* Micio mafioso_puzzle.jpg */,
+				ECF9145F190641BE00366F4B /* Micio matto_puzzle.jpg */,
+				ECF91460190641BE00366F4B /* Micio pigrotto_puzzle.jpg */,
+				ECF91461190641BE00366F4B /* Mother board_puzzle.jpg */,
+				ECF91462190641BE00366F4B /* Mountains_puzzle.jpg */,
+				ECF91463190641BE00366F4B /* Nano_puzzle.jpg */,
+				ECF91464190641BE00366F4B /* Nice view_puzzle.jpg */,
+				ECF91465190641BE00366F4B /* Obiettivo_puzzle.jpg */,
+				ECF91466190641BE00366F4B /* Old car_puzzle.jpg */,
+				ECF91467190641BE00366F4B /* Pane_puzzle.jpg */,
+				ECF91468190641BE00366F4B /* Pasta_puzzle.jpg */,
+				ECF91469190641BE00366F4B /* Pencils_puzzle.jpg */,
+				ECF9146A190641BE00366F4B /* Pizza_puzzle.jpg */,
+				ECF9146B190641BE00366F4B /* PlayStation_puzzle.jpg */,
+				ECF9146C190641BE00366F4B /* Rectil_puzzle.jpg */,
+				ECF9146D190641BE00366F4B /* The_puzzle.jpg */,
+				ECF9146E190641BE00366F4B /* Tiger_puzzle.jpg */,
+				ECF9146F190641BE00366F4B /* Yellow_puzzle.jpg */,
+			);
+			name = puzzlePic;
+			path = PNGs/puzzlePic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,25 +712,119 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF91487190641BE00366F4B /* Copia di Duck_puzzle_thumb.jpg in Resources */,
+				ECF9149D190641BE00366F4B /* Copia di Mountains_puzzle_thumb.JPG in Resources */,
+				ECF914C0190641BE00366F4B /* Micio pigrotto_puzzle.jpg in Resources */,
+				ECF914C1190641BE00366F4B /* Mother board_puzzle.jpg in Resources */,
+				ECF914BB190641BE00366F4B /* Lion_puzzle.jpg in Resources */,
+				ECF914CB190641BE00366F4B /* PlayStation_puzzle.jpg in Resources */,
+				ECF91477190641BE00366F4B /* Car_puzzle.jpg in Resources */,
 				EC4961BC18FBDB6600EDEAED /* ChooseLabel@2x.png in Resources */,
+				ECF914CF190641BE00366F4B /* Yellow_puzzle.jpg in Resources */,
+				ECF91480190641BE00366F4B /* Copia di Bulldog_puzzle_thumb.jpg in Resources */,
 				EC4961BD18FBDB6600EDEAED /* Menu.png in Resources */,
+				ECF914BA190641BE00366F4B /* Lego_puzzle.jpg in Resources */,
 				EC1624D419012E26003B4365 /* LocalAlbumViewController.xib in Resources */,
+				ECF914C7190641BE00366F4B /* Pane_puzzle.jpg in Resources */,
+				ECF91488190641BE00366F4B /* Copia di Earth music_puzzle_thumb.jpg in Resources */,
 				EC4961C518FBDB6600EDEAED /* Wood.jpg in Resources */,
+				ECF91492190641BE00366F4B /* Copia di Horses_puzzle_thumb.jpg in Resources */,
+				ECF9148D190641BE00366F4B /* Copia di Fractal leaf_puzzle_thumb.jpg in Resources */,
+				ECF91479190641BE00366F4B /* Chines chess_puzzle.jpg in Resources */,
+				ECF91486190641BE00366F4B /* Copia di Drops_puzzle_thumb.JPG in Resources */,
+				ECF914BE190641BE00366F4B /* Micio mafioso_puzzle.jpg in Resources */,
+				ECF914B8190641BE00366F4B /* Hulk_puzzle.jpg in Resources */,
+				ECF91498190641BE00366F4B /* Copia di Micetto furbetto_puzzle_thumb.jpg in Resources */,
 				EC4961C418FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png in Resources */,
+				ECF9148E190641BE00366F4B /* Copia di Girl_puzzle_thumb.jpg in Resources */,
+				ECF914B0190641BE00366F4B /* Flower_puzzle.JPG in Resources */,
+				ECF9149A190641BE00366F4B /* Copia di Micio matto_puzzle_thumb.jpg in Resources */,
 				EC4961C118FBDB6600EDEAED /* PuzzleComplete.png in Resources */,
 				EC1BA11D1904BED400EC6FD3 /* ImagePickerViewController.xib in Resources */,
+				ECF9147F190641BE00366F4B /* Copia di Buddah_puzzle_thumb.jpg in Resources */,
+				ECF914AC190641BE00366F4B /* Duck_puzzle.jpg in Resources */,
+				ECF914AA190641BE00366F4B /* Copia di Yellow_puzzle_thumb.jpg in Resources */,
 				EC22AA8D18F513AB005B6982 /* InfoPlist.strings in Resources */,
+				ECF914C2190641BE00366F4B /* Mountains_puzzle.jpg in Resources */,
+				ECF9148B190641BE00366F4B /* Copia di Flower_puzzle_thumb.JPG in Resources */,
+				ECF914A2190641BE00366F4B /* Copia di Pane_puzzle_thumb.jpg in Resources */,
+				ECF91497190641BE00366F4B /* Copia di Matrioska_puzzle_thumb.jpg in Resources */,
+				ECF91499190641BE00366F4B /* Copia di Micio mafioso_puzzle_thumb.jpg in Resources */,
+				ECF9148F190641BE00366F4B /* Copia di Girls 2_puzzle_thumb.jpg in Resources */,
+				ECF91472190641BE00366F4B /* Amsterdam signs_puzzle.jpg in Resources */,
+				ECF914BF190641BE00366F4B /* Micio matto_puzzle.jpg in Resources */,
+				ECF914BD190641BE00366F4B /* Micetto furbetto_puzzle.jpg in Resources */,
+				ECF9149E190641BE00366F4B /* Copia di Nano_puzzle_thumb.jpg in Resources */,
+				ECF91470190641BE00366F4B /* All seeing eye_puzzle.jpg in Resources */,
+				ECF914B6190641BE00366F4B /* Hippo_puzzle.jpg in Resources */,
+				ECF914A9190641BE00366F4B /* Copia di Tiger_puzzle_thumb.jpg in Resources */,
 				EC4961BB18FBDB6600EDEAED /* ChooseLabel.png in Resources */,
+				ECF91474190641BE00366F4B /* Buddah_puzzle.jpg in Resources */,
+				ECF914B1190641BE00366F4B /* Fontana di trevi_puzzle.jpg in Resources */,
+				ECF914CC190641BE00366F4B /* Rectil_puzzle.jpg in Resources */,
+				ECF914AD190641BE00366F4B /* Earth music_puzzle.jpg in Resources */,
+				ECF91494190641BE00366F4B /* Copia di Kiwi_puzzle_thumb.jpg in Resources */,
+				ECF9149C190641BE00366F4B /* Copia di Mother board_puzzle_thumb.jpg in Resources */,
+				ECF914C9190641BE00366F4B /* Pencils_puzzle.jpg in Resources */,
+				ECF91495190641BE00366F4B /* Copia di Lego_puzzle_thumb.jpg in Resources */,
+				ECF914B9190641BE00366F4B /* Kiwi_puzzle.jpg in Resources */,
+				ECF91489190641BE00366F4B /* Copia di Earth_puzzle_thumb.jpg in Resources */,
+				ECF91491190641BE00366F4B /* Copia di Hippo_puzzle_thumb.jpg in Resources */,
 				EC4961C018FBDB6600EDEAED /* PanningSwitch@2x.png in Resources */,
+				ECF91485190641BE00366F4B /* Copia di Colors_puzzle_thumb.jpg in Resources */,
+				ECF914A8190641BE00366F4B /* Copia di The_puzzle_thumb.jpg in Resources */,
+				ECF91476190641BE00366F4B /* Butterfly_puzzle.jpg in Resources */,
 				EC22AABA18F51447005B6982 /* PuzzleViewController.xib in Resources */,
+				ECF91490190641BE00366F4B /* Copia di Girls_puzzle_thumb.jpg in Resources */,
+				ECF914BC190641BE00366F4B /* Matrioska_puzzle.jpg in Resources */,
+				ECF914C5190641BE00366F4B /* Obiettivo_puzzle.jpg in Resources */,
 				EC4961BF18FBDB6600EDEAED /* PanningSwitch.png in Resources */,
+				ECF91475190641BE00366F4B /* Bulldog_puzzle.jpg in Resources */,
+				ECF914CE190641BE00366F4B /* Tiger_puzzle.jpg in Resources */,
+				ECF9147B190641BE00366F4B /* Copia di All seeing eye_puzzle_thumb.jpg in Resources */,
+				ECF914CA190641BE00366F4B /* Pizza_puzzle.jpg in Resources */,
+				ECF91483190641BE00366F4B /* Copia di Chess_puzzle_thumb.jpg in Resources */,
+				ECF914A6190641BE00366F4B /* Copia di PlayStation_puzzle_thumb.jpg in Resources */,
 				EC4961BE18FBDB6600EDEAED /* Menu@2x.png in Resources */,
+				ECF91484190641BE00366F4B /* Copia di Chines chess_puzzle_thumb.jpg in Resources */,
+				ECF9147E190641BE00366F4B /* Copia di Buddah Bellin_puzzle_thumb.jpg in Resources */,
+				ECF914AF190641BE00366F4B /* Fishing_puzzle.jpg in Resources */,
+				ECF914C3190641BE00366F4B /* Nano_puzzle.jpg in Resources */,
+				ECF91496190641BE00366F4B /* Copia di Lion_puzzle_thumb.jpg in Resources */,
+				ECF9148C190641BE00366F4B /* Copia di Fontana di trevi_puzzle_thumb.jpg in Resources */,
+				ECF91493190641BE00366F4B /* Copia di Hulk_puzzle_thumb.jpg in Resources */,
+				ECF914AB190641BE00366F4B /* Drops_puzzle.JPG in Resources */,
+				ECF914A4190641BE00366F4B /* Copia di Pencils_puzzle_thumb.jpg in Resources */,
+				ECF91473190641BE00366F4B /* Buddah Bellin_puzzle.jpg in Resources */,
+				ECF914AE190641BE00366F4B /* Earth_puzzle.jpg in Resources */,
+				ECF9149F190641BE00366F4B /* Copia di Nice view_puzzle_thumb.jpg in Resources */,
+				ECF9149B190641BE00366F4B /* Copia di Micio pigrotto_puzzle_thumb.jpg in Resources */,
+				ECF91478190641BE00366F4B /* Chess_puzzle.jpg in Resources */,
+				ECF914C4190641BE00366F4B /* Nice view_puzzle.jpg in Resources */,
+				ECF914A7190641BE00366F4B /* Copia di Rectil_puzzle_thumb.jpg in Resources */,
+				ECF9147D190641BE00366F4B /* Copia di Amsterdam signs_puzzle_thumb.jpg in Resources */,
 				EC4961C218FBDB6600EDEAED /* PuzzleComplete@2x.png in Resources */,
+				ECF914A1190641BE00366F4B /* Copia di Old car_puzzle_thumb.jpg in Resources */,
+				ECF914A0190641BE00366F4B /* Copia di Obiettivo_puzzle_thumb.jpg in Resources */,
 				EC4961C318FBDB6600EDEAED /* PuzzleComplete_iPhone.png in Resources */,
+				ECF9147C190641BE00366F4B /* Copia di Amsterdam bikes_puzzle_thumb.jpg in Resources */,
 				EC4961C618FBDB6600EDEAED /* Wood@2x.jpg in Resources */,
-				EC992F751904FB1D004BA25C /* ImagePickerCollectionCell.xib in Resources */,
+				ECF914B7190641BE00366F4B /* Horses_puzzle.jpg in Resources */,
+				ECF914A5190641BE00366F4B /* Copia di Pizza_puzzle_thumb.jpg in Resources */,
+				ECF914C8190641BE00366F4B /* Pasta_puzzle.jpg in Resources */,
+				ECF91481190641BE00366F4B /* Copia di Butterfly_puzzle_thumb.jpg in Resources */,
+				ECF9148A190641BE00366F4B /* Copia di Fishing_puzzle_thumb.jpg in Resources */,
 				EC22AA9818F513AB005B6982 /* Images.xcassets in Resources */,
-				EC188A0E18F63D08009D6238 /* test.png in Resources */,
+				ECF914C6190641BE00366F4B /* Old car_puzzle.jpg in Resources */,
+				ECF914A3190641BE00366F4B /* Copia di Pasta_puzzle_thumb.jpg in Resources */,
+				ECF914B2190641BE00366F4B /* Fractal leaf_puzzle.jpg in Resources */,
+				ECF914B5190641BE00366F4B /* Girls_puzzle.jpg in Resources */,
+				ECF914CD190641BE00366F4B /* The_puzzle.jpg in Resources */,
+				ECF914B3190641BE00366F4B /* Girl_puzzle.jpg in Resources */,
+				ECF91471190641BE00366F4B /* Amsterdam bikes_puzzle.jpg in Resources */,
+				ECF914B4190641BE00366F4B /* Girls 2_puzzle.jpg in Resources */,
+				ECF9147A190641BE00366F4B /* Colors_puzzle.jpg in Resources */,
+				ECF91482190641BE00366F4B /* Copia di Car_puzzle_thumb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,17 +846,17 @@
 				EC0E2DAF18F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m in Sources */,
 				EC0E2DAE18F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				EC22AA9618F513AB005B6982 /* MagicPuzzle.xcdatamodeld in Sources */,
-				EC992F731904F818004BA25C /* ImagePickerCollectionCell.m in Sources */,
 				EC1BA1251904C32900EC6FD3 /* UIImage+additions.m in Sources */,
 				EC0E2DAD18F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m in Sources */,
 				EC1BA1211904C31C00EC6FD3 /* SWSnapshotStackView.m in Sources */,
+				EC2DCBDB19051F6100AE202D /* iCarousel.m in Sources */,
 				EC22AA9318F513AB005B6982 /* AppDelegate.m in Sources */,
 				EC0E2DAC18F7C77C004E3DE5 /* GMGridViewCell.m in Sources */,
 				EC0E2DAB18F7C77C004E3DE5 /* GMGridView.m in Sources */,
 				EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */,
 				EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */,
+				EC2DCBDE19051FF800AE202D /* CoverFlowView.m in Sources */,
 				EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */,
-				EC1BA1291904C39800EC6FD3 /* AWCollectionViewDialLayout.m in Sources */,
 				EC22AA8F18F513AB005B6982 /* main.m in Sources */,
 				EC1BA11C1904BED400EC6FD3 /* ImagePickerViewController.m in Sources */,
 			);

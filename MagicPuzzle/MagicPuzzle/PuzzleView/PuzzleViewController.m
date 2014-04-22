@@ -11,6 +11,8 @@
 #import "sys/param.h"
 #import "sys/mount.h"
 #import "UIImage+additions.h"
+#import "ImagePickerViewController.h"
+#import "SWSnapshotStackView.h"
 @interface PuzzleViewController ()
 
 @end
@@ -34,8 +36,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
+    [super viewDidLoad];    
     [self.gridView setPagingEnabled:NO];
     self.gridView.style = GMGridViewStyleSwap;
     self.gridView.centerGrid = YES;
@@ -53,9 +54,9 @@
     
     UIButton *reloadButton = [[UIButton alloc] initWithFrame:CGRectMake(240, 0, 80, 50)];
     [reloadButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [reloadButton setTitle:@"check" forState:UIControlStateNormal];
+    [reloadButton setTitle:@"load" forState:UIControlStateNormal];
     [self.view addSubview:reloadButton];
-    [reloadButton addTarget:self action: @selector(check) forControlEvents:UIControlEventTouchUpInside];
+    [reloadButton addTarget:self action: @selector(loadLibraryImage) forControlEvents:UIControlEventTouchUpInside];
 
 //    shake
 //    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
@@ -213,6 +214,14 @@
     }
     [self.gridView reloadData];
     [self startShakeAnimation];
+}
+
+- (void)loadLibraryImage
+{
+    ImagePickerViewController *aImagePickerViewController = [[ImagePickerViewController alloc] init];
+    [self presentViewController:aImagePickerViewController animated:YES completion:^{
+        
+    }];
 }
 
 - (void)check
