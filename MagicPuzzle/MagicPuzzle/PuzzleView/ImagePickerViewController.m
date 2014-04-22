@@ -32,6 +32,7 @@
     [self.view addSubview:backgroundView];
     CoverFlowView *aCoverFlowView = [[CoverFlowView alloc] initWithFrame:self.view.frame];
     aCoverFlowView.selectDelegate = self;
+    aCoverFlowView.puzzleArray = self.imageArray;
     [aCoverFlowView setBackgroundColor:[UIColor clearColor]];
     [self.view addSubview: aCoverFlowView];
     // Do any additional setup after loading the view from its nib.

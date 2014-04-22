@@ -14,5 +14,6 @@
 
 @end
 @interface ImagePickerViewController : UIViewController <CoverFlowViewActionDelegate>
+@property NSArray *imageArray;
 @property id<ImagePickerSendIndexDelegate> sendIndexDelegate;
 @end

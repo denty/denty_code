@@ -18,23 +18,28 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        m_CoverFlow = [[iCarousel alloc] initWithFrame:self.frame];
-        [self addSubview:m_CoverFlow];
-        [m_CoverFlow setDataSource:self];
-        [m_CoverFlow setDelegate:self];
-        [m_CoverFlow setType:iCarouselTypeInvertedTimeMachine];
-    }
+        }
     return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    m_CoverFlow = [[iCarousel alloc] initWithFrame:self.frame];
+    [self addSubview:m_CoverFlow];
+    [m_CoverFlow setDataSource:self];
+    [m_CoverFlow setDelegate:self];
+    [m_CoverFlow setType:iCarouselTypeInvertedTimeMachine];
+
 }
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
 {
-    return 10;
+    return self.puzzleArray.count;
 }
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view;
 {
-    
     if (view == nil)
     {
         view = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 300, 500)];
@@ -46,7 +51,7 @@
     }
     SWSnapshotStackView *imageStackView = (SWSnapshotStackView *)[view viewWithTag:101];
     [imageStackView setContentMode:UIViewContentModeScaleAspectFit];
-    imageStackView.image = [UIImage imageNamed:@"Lion_puzzle.jpg"];
+    imageStackView.image = [self.puzzleArray objectAtIndex:index];
 //    [imageStackView setBackgroundColor:[UIColor redColor]];
     return view;
 }

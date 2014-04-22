@@ -10,7 +10,8 @@
 #import "GMGridView.h"
 #import "GMGridViewCell.h"
 #import "UIView+Toast.h"
-@interface PuzzleViewController : UIViewController <GMGridViewDataSource, GMGridViewSortingDelegate, GMGridViewActionDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+#import "ImagePickerViewController.h"
+@interface PuzzleViewController : UIViewController <GMGridViewDataSource, GMGridViewSortingDelegate, GMGridViewActionDelegate,UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,ImagePickerSendIndexDelegate>
 @property (strong, nonatomic) IBOutlet GMGridView *gridView;
 
 - (IBAction)checkAction:(id)sender;

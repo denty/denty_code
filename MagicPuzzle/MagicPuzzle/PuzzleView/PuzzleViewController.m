@@ -25,6 +25,7 @@
     BOOL check;
     CGFloat m_scale;
 }
+#pragma mark -lifecycel
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,12 +52,6 @@
     [startButton setTitle:@"start" forState:UIControlStateNormal];
     [self.view addSubview:startButton];
     [startButton addTarget:self action: @selector(pickImage) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIButton *reloadButton = [[UIButton alloc] initWithFrame:CGRectMake(240, 0, 80, 50)];
-    [reloadButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [reloadButton setTitle:@"load" forState:UIControlStateNormal];
-    [self.view addSubview:reloadButton];
-    [reloadButton addTarget:self action: @selector(loadLibraryImage) forControlEvents:UIControlEventTouchUpInside];
 
 //    shake
 //    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
@@ -70,6 +65,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -GridView Delegate&DataSource
 - (NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView
 {
     return 20;
@@ -160,18 +156,11 @@
      ];
 }
 
+#pragma mark -formatImage
 -(UIImage*)captureView:(UIImage *)theimage frame:(CGRect)fra{
     CGImageRef ref = CGImageCreateWithImageInRect(theimage.CGImage, fra);
     UIImage *i = [UIImage imageWithCGImage:ref];
     return i;
-}
-
-- (void)refresh
-{
-    UIImage * fullImage = m_puzzleImage;
-    m_captureImageArray = [self captureImage:fullImage CellNumber:20];
-    m_checkArray = [m_captureImageArray copy];
-    [self.tipImageVIew setImage:fullImage];
 }
 
 - (NSMutableArray*)captureImage:(UIImage *)image CellNumber:(NSInteger) number
@@ -206,6 +195,53 @@
     return imageArray;
 }
 
+- (UIImage *)scaleImage:(UIImage *)image
+{
+    CGFloat ratio = image.size.width/image.size.height;
+    image = [image scaleToSize:CGSizeMake(1050*ratio, 1050)];
+    if (ratio>0.8) {
+        m_scale = image.size.height/350;
+    }
+    else
+    {
+        m_scale = image.size.width/280;
+    }
+    UIGraphicsBeginImageContext(CGSizeMake(image.size.width , image.size.height ));
+    NSLog(@"height = %f , width = %f",image.size.height,image.size.width);
+    [image drawInRect:CGRectMake(0, 0, image.size.width , image.size.height )];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
+}
+
+- (UIImage *)scaleImageForThumb:(UIImage *)image
+{
+    CGFloat ratio = image.size.width/image.size.height;
+    image = [image scaleToSize:CGSizeMake(350*ratio, 350)];
+    if (ratio>0.8) {
+        m_scale = image.size.height/350;
+    }
+    else
+    {
+        m_scale = image.size.width/280;
+    }
+    UIGraphicsBeginImageContext(CGSizeMake(image.size.width , image.size.height ));
+//    NSLog(@"height = %f , width = %f",image.size.height,image.size.width);
+    [image drawInRect:CGRectMake(0, 0, image.size.width , image.size.height )];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return scaledImage;
+}
+#pragma mark -refresh
+- (void)refresh
+{
+    UIImage * fullImage = m_puzzleImage;
+    m_captureImageArray = [self captureImage:fullImage CellNumber:20];
+    m_checkArray = [m_captureImageArray copy];
+    [self.tipImageVIew setImage:fullImage];
+}
+
+#pragma mark randomImage
 - (void)randomMutableArray
 {
     for (int i=0; i<m_captureImageArray.count; i++) {
@@ -216,14 +252,51 @@
     [self startShakeAnimation];
 }
 
+#pragma mark loadLibrary
 - (void)loadLibraryImage
 {
     ImagePickerViewController *aImagePickerViewController = [[ImagePickerViewController alloc] init];
-    [self presentViewController:aImagePickerViewController animated:YES completion:^{
-        
-    }];
+    aImagePickerViewController.sendIndexDelegate = self;
+    dispatch_queue_t aQueue = dispatch_queue_create("onlineServiceCheckQueue", NULL);
+    [self.gridView makeToastActivity];
+    dispatch_async(aQueue, ^{
+        NSArray *imagePathArray = [self pathsForImages];
+        NSMutableArray *tempImageArray = [[NSMutableArray alloc] init];
+        for (NSString *strPath in imagePathArray) {
+            UIImage *image = [UIImage imageWithContentsOfFile:strPath];
+            [tempImageArray addObject:[self scaleImageForThumb:image]];
+        }
+        aImagePickerViewController.imageArray = tempImageArray;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.gridView hideToastActivity];
+            [self presentViewController:aImagePickerViewController animated:YES completion:^{
+                
+            }];
+        });
+    });
 }
 
+- (NSArray*)pathsForImages {
+    
+    NSArray *dirContents = [[NSBundle mainBundle] pathsForResourcesOfType:nil inDirectory:nil];
+    NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:dirContents.count];
+    for (NSString *string in dirContents)
+    {
+        if ([string hasSuffix:@"_puzzle.jpg"]  ||
+            [string hasSuffix:@"_puzzle.jpeg"] ||
+            [string hasSuffix:@"_puzzle.png"]  ||
+            [string hasSuffix:@"_puzzle.JPG"]  ||
+            [string hasSuffix:@"_puzzle.JPEG"] ||
+            [string hasSuffix:@"_puzzle.PNG"]
+            ) {
+            [tempArray addObject:string];
+        }
+    }
+    NSLog(@"Found %d images", tempArray.count);
+    return [NSArray arrayWithArray:tempArray];
+}
+
+#pragma mark checkPuzzle
 - (void)check
 {
     for (int i=0; i<m_captureImageArray.count; i++) {
@@ -244,6 +317,8 @@
         [self.gridView makeToast:@"Is wrong！！！ Try again！"];
     }
 }
+
+#pragma mark IBAction
 - (IBAction)checkAction:(id)sender {
     [self check];
 }
@@ -261,9 +336,10 @@
                 position:@"center"];
 }
 
+#pragma mark pickImage
 - (void)pickImage
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"从手机相册选择", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"从手机相册选择", @"MagicPuzzle生涯图库",nil];
     [actionSheet showInView:self.view];
 
 }
@@ -300,6 +376,11 @@
             [self presentViewController:albumController animated:YES completion:^{            }];
             break;
         }
+        case 2:
+        {
+            [self loadLibraryImage];
+            break;
+        }
         default:
             break;
     }
@@ -325,27 +406,7 @@
     [self.gridView reloadData];
 }
 
-- (UIImage *)scaleImage:(UIImage *)image
-{
-    CGFloat ratio = image.size.width/image.size.height;
-    image = [image scaleToSize:CGSizeMake(1050*ratio, 1050)];
-    if (ratio>0.8) {
-        m_scale = image.size.height/350;
-    }
-    else
-    {
-        m_scale = image.size.width/280;
-    }
-    UIGraphicsBeginImageContext(CGSizeMake(image.size.width , image.size.height ));
-    NSLog(@"height = %f , width = %f",image.size.height,image.size.width);
-    [image drawInRect:CGRectMake(0, 0, image.size.width , image.size.height )];
-    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return scaledImage;
-}
-
-#pragma mark -
-#pragma mark yaoyiyao
+#pragma mark shakeFunction
 -(BOOL)canBecomeFirstResponder {
     return YES;
 }
@@ -395,5 +456,16 @@
             }];
         }];
     }];
+}
+
+#pragma mark -sendIndexDelegate
+- (NSInteger)sendIndexOfImage:(NSInteger)index
+{
+    NSArray *ImagePathArray = [self pathsForImages];
+    UIImage *image = [UIImage imageWithContentsOfFile:[ImagePathArray objectAtIndex:index]];
+    m_puzzleImage = [self scaleImage:image];
+    [self refresh];
+    [self.gridView reloadData];
+    return 1;
 }
 @end
