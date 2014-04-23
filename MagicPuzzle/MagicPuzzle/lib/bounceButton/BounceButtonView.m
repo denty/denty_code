@@ -7,7 +7,9 @@
 //
 
 #import "BounceButtonView.h"
-
+static const CGFloat CSToastShadowOpacity       = 0.8;
+static const CGFloat CSToastShadowRadius        = 6.0;
+static const CGSize  CSToastShadowOffset        = { 4.0, 4.0 };
 @implementation BounceButtonView
 
 - (id)initWithFrame:(CGRect)frame
@@ -18,6 +20,21 @@
         self.itemButton1 = [[UIView alloc] initWithFrame:CGRectMake(120, 10, 130, 30)];
         self.itemButton2 = [[UIView alloc] initWithFrame:CGRectMake(90, 60, 130, 30)];
         self.itemButton3 = [[UIView alloc] initWithFrame:CGRectMake(60, 110, 130, 30)];
+        
+        self.itemButton1.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.itemButton1.layer.shadowOpacity = CSToastShadowOpacity;
+        self.itemButton1.layer.shadowRadius = CSToastShadowRadius;
+        self.itemButton1.layer.shadowOffset = CSToastShadowOffset;
+        
+        self.itemButton2.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.itemButton2.layer.shadowOpacity = CSToastShadowOpacity;
+        self.itemButton2.layer.shadowRadius = CSToastShadowRadius;
+        self.itemButton2.layer.shadowOffset = CSToastShadowOffset;
+        
+        self.itemButton3.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.itemButton3.layer.shadowOpacity = CSToastShadowOpacity;
+        self.itemButton3.layer.shadowRadius = CSToastShadowRadius;
+        self.itemButton3.layer.shadowOffset = CSToastShadowOffset;
         
         UILabel *itemlabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
         [itemlabel1 setBackgroundColor:[UIColor clearColor]];

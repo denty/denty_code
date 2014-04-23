@@ -62,7 +62,7 @@
     [self.bounceButton addBounceButtons:arrMenuItemButtons];
     [self.bounceButton setBackgroundColor:[UIColor clearColor]];
     self.homeButton = [[ASOTwoStateButton alloc] initWithFrame:CGRectMake(0, 0, 30,30)];
-//    [self.view addSubview:self.homeButton];
+    [self.view addSubview:self.homeButton];
     [self.homeButton addTarget:self action:@selector(expendButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     self.homeButton.offStateImageName = @"Menu.png";
     self.homeButton.onStateImageName = @"Menu.png";
