@@ -13,6 +13,8 @@
 #import "UIImage+additions.h"
 #import "ImagePickerViewController.h"
 #import "SWSnapshotStackView.h"
+#import "BounceButtonView.h"
+
 @interface PuzzleViewController ()
 
 @end
@@ -52,9 +54,25 @@
     [startButton setTitle:@"start" forState:UIControlStateNormal];
     [self.view addSubview:startButton];
     [startButton addTarget:self action: @selector(pickImage) forControlEvents:UIControlEventTouchUpInside];
-
-//    shake
-//    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
+    self.bounceButton = [[BounceButtonView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    NSArray *arrMenuItemButtons = [[NSArray alloc] initWithObjects:self.bounceButton.itemButton1,
+                                   self.bounceButton.itemButton2,
+                                   self.bounceButton.itemButton3,
+                                   nil]; // Add all of the defined 'menu item button' to 'menu item view'
+    [self.bounceButton addBounceButtons:arrMenuItemButtons];
+    [self.bounceButton setBackgroundColor:[UIColor clearColor]];
+    self.homeButton = [[ASOTwoStateButton alloc] initWithFrame:CGRectMake(0, 0, 30,30)];
+//    [self.view addSubview:self.homeButton];
+    [self.homeButton addTarget:self action:@selector(expendButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.homeButton.offStateImageName = @"Menu.png";
+    self.homeButton.onStateImageName = @"Menu.png";
+    [self.homeButton initAnimationWithFadeEffectEnabled:YES];
+    
+    [self.bounceButton setSpeed:[NSNumber numberWithFloat:0.3f]];
+    [self.bounceButton setBouncingDistance:[NSNumber numberWithFloat:0.3f]];
+    [self.bounceButton setAnimationStyle:ASOAnimationStyleRiseProgressively];
+    
+    [self.bounceButton setDelegate:self];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -444,13 +462,13 @@
 {
     CGFloat fOriginX = 0;
     [UIView animateWithDuration:0.2 animations:^{
-        [self.gridView setFrame:CGRectMake(fOriginX-80, 0, self.gridView.frame.size.width, self.gridView.frame.size.height)];
+        [self.gridView setFrame:CGRectMake(fOriginX-80, self.gridView.frame.origin.y, self.gridView.frame.size.width, self.gridView.frame.size.height)];
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.4 animations:^{
-            [self.gridView setFrame:CGRectMake(fOriginX+80, 0, self.gridView.frame.size.width, self.gridView.frame.size.height)];
+            [self.gridView setFrame:CGRectMake(fOriginX+80, self.gridView.frame.origin.y, self.gridView.frame.size.width, self.gridView.frame.size.height)];
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.2 animations:^{
-                [self.gridView setFrame:CGRectMake(fOriginX, 0, self.gridView.frame.size.width, self.gridView.frame.size.height)];
+                [self.gridView setFrame:CGRectMake(fOriginX, self.gridView.frame.origin.y, self.gridView.frame.size.width, self.gridView.frame.size.height)];
             } completion:^(BOOL finished) {
                 
             }];
@@ -467,5 +485,28 @@
     [self refresh];
     [self.gridView reloadData];
     return 1;
+}
+
+#pragma mark asoButtonAction
+- (void)expendButtonAction:(id)sender
+{
+    ASOTwoStateButton *tempButton = (ASOTwoStateButton *)sender;
+    if ([tempButton isOn]) {
+        // Show 'menu item view' and expand its 'menu item button'
+        [self.homeButton addCustomView:self.bounceButton];
+        [self.bounceButton expandWithAnimationStyle:ASOAnimationStyleRiseProgressively];
+    }
+    else {
+        // Collapse all 'menu item button' and remove 'menu item view'
+        [self.bounceButton collapseWithAnimationStyle:ASOAnimationStyleRiseProgressively];
+        [self.homeButton removeCustomView:self.bounceButton interval:[self.bounceButton.collapsedViewDuration doubleValue]];
+    }
+
+}
+
+#pragma mark ASOBounceButtonViewDelegate
+- (void)didSelectBounceButtonAtIndex:(NSUInteger)index
+{
+    [self.homeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 @end

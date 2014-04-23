@@ -38,6 +38,9 @@
 		EC22AABA18F51447005B6982 /* PuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC22AAB818F51447005B6982 /* PuzzleViewController.xib */; };
 		EC2DCBDB19051F6100AE202D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2DCBDA19051F6100AE202D /* iCarousel.m */; };
 		EC2DCBDE19051FF800AE202D /* CoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2DCBDD19051FF800AE202D /* CoverFlowView.m */; };
+		EC3300291907515A00642CF6 /* ASOBounceButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3300271907515A00642CF6 /* ASOBounceButtonView.m */; };
+		EC33002C19075BF700642CF6 /* BounceButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33002B19075BF700642CF6 /* BounceButtonView.m */; };
+		EC33002F19076D2C00642CF6 /* ASOTwoStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC33002E19076D2C00642CF6 /* ASOTwoStateButton.m */; };
 		EC4961BB18FBDB6600EDEAED /* ChooseLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */; };
 		EC4961BC18FBDB6600EDEAED /* ChooseLabel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */; };
 		EC4961BD18FBDB6600EDEAED /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B118FBDB6600EDEAED /* Menu.png */; };
@@ -160,6 +163,13 @@
 		EC2DCBDA19051F6100AE202D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		EC2DCBDC19051FF800AE202D /* CoverFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowView.h; sourceTree = "<group>"; };
 		EC2DCBDD19051FF800AE202D /* CoverFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowView.m; sourceTree = "<group>"; };
+		EC3300261907515A00642CF6 /* ASOBounceButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASOBounceButtonView.h; sourceTree = "<group>"; };
+		EC3300271907515A00642CF6 /* ASOBounceButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASOBounceButtonView.m; sourceTree = "<group>"; };
+		EC3300281907515A00642CF6 /* ASOBounceButtonViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASOBounceButtonViewDelegate.h; sourceTree = "<group>"; };
+		EC33002A19075BF700642CF6 /* BounceButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceButtonView.h; sourceTree = "<group>"; };
+		EC33002B19075BF700642CF6 /* BounceButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceButtonView.m; sourceTree = "<group>"; };
+		EC33002D19076D2C00642CF6 /* ASOTwoStateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASOTwoStateButton.h; sourceTree = "<group>"; };
+		EC33002E19076D2C00642CF6 /* ASOTwoStateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASOTwoStateButton.m; sourceTree = "<group>"; };
 		EC4961AF18FBDB6600EDEAED /* ChooseLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChooseLabel.png; sourceTree = "<group>"; };
 		EC4961B018FBDB6600EDEAED /* ChooseLabel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ChooseLabel@2x.png"; sourceTree = "<group>"; };
 		EC4961B118FBDB6600EDEAED /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
@@ -251,6 +261,7 @@
 		EC0E2D9A18F7C77C004E3DE5 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				EC3300251907515A00642CF6 /* bounceButton */,
 				EC2DCBD819051F6100AE202D /* iCarousel */,
 				EC1BA1221904C32900EC6FD3 /* MPImage */,
 				EC1BA11E1904C31C00EC6FD3 /* ImageViewHoder */,
@@ -407,6 +418,20 @@
 				EC2DCBDA19051F6100AE202D /* iCarousel.m */,
 			);
 			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		EC3300251907515A00642CF6 /* bounceButton */ = {
+			isa = PBXGroup;
+			children = (
+				EC33002D19076D2C00642CF6 /* ASOTwoStateButton.h */,
+				EC33002E19076D2C00642CF6 /* ASOTwoStateButton.m */,
+				EC3300261907515A00642CF6 /* ASOBounceButtonView.h */,
+				EC3300271907515A00642CF6 /* ASOBounceButtonView.m */,
+				EC3300281907515A00642CF6 /* ASOBounceButtonViewDelegate.h */,
+				EC33002A19075BF700642CF6 /* BounceButtonView.h */,
+				EC33002B19075BF700642CF6 /* BounceButtonView.m */,
+			);
+			path = bounceButton;
 			sourceTree = "<group>";
 		};
 		EC4961AE18FBDB6600EDEAED /* PNGs */ = {
@@ -650,15 +675,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC33002C19075BF700642CF6 /* BounceButtonView.m in Sources */,
 				EC0E2DAF18F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m in Sources */,
 				EC0E2DAE18F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
 				EC22AA9618F513AB005B6982 /* MagicPuzzle.xcdatamodeld in Sources */,
+				EC33002F19076D2C00642CF6 /* ASOTwoStateButton.m in Sources */,
 				EC1BA1251904C32900EC6FD3 /* UIImage+additions.m in Sources */,
 				EC0E2DAD18F7C77C004E3DE5 /* GMGridViewLayoutStrategies.m in Sources */,
 				EC1BA1211904C31C00EC6FD3 /* SWSnapshotStackView.m in Sources */,
 				EC2DCBDB19051F6100AE202D /* iCarousel.m in Sources */,
 				EC22AA9318F513AB005B6982 /* AppDelegate.m in Sources */,
 				EC0E2DAC18F7C77C004E3DE5 /* GMGridViewCell.m in Sources */,
+				EC3300291907515A00642CF6 /* ASOBounceButtonView.m in Sources */,
 				EC0E2DAB18F7C77C004E3DE5 /* GMGridView.m in Sources */,
 				EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */,
 				EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */,
