@@ -42,7 +42,7 @@
 {
     [super viewDidLoad];    
     [self.gridView setPagingEnabled:NO];
-    [self.gridView setItemSpacing:3];
+    [self.gridView setItemSpacing:5];
     self.gridView.style = GMGridViewStyleSwap;
     self.gridView.centerGrid = YES;
     self.gridView.actionDelegate = self;

@@ -17,9 +17,9 @@ static const CGSize  CSToastShadowOffset        = { 4.0, 4.0 };
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.itemButton1 = [[UIView alloc] initWithFrame:CGRectMake(120, 10, 130, 30)];
-        self.itemButton2 = [[UIView alloc] initWithFrame:CGRectMake(90, 60, 130, 30)];
-        self.itemButton3 = [[UIView alloc] initWithFrame:CGRectMake(60, 110, 130, 30)];
+        self.itemButton1 = [[UIView alloc] initWithFrame:CGRectMake(120, 10, 80, 30)];
+        self.itemButton2 = [[UIView alloc] initWithFrame:CGRectMake(90, 60, 80, 30)];
+        self.itemButton3 = [[UIView alloc] initWithFrame:CGRectMake(60, 110, 80, 30)];
         
         [self.itemButton1 setBackgroundColor:[UIColor orangeColor]];
         self.itemButton1.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -39,24 +39,29 @@ static const CGSize  CSToastShadowOffset        = { 4.0, 4.0 };
         self.itemButton3.layer.shadowRadius = CSToastShadowRadius;
         self.itemButton3.layer.shadowOffset = CSToastShadowOffset;
         
-        UILabel *itemlabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        UILabel *itemlabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
 //        [itemlabel1 setTextColor:[UIColor whiteColor]];
         [itemlabel1 setBackgroundColor:[UIColor clearColor]];
-        [itemlabel1 setText:@"拍照"];
-        UILabel *itemlabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        [itemlabel1 setText:@"easy模式"];
+        [itemlabel1 setTextAlignment:NSTextAlignmentCenter];
+        
+        UILabel *itemlabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
 //        [itemlabel2 setTextColor:[UIColor whiteColor]];
         [itemlabel2 setBackgroundColor:[UIColor clearColor]];
-        [itemlabel2 setText:@"手机相册"];
-        UILabel *itemlabel3 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        [itemlabel2 setText:@"hard模式"];
+        [itemlabel2 setTextAlignment:NSTextAlignmentCenter];
+        
+        UILabel *itemlabel3 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
 //        [itemlabel3 setTextColor:[UIColor whiteColor]];
         [itemlabel3 setBackgroundColor:[UIColor clearColor]];
-        [itemlabel3 setText:@"MagicPuzzle图库"];
+        [itemlabel3 setText:@"所有内容"];
+        [itemlabel3 setTextAlignment:NSTextAlignmentCenter];
         
-        UIButton *itemButtonActionButton1= [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        UIButton *itemButtonActionButton1= [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
         [itemButtonActionButton1 setTag:10];
-        UIButton *itemButtonActionButton2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        UIButton *itemButtonActionButton2 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
         [itemButtonActionButton2 setTag:10];
-        UIButton *itemButtonActionButton3 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 130, 30)];
+        UIButton *itemButtonActionButton3 = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
         [itemButtonActionButton3 setTag:10];
     
         [self.itemButton1 addSubview:itemlabel1];
