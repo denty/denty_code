@@ -17,4 +17,6 @@
 @interface CoverFlowView : UIView <iCarouselDataSource,iCarouselDelegate>
 @property NSArray *puzzleArray;
 @property id<CoverFlowViewActionDelegate> selectDelegate;
+@property iCarouselType displayType;
+- (void)refreshData;
 @end

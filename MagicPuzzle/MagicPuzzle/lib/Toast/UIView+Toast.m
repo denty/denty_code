@@ -263,7 +263,7 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
     if(image != nil) {
         imageView = [[UIImageView alloc] initWithImage:image];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
-        imageView.frame = CGRectMake(CSToastHorizontalPadding, CSToastVerticalPadding, CSToastImageViewWidth, CSToastImageViewHeight);
+        imageView.frame = CGRectMake(CSToastHorizontalPadding, CSToastVerticalPadding, image.size.width, image.size.height);
     }
     
     CGFloat imageWidth, imageHeight, imageLeft;

@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "CoverFlowView.h"
+#import "BounceButtonView.h"
+#import "ASOBounceButtonView.h"
+#import "ASOTwoStateButton.h"
+#import "ASOBounceButtonViewDelegate.h"
 @protocol ImagePickerSendIndexDelegate <NSObject>
 
-- (NSInteger)sendIndexOfImage:(NSInteger) index;
+- (NSInteger)sendIndexOfImage:(NSInteger) index Type:(NSString *) type;
 
 @end
-@interface ImagePickerViewController : UIViewController <CoverFlowViewActionDelegate>
+@interface ImagePickerViewController : UIViewController <CoverFlowViewActionDelegate,ASOBounceButtonViewDelegate>
 @property NSArray *imageArray;
 @property id<ImagePickerSendIndexDelegate> sendIndexDelegate;
+@property ASOTwoStateButton *homeButton;
+@property BounceButtonView *bounceButtons;
 @end

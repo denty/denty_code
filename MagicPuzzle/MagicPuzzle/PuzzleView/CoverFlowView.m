@@ -29,7 +29,7 @@
     [self addSubview:m_CoverFlow];
     [m_CoverFlow setDataSource:self];
     [m_CoverFlow setDelegate:self];
-    [m_CoverFlow setType:iCarouselTypeInvertedTimeMachine];
+    [m_CoverFlow setType:self.displayType];
 
 }
 
@@ -40,19 +40,22 @@
 
 - (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view;
 {
-    if (view == nil)
-    {
-        view = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 300, 500)];
-        SWSnapshotStackView *imageStackView = [[SWSnapshotStackView alloc] initWithFrame:CGRectMake(10, 110, 280, 280)];
-        [imageStackView setTag:101];
-        [view addSubview:imageStackView];
-//        [imageStackView setDisplayAsStack:YES];
-        NSLog(@"new");
+    if (index < self.puzzleArray.count) {
+        if (view == nil)
+        {
+            view = [[UIView alloc] initWithFrame:CGRectMake(0, 5, 300, 500)];
+            SWSnapshotStackView *imageStackView = [[SWSnapshotStackView alloc] initWithFrame:CGRectMake(10, 110, 280, 280)];
+            [imageStackView setTag:101];
+            [view addSubview:imageStackView];
+            //        [imageStackView setDisplayAsStack:YES];
+        }
+        SWSnapshotStackView *imageStackView = (SWSnapshotStackView *)[view viewWithTag:101];
+        [imageStackView setContentMode:UIViewContentModeScaleAspectFit];
+        imageStackView.image = [self.puzzleArray objectAtIndex:index];
+        //    [imageStackView setBackgroundColor:[UIColor redColor]];
+        
+        
     }
-    SWSnapshotStackView *imageStackView = (SWSnapshotStackView *)[view viewWithTag:101];
-    [imageStackView setContentMode:UIViewContentModeScaleAspectFit];
-    imageStackView.image = [self.puzzleArray objectAtIndex:index];
-//    [imageStackView setBackgroundColor:[UIColor redColor]];
     return view;
 }
 
@@ -66,8 +69,11 @@
         NSLog(@"%d",carousel.currentItemIndex);
 }
 
-- (void)refreshData:(NSArray*)data
+- (void)refreshData
 {
-    
+    [UIView beginAnimations:nil context:nil];
+    [m_CoverFlow setType:self.displayType];
+    [m_CoverFlow reloadData];
+    [UIView commitAnimations];
 }
 @end

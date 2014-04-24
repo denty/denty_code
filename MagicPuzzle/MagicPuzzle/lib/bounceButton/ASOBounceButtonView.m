@@ -68,7 +68,7 @@
 - (void) didSelectBounceButtonFrom:(id)sender
 {
     if ([self.delegate respondsToSelector:@selector(didSelectBounceButtonAtIndex:)]) {
-        [self.delegate didSelectBounceButtonAtIndex:[sender tag]];
+        [self.delegate didSelectBounceButtonAtIndex:[[sender superview] tag]];
     }
 }
 

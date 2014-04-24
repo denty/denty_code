@@ -14,6 +14,7 @@
 #import "ImagePickerViewController.h"
 #import "SWSnapshotStackView.h"
 #import "BounceButtonView.h"
+#import "puzzleImageModel.h"
 
 @interface PuzzleViewController ()
 
@@ -45,7 +46,6 @@
     self.gridView.centerGrid = YES;
     self.gridView.actionDelegate = self;
     self.gridView.sortingDelegate = self;
-//    self.gridView.transformDelegate = self;
     self.gridView.dataSource = self;
     [self.homeBackgroundView setImage:[UIImage imageNamed:@"Wood.jpg"]];
     [self.gridView setBackgroundColor:[UIColor clearColor]];
@@ -54,25 +54,7 @@
     [startButton setTitle:@"start" forState:UIControlStateNormal];
     [self.view addSubview:startButton];
     [startButton addTarget:self action: @selector(pickImage) forControlEvents:UIControlEventTouchUpInside];
-    self.bounceButton = [[BounceButtonView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    NSArray *arrMenuItemButtons = [[NSArray alloc] initWithObjects:self.bounceButton.itemButton1,
-                                   self.bounceButton.itemButton2,
-                                   self.bounceButton.itemButton3,
-                                   nil]; // Add all of the defined 'menu item button' to 'menu item view'
-    [self.bounceButton addBounceButtons:arrMenuItemButtons];
-    [self.bounceButton setBackgroundColor:[UIColor clearColor]];
-    self.homeButton = [[ASOTwoStateButton alloc] initWithFrame:CGRectMake(0, 0, 30,30)];
-    [self.view addSubview:self.homeButton];
-    [self.homeButton addTarget:self action:@selector(expendButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    self.homeButton.offStateImageName = @"Menu.png";
-    self.homeButton.onStateImageName = @"Menu.png";
-    [self.homeButton initAnimationWithFadeEffectEnabled:YES];
-    
-    [self.bounceButton setSpeed:[NSNumber numberWithFloat:0.3f]];
-    [self.bounceButton setBouncingDistance:[NSNumber numberWithFloat:0.3f]];
-    [self.bounceButton setAnimationStyle:ASOAnimationStyleRiseProgressively];
-    
-    [self.bounceButton setDelegate:self];
+//    [self addAsoStyleButton]; 不添加Aso型按钮
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -113,6 +95,7 @@
     if (m_captureImageArray.count>0) {
         UIImage * captureImage = (UIImage *)[m_captureImageArray objectAtIndex:index];
         [(UIImageView *)[cell.contentView viewWithTag:10] setImage:captureImage];
+        
     }
     return cell;
 
@@ -232,24 +215,6 @@
     return scaledImage;
 }
 
-- (UIImage *)scaleImageForThumb:(UIImage *)image
-{
-    CGFloat ratio = image.size.width/image.size.height;
-    image = [image scaleToSize:CGSizeMake(350*ratio, 350)];
-    if (ratio>0.8) {
-        m_scale = image.size.height/350;
-    }
-    else
-    {
-        m_scale = image.size.width/280;
-    }
-    UIGraphicsBeginImageContext(CGSizeMake(image.size.width , image.size.height ));
-//    NSLog(@"height = %f , width = %f",image.size.height,image.size.width);
-    [image drawInRect:CGRectMake(0, 0, image.size.width , image.size.height )];
-    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return scaledImage;
-}
 #pragma mark -refresh
 - (void)refresh
 {
@@ -275,16 +240,15 @@
 {
     ImagePickerViewController *aImagePickerViewController = [[ImagePickerViewController alloc] init];
     aImagePickerViewController.sendIndexDelegate = self;
-    dispatch_queue_t aQueue = dispatch_queue_create("onlineServiceCheckQueue", NULL);
+    dispatch_queue_t aQueue = dispatch_queue_create("LoadLibraryImageQueue", NULL);
     [self.gridView makeToastActivity];
     dispatch_async(aQueue, ^{
-        NSArray *imagePathArray = [self pathsForImages];
-        NSMutableArray *tempImageArray = [[NSMutableArray alloc] init];
-        for (NSString *strPath in imagePathArray) {
-            UIImage *image = [UIImage imageWithContentsOfFile:strPath];
-            [tempImageArray addObject:[self scaleImageForThumb:image]];
+        NSArray *imagePathArray = [puzzleImageModel imagesThumbForPuzzle];
+        NSMutableArray *formatImageArray = [[NSMutableArray alloc] init];
+        for (UIImage *tempImage in imagePathArray) {
+            [formatImageArray addObject:[puzzleImageModel scaleImageForThumb:tempImage]];
         }
-        aImagePickerViewController.imageArray = tempImageArray;
+        aImagePickerViewController.imageArray = formatImageArray;
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.gridView hideToastActivity];
             [self presentViewController:aImagePickerViewController animated:YES completion:^{
@@ -294,46 +258,34 @@
     });
 }
 
-- (NSArray*)pathsForImages {
-    
-    NSArray *dirContents = [[NSBundle mainBundle] pathsForResourcesOfType:nil inDirectory:nil];
-    NSMutableArray *tempArray = [[NSMutableArray alloc] initWithCapacity:dirContents.count];
-    for (NSString *string in dirContents)
-    {
-        if ([string hasSuffix:@"_puzzle.jpg"]  ||
-            [string hasSuffix:@"_puzzle.jpeg"] ||
-            [string hasSuffix:@"_puzzle.png"]  ||
-            [string hasSuffix:@"_puzzle.JPG"]  ||
-            [string hasSuffix:@"_puzzle.JPEG"] ||
-            [string hasSuffix:@"_puzzle.PNG"]
-            ) {
-            [tempArray addObject:string];
-        }
-    }
-    NSLog(@"Found %d images", tempArray.count);
-    return [NSArray arrayWithArray:tempArray];
-}
-
 #pragma mark checkPuzzle
 - (void)check
 {
-    for (int i=0; i<m_captureImageArray.count; i++) {
-        NSData *data = UIImagePNGRepresentation([m_captureImageArray objectAtIndex:i]);
-        NSData *checkData = UIImagePNGRepresentation([m_checkArray objectAtIndex:i]);
-        if ([data isEqual:checkData]) {
-            check = YES;
-        }else
-        {
-            check = NO;
-            break;
+    [self.gridView makeToastActivity];
+    dispatch_queue_t aQueue = dispatch_queue_create("checkQueue", NULL);
+    dispatch_async(aQueue, ^{
+        for (int i=0; i<m_captureImageArray.count; i++) {
+            NSData *data = UIImagePNGRepresentation([m_captureImageArray objectAtIndex:i]);
+            NSData *checkData = UIImagePNGRepresentation([m_checkArray objectAtIndex:i]);
+            if ([data isEqual:checkData]) {
+                check = YES;
+            }else
+            {
+                check = NO;
+                break;
+            }
         }
-    }
-    if (check) {
-        [self.gridView makeToast:@"excellent！！！"];
-    }else
-    {
-        [self.gridView makeToast:@"Is wrong！！！ Try again！"];
-    }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.gridView hideToastActivity];
+            if (check) {
+                [self.gridView makeToast:@"excellent ！！！" duration:2.0 position:@"center" image:[UIImage imageNamed:@"tools_bookmark_yes.png"]];
+            }else
+            {
+                [self.gridView makeToast:@"Is wrong！ Try again！" duration:2.0 position:@"center" image:[UIImage imageNamed:@"sync_error.png"]];
+            }
+        });
+    });
+
 }
 
 #pragma mark IBAction
@@ -477,14 +429,24 @@
 }
 
 #pragma mark -sendIndexDelegate
-- (NSInteger)sendIndexOfImage:(NSInteger)index
+- (NSInteger)sendIndexOfImage:(NSInteger)index Type:(NSString *)type
 {
-    NSArray *ImagePathArray = [self pathsForImages];
+    NSArray *ImagePathArray;
+    if ([type isEqualToString:@"easy"]) {
+        ImagePathArray = [puzzleImageModel pathsForEasyImages];
+    }
+    else if ([type isEqualToString:@"hard"])
+    {
+        ImagePathArray = [puzzleImageModel pathsForHardImages];
+    }else
+    {
+        ImagePathArray = [puzzleImageModel pathsForImages];
+    }
     UIImage *image = [UIImage imageWithContentsOfFile:[ImagePathArray objectAtIndex:index]];
     m_puzzleImage = [self scaleImage:image];
     [self refresh];
     [self.gridView reloadData];
-    return 1;
+    return index;
 }
 
 #pragma mark asoButtonAction
@@ -508,5 +470,29 @@
 - (void)didSelectBounceButtonAtIndex:(NSUInteger)index
 {
     [self.homeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+}
+
+#pragma mark addAsoStyleButton
+- (void)addAsoStyleButton
+{
+    self.bounceButton = [[BounceButtonView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    NSArray *arrMenuItemButtons = [[NSArray alloc] initWithObjects:self.bounceButton.itemButton1,
+                                   self.bounceButton.itemButton2,
+                                   self.bounceButton.itemButton3,
+                                   nil]; // Add all of the defined 'menu item button' to 'menu item view'
+    [self.bounceButton addBounceButtons:arrMenuItemButtons];
+    [self.bounceButton setBackgroundColor:[UIColor clearColor]];
+    self.homeButton = [[ASOTwoStateButton alloc] initWithFrame:CGRectMake(0, 0, 30,30)];
+    [self.view addSubview:self.homeButton];
+    [self.homeButton addTarget:self action:@selector(expendButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.homeButton.offStateImageName = @"Menu.png";
+    self.homeButton.onStateImageName = @"Menu.png";
+    [self.homeButton initAnimationWithFadeEffectEnabled:YES];
+    
+    [self.bounceButton setSpeed:[NSNumber numberWithFloat:0.3f]];
+    [self.bounceButton setBouncingDistance:[NSNumber numberWithFloat:0.3f]];
+    [self.bounceButton setAnimationStyle:ASOAnimationStyleRiseProgressively];
+    
+    [self.bounceButton setDelegate:self];
 }
 @end
