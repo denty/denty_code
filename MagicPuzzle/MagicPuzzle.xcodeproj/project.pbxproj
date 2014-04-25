@@ -75,7 +75,6 @@
 		EC0BFCBA1908E76800231AAC /* sync_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFC921908E76800231AAC /* sync_error@2x.png */; };
 		EC0BFCBB1908E76800231AAC /* tools_bookmark_yes.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFC931908E76800231AAC /* tools_bookmark_yes.png */; };
 		EC0BFCBC1908E76800231AAC /* tools_bookmark_yes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFC941908E76800231AAC /* tools_bookmark_yes@2x.png */; };
-		EC0BFCC01908F29300231AAC /* puzzleImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0BFCBF1908F29300231AAC /* puzzleImageModel.m */; };
 		EC0BFCCC19090C8100231AAC /* All seeing eye_Easy_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFCC119090C8100231AAC /* All seeing eye_Easy_puzzle.jpg */; };
 		EC0BFCCD19090C8100231AAC /* Amsterdam bikes_Easy_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFCC219090C8100231AAC /* Amsterdam bikes_Easy_puzzle.jpg */; };
 		EC0BFCCE19090C8100231AAC /* Amsterdam signs_Easy_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC0BFCC319090C8100231AAC /* Amsterdam signs_Easy_puzzle.jpg */; };
@@ -122,6 +121,8 @@
 		EC0E2DAE18F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA518F7C77C004E3DE5 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
 		EC0E2DAF18F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DA718F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m */; };
 		EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */; };
+		EC0F2263190A375D00763944 /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0F2260190A375D00763944 /* MainModel.m */; };
+		EC0F2264190A375D00763944 /* puzzleImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0F2262190A375D00763944 /* puzzleImageModel.m */; };
 		EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1624D119012E26003B4365 /* LocalAlbumViewController.m */; };
 		EC1624D419012E26003B4365 /* LocalAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */; };
 		EC1BA11C1904BED400EC6FD3 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1BA11A1904BED400EC6FD3 /* ImagePickerViewController.m */; };
@@ -271,8 +272,6 @@
 		EC0BFC921908E76800231AAC /* sync_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sync_error@2x.png"; sourceTree = "<group>"; };
 		EC0BFC931908E76800231AAC /* tools_bookmark_yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tools_bookmark_yes.png; sourceTree = "<group>"; };
 		EC0BFC941908E76800231AAC /* tools_bookmark_yes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tools_bookmark_yes@2x.png"; sourceTree = "<group>"; };
-		EC0BFCBE1908F29300231AAC /* puzzleImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = puzzleImageModel.h; sourceTree = "<group>"; };
-		EC0BFCBF1908F29300231AAC /* puzzleImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = puzzleImageModel.m; sourceTree = "<group>"; };
 		EC0BFCC119090C8100231AAC /* All seeing eye_Easy_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "All seeing eye_Easy_puzzle.jpg"; sourceTree = "<group>"; };
 		EC0BFCC219090C8100231AAC /* Amsterdam bikes_Easy_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amsterdam bikes_Easy_puzzle.jpg"; sourceTree = "<group>"; };
 		EC0BFCC319090C8100231AAC /* Amsterdam signs_Easy_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Amsterdam signs_Easy_puzzle.jpg"; sourceTree = "<group>"; };
@@ -327,6 +326,10 @@
 		EC0E2DA718F7C77C004E3DE5 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
 		EC0E2DA918F7C77C004E3DE5 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		EC0E2DAA18F7C77C004E3DE5 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		EC0F225F190A375D00763944 /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainModel.h; path = model/MainModel.h; sourceTree = "<group>"; };
+		EC0F2260190A375D00763944 /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainModel.m; path = model/MainModel.m; sourceTree = "<group>"; };
+		EC0F2261190A375D00763944 /* puzzleImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = puzzleImageModel.h; path = model/puzzleImageModel.h; sourceTree = "<group>"; };
+		EC0F2262190A375D00763944 /* puzzleImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = puzzleImageModel.m; path = model/puzzleImageModel.m; sourceTree = "<group>"; };
 		EC1624D019012E26003B4365 /* LocalAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalAlbumViewController.h; sourceTree = "<group>"; };
 		EC1624D119012E26003B4365 /* LocalAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalAlbumViewController.m; sourceTree = "<group>"; };
 		EC1624D219012E26003B4365 /* LocalAlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalAlbumViewController.xib; sourceTree = "<group>"; };
@@ -542,8 +545,10 @@
 		EC0BFCBD1908F25300231AAC /* model */ = {
 			isa = PBXGroup;
 			children = (
-				EC0BFCBE1908F29300231AAC /* puzzleImageModel.h */,
-				EC0BFCBF1908F29300231AAC /* puzzleImageModel.m */,
+				EC0F225F190A375D00763944 /* MainModel.h */,
+				EC0F2260190A375D00763944 /* MainModel.m */,
+				EC0F2261190A375D00763944 /* puzzleImageModel.h */,
+				EC0F2262190A375D00763944 /* puzzleImageModel.m */,
 			);
 			name = model;
 			path = MagicPuzzle;
@@ -1070,14 +1075,15 @@
 				EC22AA9318F513AB005B6982 /* AppDelegate.m in Sources */,
 				EC0E2DAC18F7C77C004E3DE5 /* GMGridViewCell.m in Sources */,
 				EC3300291907515A00642CF6 /* ASOBounceButtonView.m in Sources */,
+				EC0F2263190A375D00763944 /* MainModel.m in Sources */,
 				EC0E2DAB18F7C77C004E3DE5 /* GMGridView.m in Sources */,
 				EC22AAB918F51447005B6982 /* PuzzleViewController.m in Sources */,
+				EC0F2264190A375D00763944 /* puzzleImageModel.m in Sources */,
 				EC0E2DB018F7C77C004E3DE5 /* UIView+Toast.m in Sources */,
 				EC2DCBDE19051FF800AE202D /* CoverFlowView.m in Sources */,
 				EC1624D319012E26003B4365 /* LocalAlbumViewController.m in Sources */,
 				EC22AA8F18F513AB005B6982 /* main.m in Sources */,
 				EC1BA11C1904BED400EC6FD3 /* ImagePickerViewController.m in Sources */,
-				EC0BFCC01908F29300231AAC /* puzzleImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

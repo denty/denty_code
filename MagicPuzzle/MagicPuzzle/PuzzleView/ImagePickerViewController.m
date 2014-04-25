@@ -99,6 +99,7 @@
 #pragma mark ASOBounceButtonViewDelegate
 - (void)didSelectBounceButtonAtIndex:(NSUInteger)index
 {
+    [self.homeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
     NSLog(@"%d",index);
     if (index == 0) {
 //        easy
@@ -127,6 +128,5 @@
         m_type = nil;
     }
     [m_aCoverFlowView refreshData];
-    [self.homeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 @end
