@@ -163,6 +163,7 @@
 		EC4961C418FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */; };
 		EC4961C518FBDB6600EDEAED /* Wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961B918FBDB6600EDEAED /* Wood.jpg */; };
 		EC4961C618FBDB6600EDEAED /* Wood@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */; };
+		EC9A7C85191CD6CE0083FBFE /* mark.png in Resources */ = {isa = PBXBuildFile; fileRef = EC9A7C84191CD6CE0083FBFE /* mark.png */; };
 		ECF915D61906575F00366F4B /* Girls 2_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF915A61906575F00366F4B /* Girls 2_puzzle.jpg */; };
 		ECF915D71906575F00366F4B /* Girls_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF915A71906575F00366F4B /* Girls_puzzle.jpg */; };
 		ECF915D81906575F00366F4B /* Hippo_puzzle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ECF915A81906575F00366F4B /* Hippo_puzzle.jpg */; };
@@ -384,6 +385,7 @@
 		EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PuzzleComplete_iPhone@2x.png"; sourceTree = "<group>"; };
 		EC4961B918FBDB6600EDEAED /* Wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wood.jpg; sourceTree = "<group>"; };
 		EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood@2x.jpg"; sourceTree = "<group>"; };
+		EC9A7C84191CD6CE0083FBFE /* mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mark.png; sourceTree = "<group>"; };
 		ECF915A61906575F00366F4B /* Girls 2_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Girls 2_puzzle.jpg"; sourceTree = "<group>"; };
 		ECF915A71906575F00366F4B /* Girls_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Girls_puzzle.jpg; sourceTree = "<group>"; };
 		ECF915A81906575F00366F4B /* Hippo_puzzle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hippo_puzzle.jpg; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 				EC4961B818FBDB6600EDEAED /* PuzzleComplete_iPhone@2x.png */,
 				EC4961B918FBDB6600EDEAED /* Wood.jpg */,
 				EC4961BA18FBDB6600EDEAED /* Wood@2x.jpg */,
+				EC9A7C84191CD6CE0083FBFE /* mark.png */,
 			);
 			path = PNGs;
 			sourceTree = "<group>";
@@ -956,6 +959,7 @@
 				EC0BFD0919091CCC00231AAC /* Copia di Duck_Hard_puzzle_thumb.jpg in Resources */,
 				EC0BFCAA1908E76800231AAC /* icon-unread@2x.png in Resources */,
 				ECF915E21906575F00366F4B /* Micio pigrotto_puzzle.jpg in Resources */,
+				EC9A7C85191CD6CE0083FBFE /* mark.png in Resources */,
 				ECF915DC1906575F00366F4B /* Lego_puzzle.jpg in Resources */,
 				EC0BFCA41908E76800231AAC /* ic_list_home_night@2x.png in Resources */,
 				EC0BFCF719091CBA00231AAC /* Duck_Hard_puzzle.jpg in Resources */,

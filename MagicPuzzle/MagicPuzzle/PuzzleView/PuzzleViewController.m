@@ -50,9 +50,13 @@
     self.gridView.dataSource = self;
     [self.homeBackgroundView setImage:[UIImage imageNamed:@"Wood.jpg"]];
     [self.gridView setBackgroundColor:[UIColor clearColor]];
-    UIButton *startButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 80, 50)];
-    [startButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    UIButton *startButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 95, 75)];
+    [startButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [startButton setBackgroundImage:[UIImage imageNamed:@"mark.png"] forState:UIControlStateNormal];
+    startButton.transform = CGAffineTransformRotate(CGAffineTransformIdentity, 2*M_PI/2);
+    startButton.titleLabel.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -2*M_PI/2);
     [startButton setTitle:@"start" forState:UIControlStateNormal];
+    
     [self.view addSubview:startButton];
     [startButton addTarget:self action: @selector(pickImage) forControlEvents:UIControlEventTouchUpInside];
 //    [self addAsoStyleButton]; 不添加Aso型按钮

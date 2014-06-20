@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/Users/broydenty/personalCode/denty_code/android/.metadata/.plugins/org.eclipse.jdt.core
+1670428024.index
+3055798694.index
