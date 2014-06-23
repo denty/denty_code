@@ -93,6 +93,7 @@
         picTitleContentCell = [[PicTitleContentCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:picTitleContentIdentifier];
     }
     [picTitleContentCell setSelectionStyle:UITableViewCellSelectionStyleNone];
+
     return picTitleContentCell;
 }
 

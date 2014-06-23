@@ -24,7 +24,7 @@
     [SliderViewController sharedSliderController].mainVCClassName = @"RootViewController";
     [SliderViewController sharedSliderController].RightVC = [[CommitViewController alloc] init];
     [SliderViewController sharedSliderController].RightSContentScale=0.9;
-    
+//    [SliderViewController sharedSliderController].canMoveWithGesture = NO;
     self.window.rootViewController = [[MRNavigationViewController alloc] initWithRootViewController:[SliderViewController sharedSliderController]];
     
     self.window.backgroundColor = [UIColor whiteColor];

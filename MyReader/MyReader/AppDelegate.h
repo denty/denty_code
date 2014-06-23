@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MRNavigationViewController.h"
 #import "RootViewController.h"
+#import "UIView+Additions.h"
+#import "UIImageView+WebCache.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

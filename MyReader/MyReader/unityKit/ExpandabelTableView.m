@@ -120,10 +120,12 @@
                 [self endUpdates];
                 [self scrollToRowAtIndexPath:indexPath atScrollPosition:(UITableViewScrollPositionTop) animated:YES];
                 [self reloadData];
+                [self.expandableDelegate expandAnimationStop];
             }
             else
             {
                 /*数据错误*/
+                [self.expandableDelegate expandAnimationStop];
             }
 
         });

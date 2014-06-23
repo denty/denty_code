@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RMImageView.h"
-
+#import "UIView+Additions.h"
+#import "UIImageView+WebCache.h"
 @interface PicTitleContentCellTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *cellTitle;
 @property (weak, nonatomic) IBOutlet UILabel *cellContext;
-@property (weak, nonatomic) IBOutlet RMImageView *cellImage;
+@property (weak, nonatomic) IBOutlet UIImageView *cellImage;
 
 @end

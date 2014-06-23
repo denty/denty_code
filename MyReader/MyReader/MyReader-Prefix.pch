@@ -14,4 +14,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+    #import "UIView+Additions.h"
+    #import "UIImage+GIF.h"
+    #import "UIImageView+WebCache.h"
+    #import "UIImageView+HighlightedWebCache.h"
+    #import "UIImage+WebP.h"
+    #import "UIImage+MultiFormat.h"
 #endif

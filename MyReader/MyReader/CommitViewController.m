@@ -17,6 +17,7 @@
 {
     ExpandabelTableView *expandeTableView;
     int lastContentOffset;
+    CGFloat lastOrginY;
 }
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -76,8 +77,15 @@
     static NSString *picTitleContentIdentifier = @"PicTitleContentCellTableViewCell";
     PicTitleContentCellTableViewCell *picTitleContentCell = [tableView dequeueReusableCellWithIdentifier:picTitleContentIdentifier];
     if (picTitleContentCell == nil) {
-        picTitleContentCell = [[PicTitleContentCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:picTitleContentIdentifier];
+        picTitleContentCell = [[PicTitleContentCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     }
+    [picTitleContentCell setHidden:YES];
+    [UIView transitionWithView:picTitleContentCell duration:0.75 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [picTitleContentCell setHidden:NO];
+        [picTitleContentCell.cellImage setImageWithURL:[NSURL URLWithString:@"http://img.wochacha.com/broke_images/6/3/203343714_13929691101f7ab7fb211dc64217a3e835553c5327.jpg"] placeholderImage:nil];
+    } completion:^(BOOL finished) {
+        
+    }];
     return picTitleContentCell;
 }
 
@@ -126,7 +134,6 @@
             [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.naviControllerBar cache:YES];
             [self.naviControllerBar setHidden:NO];
             [UIView commitAnimations];
-            [UIView setAnimationDidStopSelector:@selector(stopAnimation)];
         }
         
         //向上
@@ -153,11 +160,6 @@
     return testDataArray;
 }
 
-
-- (void)stopAnimation
-{
-    [expandeTableView setFrame:CGRectMake(expandeTableView.frame.origin.x, expandeTableView.frame.origin.y, 320, self.view.frame.size.height-44)];
-}
 - (IBAction)popViewControllerAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
