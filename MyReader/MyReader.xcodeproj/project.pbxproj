@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC209E7E19594AE000B2E87B /* CommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC209E7C19594AE000B2E87B /* CommitViewController.m */; };
+		EC209E7F19594AE000B2E87B /* CommitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC209E7D19594AE000B2E87B /* CommitViewController.xib */; };
+		EC209E8419594B6F00B2E87B /* ContextImageMixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC209E8219594B6F00B2E87B /* ContextImageMixViewController.m */; };
+		EC209E8519594B6F00B2E87B /* ContextImageMixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC209E8319594B6F00B2E87B /* ContextImageMixViewController.xib */; };
 		EC293ED919415D740027A306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC293ED819415D740027A306 /* Foundation.framework */; };
 		EC293EDB19415D740027A306 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC293EDA19415D740027A306 /* CoreGraphics.framework */; };
 		EC293EDD19415D740027A306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC293EDC19415D740027A306 /* UIKit.framework */; };
@@ -28,6 +32,9 @@
 		EC293F1619415F0B0027A306 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC293F1419415F0B0027A306 /* RootViewController.xib */; };
 		EC293F2419416E540027A306 /* PicTitleContentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC293F2219416E540027A306 /* PicTitleContentCellTableViewCell.m */; };
 		EC293F2519416E540027A306 /* PicTitleContentCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC293F2319416E540027A306 /* PicTitleContentCellTableViewCell.xib */; };
+		EC2E7E5319595F8C0048E46B /* ContextImageMixModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2E7E5219595F8C0048E46B /* ContextImageMixModel.m */; };
+		EC2E7E57195960690048E46B /* ContextImageMixTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2E7E55195960690048E46B /* ContextImageMixTableViewCell.m */; };
+		EC2E7E58195960690048E46B /* ContextImageMixTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2E7E56195960690048E46B /* ContextImageMixTableViewCell.xib */; };
 		EC4509901958093700D6884A /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45098F1958093700D6884A /* UIView+Additions.m */; };
 		EC450A3E1958133200D6884A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC450A201958133200D6884A /* MKAnnotationView+WebCache.m */; };
 		EC450A3F1958133200D6884A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = EC450A221958133200D6884A /* NSData+ImageContentType.m */; };
@@ -45,8 +52,6 @@
 		EC450A4B1958133200D6884A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC450A3B1958133200D6884A /* UIImageView+HighlightedWebCache.m */; };
 		EC450A4C1958133200D6884A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EC450A3D1958133200D6884A /* UIImageView+WebCache.m */; };
 		EC450A4E1958167B00D6884A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC450A4D1958167B00D6884A /* MapKit.framework */; };
-		EC5677861946E1AF006889CF /* CommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5677841946E1AF006889CF /* CommitViewController.m */; };
-		EC5677871946E1AF006889CF /* CommitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5677851946E1AF006889CF /* CommitViewController.xib */; };
 		EC7927FF1949458B00876573 /* ExpandabelTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7927FC1949458B00876573 /* ExpandabelTableView.m */; };
 		EC7928001949458B00876573 /* RMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7927FE1949458B00876573 /* RMImageView.m */; };
 		EC792804194945B000876573 /* navbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC792802194945B000876573 /* navbar_bg.png */; };
@@ -66,6 +71,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC209E7B19594AE000B2E87B /* CommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitViewController.h; sourceTree = "<group>"; };
+		EC209E7C19594AE000B2E87B /* CommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitViewController.m; sourceTree = "<group>"; };
+		EC209E7D19594AE000B2E87B /* CommitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitViewController.xib; sourceTree = "<group>"; };
+		EC209E8119594B6F00B2E87B /* ContextImageMixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextImageMixViewController.h; sourceTree = "<group>"; };
+		EC209E8219594B6F00B2E87B /* ContextImageMixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextImageMixViewController.m; sourceTree = "<group>"; };
+		EC209E8319594B6F00B2E87B /* ContextImageMixViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextImageMixViewController.xib; sourceTree = "<group>"; };
 		EC293ED519415D740027A306 /* MyReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC293ED819415D740027A306 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC293EDA19415D740027A306 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +104,11 @@
 		EC293F2119416E540027A306 /* PicTitleContentCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicTitleContentCellTableViewCell.h; sourceTree = "<group>"; };
 		EC293F2219416E540027A306 /* PicTitleContentCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicTitleContentCellTableViewCell.m; sourceTree = "<group>"; };
 		EC293F2319416E540027A306 /* PicTitleContentCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicTitleContentCellTableViewCell.xib; sourceTree = "<group>"; };
+		EC2E7E5119595F8C0048E46B /* ContextImageMixModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextImageMixModel.h; sourceTree = "<group>"; };
+		EC2E7E5219595F8C0048E46B /* ContextImageMixModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextImageMixModel.m; sourceTree = "<group>"; };
+		EC2E7E54195960690048E46B /* ContextImageMixTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextImageMixTableViewCell.h; sourceTree = "<group>"; };
+		EC2E7E55195960690048E46B /* ContextImageMixTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextImageMixTableViewCell.m; sourceTree = "<group>"; };
+		EC2E7E56195960690048E46B /* ContextImageMixTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextImageMixTableViewCell.xib; sourceTree = "<group>"; };
 		EC45098E1958093700D6884A /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		EC45098F1958093700D6884A /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		EC450A1F1958133200D6884A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -127,9 +143,6 @@
 		EC450A3C1958133200D6884A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		EC450A3D1958133200D6884A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		EC450A4D1958167B00D6884A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		EC5677831946E1AF006889CF /* CommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitViewController.h; sourceTree = "<group>"; };
-		EC5677841946E1AF006889CF /* CommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitViewController.m; sourceTree = "<group>"; };
-		EC5677851946E1AF006889CF /* CommitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitViewController.xib; sourceTree = "<group>"; };
 		EC7927FB1949458B00876573 /* ExpandabelTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpandabelTableView.h; path = MyReader/unityKit/ExpandabelTableView.h; sourceTree = SOURCE_ROOT; };
 		EC7927FC1949458B00876573 /* ExpandabelTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpandabelTableView.m; path = MyReader/unityKit/ExpandabelTableView.m; sourceTree = SOURCE_ROOT; };
 		EC7927FD1949458B00876573 /* RMImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMImageView.h; path = MyReader/unityKit/RMImageView.h; sourceTree = SOURCE_ROOT; };
@@ -169,6 +182,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC209E7A19594AE000B2E87B /* commit */ = {
+			isa = PBXGroup;
+			children = (
+				EC209E7B19594AE000B2E87B /* CommitViewController.h */,
+				EC209E7C19594AE000B2E87B /* CommitViewController.m */,
+				EC209E7D19594AE000B2E87B /* CommitViewController.xib */,
+			);
+			path = commit;
+			sourceTree = "<group>";
+		};
+		EC209E8019594B2F00B2E87B /* context */ = {
+			isa = PBXGroup;
+			children = (
+				EC209E8119594B6F00B2E87B /* ContextImageMixViewController.h */,
+				EC209E8219594B6F00B2E87B /* ContextImageMixViewController.m */,
+				EC209E8319594B6F00B2E87B /* ContextImageMixViewController.xib */,
+			);
+			name = context;
+			path = MyReader/context;
+			sourceTree = SOURCE_ROOT;
+		};
 		EC293ECC19415D740027A306 = {
 			isa = PBXGroup;
 			children = (
@@ -204,20 +238,20 @@
 		EC293EE019415D740027A306 /* MyReader */ = {
 			isa = PBXGroup;
 			children = (
+				EC2E7E5019595F8C0048E46B /* model */,
+				EC209E8019594B2F00B2E87B /* context */,
 				EC45098D195808E700D6884A /* category */,
 				EC79280619497EB700876573 /* SliderViewController */,
 				EC792801194945B000876573 /* res */,
 				EC293EE919415D740027A306 /* AppDelegate.h */,
 				EC293EEA19415D740027A306 /* AppDelegate.m */,
+				EC209E7A19594AE000B2E87B /* commit */,
 				EC293F0D19415DD20027A306 /* MRNavigationViewController.h */,
 				EC293F0E19415DD20027A306 /* MRNavigationViewController.m */,
 				EC293F0F19415DD20027A306 /* MRNavigationViewController.xib */,
 				EC293F1219415F0B0027A306 /* RootViewController.h */,
 				EC293F1319415F0B0027A306 /* RootViewController.m */,
 				EC293F1419415F0B0027A306 /* RootViewController.xib */,
-				EC5677831946E1AF006889CF /* CommitViewController.h */,
-				EC5677841946E1AF006889CF /* CommitViewController.m */,
-				EC5677851946E1AF006889CF /* CommitViewController.xib */,
 				EC293EEF19415D740027A306 /* Images.xcassets */,
 				EC293F2619416ED90027A306 /* unityKit */,
 				EC293F2019416E540027A306 /* tableViewCell */,
@@ -262,6 +296,9 @@
 				EC293F2119416E540027A306 /* PicTitleContentCellTableViewCell.h */,
 				EC293F2219416E540027A306 /* PicTitleContentCellTableViewCell.m */,
 				EC293F2319416E540027A306 /* PicTitleContentCellTableViewCell.xib */,
+				EC2E7E54195960690048E46B /* ContextImageMixTableViewCell.h */,
+				EC2E7E55195960690048E46B /* ContextImageMixTableViewCell.m */,
+				EC2E7E56195960690048E46B /* ContextImageMixTableViewCell.xib */,
 			);
 			path = tableViewCell;
 			sourceTree = "<group>";
@@ -277,6 +314,15 @@
 			);
 			name = unityKit;
 			path = tableViewCell/unityKit;
+			sourceTree = "<group>";
+		};
+		EC2E7E5019595F8C0048E46B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E7E5119595F8C0048E46B /* ContextImageMixModel.h */,
+				EC2E7E5219595F8C0048E46B /* ContextImageMixModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		EC45098D195808E700D6884A /* category */ = {
@@ -424,12 +470,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC293F1119415DD20027A306 /* MRNavigationViewController.xib in Resources */,
+				EC209E7F19594AE000B2E87B /* CommitViewController.xib in Resources */,
 				EC293F2519416E540027A306 /* PicTitleContentCellTableViewCell.xib in Resources */,
 				EC293EE519415D740027A306 /* InfoPlist.strings in Resources */,
+				EC209E8519594B6F00B2E87B /* ContextImageMixViewController.xib in Resources */,
 				EC792804194945B000876573 /* navbar_bg.png in Resources */,
+				EC2E7E58195960690048E46B /* ContextImageMixTableViewCell.xib in Resources */,
 				EC293F1619415F0B0027A306 /* RootViewController.xib in Resources */,
 				EC293EF019415D740027A306 /* Images.xcassets in Resources */,
-				EC5677871946E1AF006889CF /* CommitViewController.xib in Resources */,
 				EC792805194945B000876573 /* navbar_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +500,7 @@
 				EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */,
 				EC293EEB19415D740027A306 /* AppDelegate.m in Sources */,
 				EC450A4A1958133200D6884A /* UIImage+WebP.m in Sources */,
-				EC5677861946E1AF006889CF /* CommitViewController.m in Sources */,
+				EC2E7E5319595F8C0048E46B /* ContextImageMixModel.m in Sources */,
 				EC450A471958133200D6884A /* UIButton+WebCache.m in Sources */,
 				EC450A441958133200D6884A /* SDWebImageDownloaderOperation.m in Sources */,
 				EC7928001949458B00876573 /* RMImageView.m in Sources */,
@@ -464,11 +512,14 @@
 				EC450A4B1958133200D6884A /* UIImageView+HighlightedWebCache.m in Sources */,
 				EC293EE719415D740027A306 /* main.m in Sources */,
 				EC450A431958133200D6884A /* SDWebImageDownloader.m in Sources */,
+				EC209E8419594B6F00B2E87B /* ContextImageMixViewController.m in Sources */,
 				EC450A411958133200D6884A /* SDWebImageCompat.m in Sources */,
 				EC79280F19497EB700876573 /* SliderViewController.m in Sources */,
 				EC450A481958133200D6884A /* UIImage+GIF.m in Sources */,
 				EC450A491958133200D6884A /* UIImage+MultiFormat.m in Sources */,
+				EC2E7E57195960690048E46B /* ContextImageMixTableViewCell.m in Sources */,
 				EC293EEE19415D740027A306 /* MyReader.xcdatamodeld in Sources */,
+				EC209E7E19594AE000B2E87B /* CommitViewController.m in Sources */,
 				EC450A461958133200D6884A /* SDWebImagePrefetcher.m in Sources */,
 				EC293F1519415F0B0027A306 /* RootViewController.m in Sources */,
 				EC450A3E1958133200D6884A /* MKAnnotationView+WebCache.m in Sources */,

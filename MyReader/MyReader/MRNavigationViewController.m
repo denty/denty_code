@@ -7,7 +7,6 @@
 //
 
 #import "MRNavigationViewController.h"
-
 @interface MRNavigationViewController ()
 
 @end
@@ -55,5 +54,16 @@
     
     [dict setObject:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)] forKey:UITextAttributeTextShadowOffset];
     self.navigationBar.titleTextAttributes = dict;
-}
+    
+
+    NSError *error = nil;
+    NSData *data;
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:data
+                                                    options:NSJSONReadingAllowFragments
+                                                      error:&error];
+
+    [jsonObject dictionaryRepresentation];
+    
+    }
+
 @end
