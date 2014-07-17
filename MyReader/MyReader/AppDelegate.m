@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SliderViewController.h"
 #import "CommitViewController.h"
 @implementation AppDelegate
 
@@ -21,11 +20,8 @@
 
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
-    [SliderViewController sharedSliderController].mainVCClassName = @"RootViewController";
-    [SliderViewController sharedSliderController].RightVC = [[CommitViewController alloc] init];
-    [SliderViewController sharedSliderController].RightSContentScale=0.9;
-//    [SliderViewController sharedSliderController].canMoveWithGesture = NO;
-    self.window.rootViewController = [[MRNavigationViewController alloc] initWithRootViewController:[SliderViewController sharedSliderController]];
+    RootViewController *aRootViewController = [[RootViewController alloc] init];
+    self.window.rootViewController = [[MRNavigationViewController alloc] initWithRootViewController:aRootViewController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
