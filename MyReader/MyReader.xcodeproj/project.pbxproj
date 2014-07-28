@@ -58,6 +58,10 @@
 		EC792805194945B000876573 /* navbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC792803194945B000876573 /* navbar_bg@2x.png */; };
 		EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC79280A19497EB700876573 /* SliderContentViewController.m */; };
 		EC79280F19497EB700876573 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC79280C19497EB700876573 /* SliderViewController.m */; };
+		ECA24C0B1977981900B5B787 /* UIExpandableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA24C0A1977981900B5B787 /* UIExpandableTableView.m */; };
+		ECA24C0D19779C9100B5B787 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA24C0C19779C9100B5B787 /* ReadMe.txt */; };
+		ECA24C1219779E4A00B5B787 /* MoreSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */; };
+		ECA24C1319779E4A00B5B787 /* MoreSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA24C1119779E4A00B5B787 /* MoreSettingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +157,12 @@
 		EC79280A19497EB700876573 /* SliderContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderContentViewController.m; sourceTree = "<group>"; };
 		EC79280B19497EB700876573 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		EC79280C19497EB700876573 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		ECA24C091977981900B5B787 /* UIExpandableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpandableTableView.h; sourceTree = "<group>"; };
+		ECA24C0A1977981900B5B787 /* UIExpandableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpandableTableView.m; sourceTree = "<group>"; };
+		ECA24C0C19779C9100B5B787 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
+		ECA24C0F19779E4A00B5B787 /* MoreSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreSettingViewController.h; sourceTree = "<group>"; };
+		ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreSettingViewController.m; sourceTree = "<group>"; };
+		ECA24C1119779E4A00B5B787 /* MoreSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreSettingViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +248,8 @@
 		EC293EE019415D740027A306 /* MyReader */ = {
 			isa = PBXGroup;
 			children = (
+				ECA24C0E19779E1D00B5B787 /* MoreSetting */,
+				ECA24C0C19779C9100B5B787 /* ReadMe.txt */,
 				EC2E7E5019595F8C0048E46B /* model */,
 				EC209E8019594B2F00B2E87B /* context */,
 				EC45098D195808E700D6884A /* category */,
@@ -306,6 +318,7 @@
 		EC293F2619416ED90027A306 /* unityKit */ = {
 			isa = PBXGroup;
 			children = (
+				ECA24C081977981900B5B787 /* githubExpandedTableView */,
 				EC7927FB1949458B00876573 /* ExpandabelTableView.h */,
 				EC7927FC1949458B00876573 /* ExpandabelTableView.m */,
 				EC7927FD1949458B00876573 /* RMImageView.h */,
@@ -394,6 +407,26 @@
 			path = SliderViewController;
 			sourceTree = "<group>";
 		};
+		ECA24C081977981900B5B787 /* githubExpandedTableView */ = {
+			isa = PBXGroup;
+			children = (
+				ECA24C091977981900B5B787 /* UIExpandableTableView.h */,
+				ECA24C0A1977981900B5B787 /* UIExpandableTableView.m */,
+			);
+			name = githubExpandedTableView;
+			path = MyReader/unityKit/githubExpandedTableView;
+			sourceTree = SOURCE_ROOT;
+		};
+		ECA24C0E19779E1D00B5B787 /* MoreSetting */ = {
+			isa = PBXGroup;
+			children = (
+				ECA24C0F19779E4A00B5B787 /* MoreSettingViewController.h */,
+				ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */,
+				ECA24C1119779E4A00B5B787 /* MoreSettingViewController.xib */,
+			);
+			path = MoreSetting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,11 +504,13 @@
 			files = (
 				EC293F1119415DD20027A306 /* MRNavigationViewController.xib in Resources */,
 				EC209E7F19594AE000B2E87B /* CommitViewController.xib in Resources */,
+				ECA24C1319779E4A00B5B787 /* MoreSettingViewController.xib in Resources */,
 				EC293F2519416E540027A306 /* PicTitleContentCellTableViewCell.xib in Resources */,
 				EC293EE519415D740027A306 /* InfoPlist.strings in Resources */,
 				EC209E8519594B6F00B2E87B /* ContextImageMixViewController.xib in Resources */,
 				EC792804194945B000876573 /* navbar_bg.png in Resources */,
 				EC2E7E58195960690048E46B /* ContextImageMixTableViewCell.xib in Resources */,
+				ECA24C0D19779C9100B5B787 /* ReadMe.txt in Resources */,
 				EC293F1619415F0B0027A306 /* RootViewController.xib in Resources */,
 				EC293EF019415D740027A306 /* Images.xcassets in Resources */,
 				EC792805194945B000876573 /* navbar_bg@2x.png in Resources */,
@@ -498,10 +533,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */,
+				ECA24C0B1977981900B5B787 /* UIExpandableTableView.m in Sources */,
 				EC293EEB19415D740027A306 /* AppDelegate.m in Sources */,
 				EC450A4A1958133200D6884A /* UIImage+WebP.m in Sources */,
 				EC2E7E5319595F8C0048E46B /* ContextImageMixModel.m in Sources */,
 				EC450A471958133200D6884A /* UIButton+WebCache.m in Sources */,
+				ECA24C1219779E4A00B5B787 /* MoreSettingViewController.m in Sources */,
 				EC450A441958133200D6884A /* SDWebImageDownloaderOperation.m in Sources */,
 				EC7928001949458B00876573 /* RMImageView.m in Sources */,
 				EC450A401958133200D6884A /* SDImageCache.m in Sources */,
@@ -601,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -634,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -648,7 +685,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyReader/MyReader-Prefix.pch";
 				INFOPLIST_FILE = "MyReader/MyReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -662,7 +699,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyReader/MyReader-Prefix.pch";
 				INFOPLIST_FILE = "MyReader/MyReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

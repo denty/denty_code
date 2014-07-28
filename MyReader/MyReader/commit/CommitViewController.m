@@ -35,6 +35,7 @@
     [self.view setBackgroundColor:[UIColor grayColor]];
     NSArray *testDataArray = [[NSArray alloc] initWithObjects:@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",nil];
     self.title = @"juyue";
+    self.navigationController.delegate = self;
     expandeTableView = [[ExpandabelTableView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:expandeTableView];
     
@@ -52,7 +53,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController.navigationBar setHidden:NO];
+    [self.navigationController.navigationBar setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +61,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - navigationDelegate
 
 #pragma mark -expandableTabelViewDataSource
 - (NSInteger)numberOfSectionsInExpandableTableView:(UITableView *)tableView

@@ -9,8 +9,7 @@
 #import "PicTitleContentCellTableViewCell.h"
 #import "RootViewController.h"
 #import "CommitViewController.h"
-#import "SliderViewController.h"
-
+#import "MoreSettingViewController.h"
 
 @interface RootViewController ()
 @end
@@ -75,7 +74,13 @@
 
 - (void)pushAction
 {
-        [[SliderViewController sharedSliderController] rightItemClick];
+    UIGraphicsBeginImageContextWithOptions(self.view.frame.size, YES, 0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *currentImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    MoreSettingViewController *aMoreSettingViewController = [[MoreSettingViewController alloc] init];
+    aMoreSettingViewController.previousImage = currentImage;
+    [self.navigationController pushViewController:aMoreSettingViewController animated:NO];
 }
 
 #pragma mark -tableViewDataSource
@@ -110,7 +115,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CommitViewController *aCommitViewController = [[CommitViewController alloc] init];
-   
-    [[SliderViewController sharedSliderController].navigationController pushViewController:aCommitViewController animated:YES];
+    [self.navigationController pushViewController:aCommitViewController animated:YES];
 }
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ExpandabelTableView.h"
-@interface CommitViewController : UIViewController <ExpandabelTableViewDelegate,ExpandabelTableViewDataSource,UIScrollViewDelegate>
+@interface CommitViewController : UIViewController <ExpandabelTableViewDelegate,ExpandabelTableViewDataSource,UIScrollViewDelegate,UINavigationControllerDelegate,UINavigationBarDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIView *naviControllerBar;
 - (IBAction)popViewControllerAction:(id)sender;
