@@ -20,4 +20,5 @@
     #import "UIImageView+HighlightedWebCache.h"
     #import "UIImage+WebP.h"
     #import "UIImage+MultiFormat.h"
+    #import "UIColor+Additions.h"
 #endif

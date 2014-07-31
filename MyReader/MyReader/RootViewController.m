@@ -10,6 +10,8 @@
 #import "RootViewController.h"
 #import "CommitViewController.h"
 #import "MoreSettingViewController.h"
+#import "AnimationViewController.h"
+#import "ClockTableViewController.h"
 
 @interface RootViewController ()
 @end
@@ -114,7 +116,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CommitViewController *aCommitViewController = [[CommitViewController alloc] init];
-    [self.navigationController pushViewController:aCommitViewController animated:YES];
+//    CommitViewController *aCommitViewController = [[CommitViewController alloc] init];
+//    [self.navigationController pushViewController:aCommitViewController animated:YES];
+//    AnimationViewController *aAnimationViewController = [[AnimationViewController alloc] init];
+//    [self.navigationController pushViewController:aAnimationViewController animated:YES];
+    ClockTableViewController *aClockTableViewController = [[ClockTableViewController alloc] init];
+    [self.navigationController pushViewController:aClockTableViewController animated:YES];
 }
 @end

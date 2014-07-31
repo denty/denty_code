@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC12BD811989D53E00FA7DE1 /* ClockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC12BD7F1989D53E00FA7DE1 /* ClockTableViewController.m */; };
+		EC12BD821989D53E00FA7DE1 /* ClockTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC12BD801989D53E00FA7DE1 /* ClockTableViewController.xib */; };
+		EC12BD861989D63900FA7DE1 /* ClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC12BD841989D63900FA7DE1 /* ClockTableViewCell.m */; };
+		EC12BD871989D63900FA7DE1 /* ClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC12BD851989D63900FA7DE1 /* ClockTableViewCell.xib */; };
+		EC12BD8A198A108C00FA7DE1 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC12BD89198A108C00FA7DE1 /* UIColor+Additions.m */; };
+		EC12BD8D198A114500FA7DE1 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC12BD8C198A114500FA7DE1 /* NSString+Additions.m */; };
 		EC209E7E19594AE000B2E87B /* CommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC209E7C19594AE000B2E87B /* CommitViewController.m */; };
 		EC209E7F19594AE000B2E87B /* CommitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC209E7D19594AE000B2E87B /* CommitViewController.xib */; };
 		EC209E8419594B6F00B2E87B /* ContextImageMixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC209E8219594B6F00B2E87B /* ContextImageMixViewController.m */; };
@@ -58,6 +64,8 @@
 		EC792805194945B000876573 /* navbar_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC792803194945B000876573 /* navbar_bg@2x.png */; };
 		EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC79280A19497EB700876573 /* SliderContentViewController.m */; };
 		EC79280F19497EB700876573 /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC79280C19497EB700876573 /* SliderViewController.m */; };
+		EC9EAC281987335600FEB468 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9EAC261987335600FEB468 /* AnimationViewController.m */; };
+		EC9EAC291987335600FEB468 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC9EAC271987335600FEB468 /* AnimationViewController.xib */; };
 		ECA24C0B1977981900B5B787 /* UIExpandableTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA24C0A1977981900B5B787 /* UIExpandableTableView.m */; };
 		ECA24C0D19779C9100B5B787 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA24C0C19779C9100B5B787 /* ReadMe.txt */; };
 		ECA24C1219779E4A00B5B787 /* MoreSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */; };
@@ -75,6 +83,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC12BD7E1989D53E00FA7DE1 /* ClockTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableViewController.h; sourceTree = "<group>"; };
+		EC12BD7F1989D53E00FA7DE1 /* ClockTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableViewController.m; sourceTree = "<group>"; };
+		EC12BD801989D53E00FA7DE1 /* ClockTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockTableViewController.xib; sourceTree = "<group>"; };
+		EC12BD831989D63900FA7DE1 /* ClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableViewCell.h; sourceTree = "<group>"; };
+		EC12BD841989D63900FA7DE1 /* ClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableViewCell.m; sourceTree = "<group>"; };
+		EC12BD851989D63900FA7DE1 /* ClockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockTableViewCell.xib; sourceTree = "<group>"; };
+		EC12BD88198A108C00FA7DE1 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		EC12BD89198A108C00FA7DE1 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		EC12BD8B198A114500FA7DE1 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		EC12BD8C198A114500FA7DE1 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		EC209E7B19594AE000B2E87B /* CommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommitViewController.h; sourceTree = "<group>"; };
 		EC209E7C19594AE000B2E87B /* CommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommitViewController.m; sourceTree = "<group>"; };
 		EC209E7D19594AE000B2E87B /* CommitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommitViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +175,9 @@
 		EC79280A19497EB700876573 /* SliderContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderContentViewController.m; sourceTree = "<group>"; };
 		EC79280B19497EB700876573 /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		EC79280C19497EB700876573 /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		EC9EAC251987335600FEB468 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		EC9EAC261987335600FEB468 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
+		EC9EAC271987335600FEB468 /* AnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		ECA24C091977981900B5B787 /* UIExpandableTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIExpandableTableView.h; sourceTree = "<group>"; };
 		ECA24C0A1977981900B5B787 /* UIExpandableTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIExpandableTableView.m; sourceTree = "<group>"; };
 		ECA24C0C19779C9100B5B787 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
@@ -198,6 +219,15 @@
 				EC209E7B19594AE000B2E87B /* CommitViewController.h */,
 				EC209E7C19594AE000B2E87B /* CommitViewController.m */,
 				EC209E7D19594AE000B2E87B /* CommitViewController.xib */,
+				EC9EAC251987335600FEB468 /* AnimationViewController.h */,
+				EC9EAC261987335600FEB468 /* AnimationViewController.m */,
+				EC9EAC271987335600FEB468 /* AnimationViewController.xib */,
+				EC12BD7E1989D53E00FA7DE1 /* ClockTableViewController.h */,
+				EC12BD7F1989D53E00FA7DE1 /* ClockTableViewController.m */,
+				EC12BD801989D53E00FA7DE1 /* ClockTableViewController.xib */,
+				EC12BD831989D63900FA7DE1 /* ClockTableViewCell.h */,
+				EC12BD841989D63900FA7DE1 /* ClockTableViewCell.m */,
+				EC12BD851989D63900FA7DE1 /* ClockTableViewCell.xib */,
 			);
 			path = commit;
 			sourceTree = "<group>";
@@ -343,6 +373,10 @@
 			children = (
 				EC45098E1958093700D6884A /* UIView+Additions.h */,
 				EC45098F1958093700D6884A /* UIView+Additions.m */,
+				EC12BD88198A108C00FA7DE1 /* UIColor+Additions.h */,
+				EC12BD89198A108C00FA7DE1 /* UIColor+Additions.m */,
+				EC12BD8B198A114500FA7DE1 /* NSString+Additions.h */,
+				EC12BD8C198A114500FA7DE1 /* NSString+Additions.m */,
 			);
 			name = category;
 			path = MyReader/category;
@@ -502,9 +536,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC12BD871989D63900FA7DE1 /* ClockTableViewCell.xib in Resources */,
+				EC9EAC291987335600FEB468 /* AnimationViewController.xib in Resources */,
 				EC293F1119415DD20027A306 /* MRNavigationViewController.xib in Resources */,
 				EC209E7F19594AE000B2E87B /* CommitViewController.xib in Resources */,
 				ECA24C1319779E4A00B5B787 /* MoreSettingViewController.xib in Resources */,
+				EC12BD821989D53E00FA7DE1 /* ClockTableViewController.xib in Resources */,
 				EC293F2519416E540027A306 /* PicTitleContentCellTableViewCell.xib in Resources */,
 				EC293EE519415D740027A306 /* InfoPlist.strings in Resources */,
 				EC209E8519594B6F00B2E87B /* ContextImageMixViewController.xib in Resources */,
@@ -534,6 +571,7 @@
 			files = (
 				EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */,
 				ECA24C0B1977981900B5B787 /* UIExpandableTableView.m in Sources */,
+				EC12BD811989D53E00FA7DE1 /* ClockTableViewController.m in Sources */,
 				EC293EEB19415D740027A306 /* AppDelegate.m in Sources */,
 				EC450A4A1958133200D6884A /* UIImage+WebP.m in Sources */,
 				EC2E7E5319595F8C0048E46B /* ContextImageMixModel.m in Sources */,
@@ -549,15 +587,19 @@
 				EC450A4B1958133200D6884A /* UIImageView+HighlightedWebCache.m in Sources */,
 				EC293EE719415D740027A306 /* main.m in Sources */,
 				EC450A431958133200D6884A /* SDWebImageDownloader.m in Sources */,
+				EC12BD8D198A114500FA7DE1 /* NSString+Additions.m in Sources */,
 				EC209E8419594B6F00B2E87B /* ContextImageMixViewController.m in Sources */,
 				EC450A411958133200D6884A /* SDWebImageCompat.m in Sources */,
 				EC79280F19497EB700876573 /* SliderViewController.m in Sources */,
 				EC450A481958133200D6884A /* UIImage+GIF.m in Sources */,
+				EC9EAC281987335600FEB468 /* AnimationViewController.m in Sources */,
 				EC450A491958133200D6884A /* UIImage+MultiFormat.m in Sources */,
 				EC2E7E57195960690048E46B /* ContextImageMixTableViewCell.m in Sources */,
+				EC12BD861989D63900FA7DE1 /* ClockTableViewCell.m in Sources */,
 				EC293EEE19415D740027A306 /* MyReader.xcdatamodeld in Sources */,
 				EC209E7E19594AE000B2E87B /* CommitViewController.m in Sources */,
 				EC450A461958133200D6884A /* SDWebImagePrefetcher.m in Sources */,
+				EC12BD8A198A108C00FA7DE1 /* UIColor+Additions.m in Sources */,
 				EC293F1519415F0B0027A306 /* RootViewController.m in Sources */,
 				EC450A3E1958133200D6884A /* MKAnnotationView+WebCache.m in Sources */,
 				EC450A4C1958133200D6884A /* UIImageView+WebCache.m in Sources */,
