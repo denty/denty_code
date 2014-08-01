@@ -29,6 +29,8 @@
     [self.clockTableView setDelegate:self];
     [self.clockTableView setDataSource:self];
     [self.clockTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    [self.clockTableView setBackgroundColor:[UIColor whiteColor]];
     [self.clockTableView setBackgroundColor:[UIColor blackColor]];
     // Do any additional setup after loading the view from its nib.
 }
@@ -63,21 +65,22 @@
     //243 212 158
     if (indexPath.row == 0) {
         [cell.timeHolderView setBackgroundColor:[UIColor colorWithIntRed:237 intGreen:108 intBlue:108 alpha:1]];
-        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:237 intGreen:108 intBlue:108 alpha:1]];
+//        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:237 intGreen:108 intBlue:108 alpha:1]];
     }
     if (indexPath.row == 1) {
         [cell.timeHolderView setBackgroundColor:[UIColor colorWithIntRed:241 intGreen:142 intBlue:124 alpha:1]];
-        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:241 intGreen:142 intBlue:124 alpha:1]];
+//        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:241 intGreen:142 intBlue:124 alpha:1]];
     }
     if (indexPath.row == 2) {
         [cell.timeHolderView setBackgroundColor:[UIColor colorWithIntRed:255 intGreen:172 intBlue:132 alpha:1]];
-        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:255 intGreen:172 intBlue:132 alpha:1]];
+//        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:255 intGreen:172 intBlue:132 alpha:1]];
     }
     if (indexPath.row == 3) {
         [cell.timeHolderView setBackgroundColor:[UIColor colorWithIntRed:243 intGreen:212 intBlue:148 alpha:1]];
-        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:243 intGreen:212 intBlue:148 alpha:1]];
+//        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:243 intGreen:212 intBlue:148 alpha:1]];
         [cell.timeLabel setText:@"set"];
     }
+    cell.backgroundColor = [UIColor blackColor];
     return cell;
 }
 @end

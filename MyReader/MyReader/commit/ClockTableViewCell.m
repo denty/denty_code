@@ -14,6 +14,10 @@
 {
     CGPoint m_beganPoint;
     CGPoint m_center;
+    CGRect m_rect;
+    float m_angel;
+    CGPoint m_posiztion;
+    CGPoint m_timeposiztion;
 }
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -27,23 +31,34 @@
         self.timeLabel.backgroundColor = [UIColor clearColor];
         self.timeLabel.shadowColor = [UIColor lightGrayColor];
         self.timeLabel.shadowOffset = CGSizeMake(0, 1);
-    
+         
         [self.timeHolderView.layer setShadowOpacity:1];
         [self.timeHolderView.layer setShadowRadius:0.5];
         [self.timeHolderView.layer setShadowOffset:CGSizeMake(0, 0)];
         [self.timeHolderView.layer setShadowColor:[UIColor blackColor].CGColor];
+        [self.timeHolderView.layer setShadowPath:[[UIBezierPath bezierPathWithRect:self.timeHolderView.bounds] CGPath]];
+        m_rect = self.iconView.layer.frame;
         
         [self.iconView.layer setShadowOpacity:1];
+        [self.iconView.layer setAnchorPoint:CGPointMake(0, 0.5)];
+        [self.iconView.layer setFrame:self.iconView.layer.frame];
+        self.iconView.originX = self.timeHolderView.width;
         [self.iconView.layer setShadowRadius:0.5];
         [self.iconView.layer setShadowOffset:CGSizeMake(0, 0)];
         [self.iconView.layer setShadowColor:[UIColor blackColor].CGColor];
+        [self.iconView.layer setShadowPath:[[UIBezierPath bezierPathWithRect:self.iconView.bounds] CGPath]];
+        
+        
+        
         
         [self bringSubviewToFront:self.timeHolderView];
         UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.iconView.width, self.iconView.height)];
         [coverView setBackgroundColor:[UIColor blackColor]];
         [coverView setAlpha:0.1];
+        
+        m_posiztion=self.iconView.layer.position;
+        m_timeposiztion = self.timeHolderView.layer.position;
         [self.iconView addSubview:coverView];
-//        [self setClipsToBounds:YES];
     }
     return self;
 }
@@ -52,6 +67,12 @@
 {
     // Initialization code
     [super awakeFromNib];
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    [self.iconView.layer setBackgroundColor:self.timeHolderView.backgroundColor.CGColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -66,18 +87,31 @@
     CGPoint locationPoint;
     if (gesture.state == UIGestureRecognizerStateBegan) {
         m_beganPoint = [gesture translationInView:self.timeHolderView];
-        m_center = self.timeHolderView.center;
+
     }
     else if (gesture.state == UIGestureRecognizerStateChanged)
     {
         locationPoint = [gesture translationInView:self.timeHolderView];
-        [self.timeHolderView setOriginX:(m_beganPoint.x+locationPoint.x)];
+        if (m_angel<0.1) {
+            self.timeHolderView.layer.transform = CATransform3DMakeTranslation(locationPoint.x-m_beganPoint.x, 0, 0);
+            m_angel =-(locationPoint.x-m_beganPoint.x)/800;
+            CATransform3D rotate = CATransform3DMakeRotation(m_angel, 0, 1, 0);
+            CATransform3D combinedTransform = CATransform3DConcat(CATransform3DPerspect(rotate, CGPointMake(0, 0), 200), CATransform3DMakeTranslation(locationPoint.x-m_beganPoint.x, 0, 0));
+            [self.iconView.layer setShadowRadius:self.iconView.layer.shadowRadius++];
+            self.iconView.layer.transform = combinedTransform;
+            
+
+        }
     }
     else if (gesture.state == UIGestureRecognizerStateEnded)
     {
         NSLog(@"end");
         [UIView animateWithDuration:0.5 animations:^{
-            [self.timeHolderView setOriginX:0];
+            self.timeHolderView.layer.position = m_timeposiztion;
+            self.timeHolderView.layer.transform = CATransform3DIdentity;
+            self.iconView.layer.position = m_posiztion;
+            self.iconView.layer.transform = CATransform3DIdentity;
+            m_angel = 0;
         }];
     }
 }
@@ -90,5 +124,19 @@
     } else {
         return NO;
     }
+}
+
+CATransform3D CATransform3DMakePerspective(CGPoint center, float disZ)
+{
+    CATransform3D transToCenter = CATransform3DMakeTranslation(-center.x, -center.y, 0);
+    CATransform3D transBack = CATransform3DMakeTranslation(center.x, center.y, 0);
+    CATransform3D scale = CATransform3DIdentity;
+    scale.m34 = -1.0f/disZ;
+    return CATransform3DConcat(CATransform3DConcat(transToCenter, scale), transBack);
+}
+
+CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
+{
+    return CATransform3DConcat(t, CATransform3DMakePerspective(center, disZ));
 }
 @end
