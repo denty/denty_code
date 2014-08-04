@@ -8,6 +8,7 @@
 
 #import "ClockTableViewController.h"
 #import "ClockTableViewCell.h"
+#import "AlartViewController.h"
 @interface ClockTableViewController ()
 
 @end
@@ -82,5 +83,13 @@
     }
     cell.backgroundColor = [UIColor blackColor];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AlartViewController *aAlartViewController = [[AlartViewController alloc] init];
+    __weak UIViewController *weakSelf = self;
+    aAlartViewController.titleView = [self tableView:tableView cellForRowAtIndexPath:indexPath];
+    [aAlartViewController showView:weakSelf];
 }
 @end

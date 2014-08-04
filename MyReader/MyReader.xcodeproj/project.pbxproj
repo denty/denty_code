@@ -70,6 +70,8 @@
 		ECA24C0D19779C9100B5B787 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECA24C0C19779C9100B5B787 /* ReadMe.txt */; };
 		ECA24C1219779E4A00B5B787 /* MoreSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */; };
 		ECA24C1319779E4A00B5B787 /* MoreSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA24C1119779E4A00B5B787 /* MoreSettingViewController.xib */; };
+		ECA3E6B2198F1F960029EF9E /* AlartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E6B0198F1F960029EF9E /* AlartViewController.m */; };
+		ECA3E6B3198F1F960029EF9E /* AlartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E6B1198F1F960029EF9E /* AlartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +186,9 @@
 		ECA24C0F19779E4A00B5B787 /* MoreSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreSettingViewController.h; sourceTree = "<group>"; };
 		ECA24C1019779E4A00B5B787 /* MoreSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreSettingViewController.m; sourceTree = "<group>"; };
 		ECA24C1119779E4A00B5B787 /* MoreSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreSettingViewController.xib; sourceTree = "<group>"; };
+		ECA3E6AF198F1F960029EF9E /* AlartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlartViewController.h; sourceTree = "<group>"; };
+		ECA3E6B0198F1F960029EF9E /* AlartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlartViewController.m; sourceTree = "<group>"; };
+		ECA3E6B1198F1F960029EF9E /* AlartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,18 +221,10 @@
 		EC209E7A19594AE000B2E87B /* commit */ = {
 			isa = PBXGroup;
 			children = (
+				ECA3E6AE198F1F680029EF9E /* newUnity */,
 				EC209E7B19594AE000B2E87B /* CommitViewController.h */,
 				EC209E7C19594AE000B2E87B /* CommitViewController.m */,
 				EC209E7D19594AE000B2E87B /* CommitViewController.xib */,
-				EC9EAC251987335600FEB468 /* AnimationViewController.h */,
-				EC9EAC261987335600FEB468 /* AnimationViewController.m */,
-				EC9EAC271987335600FEB468 /* AnimationViewController.xib */,
-				EC12BD7E1989D53E00FA7DE1 /* ClockTableViewController.h */,
-				EC12BD7F1989D53E00FA7DE1 /* ClockTableViewController.m */,
-				EC12BD801989D53E00FA7DE1 /* ClockTableViewController.xib */,
-				EC12BD831989D63900FA7DE1 /* ClockTableViewCell.h */,
-				EC12BD841989D63900FA7DE1 /* ClockTableViewCell.m */,
-				EC12BD851989D63900FA7DE1 /* ClockTableViewCell.xib */,
 			);
 			path = commit;
 			sourceTree = "<group>";
@@ -461,6 +458,25 @@
 			path = MoreSetting;
 			sourceTree = "<group>";
 		};
+		ECA3E6AE198F1F680029EF9E /* newUnity */ = {
+			isa = PBXGroup;
+			children = (
+				EC9EAC251987335600FEB468 /* AnimationViewController.h */,
+				EC9EAC261987335600FEB468 /* AnimationViewController.m */,
+				EC9EAC271987335600FEB468 /* AnimationViewController.xib */,
+				EC12BD7E1989D53E00FA7DE1 /* ClockTableViewController.h */,
+				EC12BD7F1989D53E00FA7DE1 /* ClockTableViewController.m */,
+				EC12BD801989D53E00FA7DE1 /* ClockTableViewController.xib */,
+				EC12BD831989D63900FA7DE1 /* ClockTableViewCell.h */,
+				EC12BD841989D63900FA7DE1 /* ClockTableViewCell.m */,
+				EC12BD851989D63900FA7DE1 /* ClockTableViewCell.xib */,
+				ECA3E6AF198F1F960029EF9E /* AlartViewController.h */,
+				ECA3E6B0198F1F960029EF9E /* AlartViewController.m */,
+				ECA3E6B1198F1F960029EF9E /* AlartViewController.xib */,
+			);
+			name = newUnity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -547,6 +563,7 @@
 				EC209E8519594B6F00B2E87B /* ContextImageMixViewController.xib in Resources */,
 				EC792804194945B000876573 /* navbar_bg.png in Resources */,
 				EC2E7E58195960690048E46B /* ContextImageMixTableViewCell.xib in Resources */,
+				ECA3E6B3198F1F960029EF9E /* AlartViewController.xib in Resources */,
 				ECA24C0D19779C9100B5B787 /* ReadMe.txt in Resources */,
 				EC293F1619415F0B0027A306 /* RootViewController.xib in Resources */,
 				EC293EF019415D740027A306 /* Images.xcassets in Resources */,
@@ -572,6 +589,7 @@
 				EC79280E19497EB700876573 /* SliderContentViewController.m in Sources */,
 				ECA24C0B1977981900B5B787 /* UIExpandableTableView.m in Sources */,
 				EC12BD811989D53E00FA7DE1 /* ClockTableViewController.m in Sources */,
+				ECA3E6B2198F1F960029EF9E /* AlartViewController.m in Sources */,
 				EC293EEB19415D740027A306 /* AppDelegate.m in Sources */,
 				EC450A4A1958133200D6884A /* UIImage+WebP.m in Sources */,
 				EC2E7E5319595F8C0048E46B /* ContextImageMixModel.m in Sources */,
