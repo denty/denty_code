@@ -31,6 +31,7 @@
 		ECA3E7951990DE410029EF9E /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7901990DE410029EF9E /* NSString+Additions.m */; };
 		ECA3E7961990DE410029EF9E /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7921990DE410029EF9E /* UIColor+Additions.m */; };
 		ECA3E7971990DE410029EF9E /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7941990DE410029EF9E /* UIView+Additions.m */; };
+		ECDAB60019922B54002E5D47 /* ClockTime.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDAB5FF19922B54002E5D47 /* ClockTime.m */; };
 		ECE2CB771991CE5D00960A12 /* sound.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB761991CE5D00960A12 /* sound.plist */; };
 		ECE2CB7C1991D10000960A12 /* ----01.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB781991D10000960A12 /* ----01.caf */; };
 		ECE2CB7D1991D10000960A12 /* ----06.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB791991D10000960A12 /* ----06.caf */; };
@@ -84,6 +85,9 @@
 		ECA3E7921990DE410029EF9E /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 		ECA3E7931990DE410029EF9E /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		ECA3E7941990DE410029EF9E /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		ECDAB5FD19922AAA002E5D47 /* clock1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = clock1.xcdatamodel; sourceTree = "<group>"; };
+		ECDAB5FE19922B54002E5D47 /* ClockTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClockTime.h; path = model/ClockTime.h; sourceTree = "<group>"; };
+		ECDAB5FF19922B54002E5D47 /* ClockTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClockTime.m; path = model/ClockTime.m; sourceTree = "<group>"; };
 		ECE2CB761991CE5D00960A12 /* sound.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sound.plist; sourceTree = "<group>"; };
 		ECE2CB781991D10000960A12 /* ----01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----01.caf"; sourceTree = "<group>"; };
 		ECE2CB791991D10000960A12 /* ----06.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----06.caf"; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 		ECA3E73C1990DD260029EF9E = {
 			isa = PBXGroup;
 			children = (
+				ECDAB5FE19922B54002E5D47 /* ClockTime.h */,
+				ECDAB5FF19922B54002E5D47 /* ClockTime.m */,
 				ECE2CB811992087B00960A12 /* MGConferenceDatePicker */,
 				ECE2CB801991FFD000960A12 /* DentyDatePicker */,
 				ECA3E78E1990DE410029EF9E /* category */,
@@ -362,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA3E7951990DE410029EF9E /* NSString+Additions.m in Sources */,
+				ECDAB60019922B54002E5D47 /* ClockTime.m in Sources */,
 				ECA3E78A1990DE010029EF9E /* ClockTableViewCell.m in Sources */,
 				ECA3E75B1990DD260029EF9E /* AppDelegate.m in Sources */,
 				ECA3E7971990DE410029EF9E /* UIView+Additions.m in Sources */,
@@ -584,6 +591,7 @@
 		ECA3E75C1990DD260029EF9E /* clock.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				ECDAB5FD19922AAA002E5D47 /* clock1.xcdatamodel */,
 				ECA3E75D1990DD260029EF9E /* clock.xcdatamodel */,
 			);
 			currentVersion = ECA3E75D1990DD260029EF9E /* clock.xcdatamodel */;
