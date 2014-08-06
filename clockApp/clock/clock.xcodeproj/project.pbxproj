@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA3E7491990DD260029EF9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E7481990DD260029EF9E /* Foundation.framework */; };
+		ECA3E74B1990DD260029EF9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E74A1990DD260029EF9E /* CoreGraphics.framework */; };
+		ECA3E74D1990DD260029EF9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E74C1990DD260029EF9E /* UIKit.framework */; };
+		ECA3E74F1990DD260029EF9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E74E1990DD260029EF9E /* CoreData.framework */; };
+		ECA3E7551990DD260029EF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E7531990DD260029EF9E /* InfoPlist.strings */; };
+		ECA3E7571990DD260029EF9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7561990DD260029EF9E /* main.m */; };
+		ECA3E75B1990DD260029EF9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E75A1990DD260029EF9E /* AppDelegate.m */; };
+		ECA3E75E1990DD260029EF9E /* clock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E75C1990DD260029EF9E /* clock.xcdatamodeld */; };
+		ECA3E7601990DD260029EF9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E75F1990DD260029EF9E /* Images.xcassets */; };
+		ECA3E7671990DD260029EF9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E7661990DD260029EF9E /* XCTest.framework */; };
+		ECA3E7681990DD260029EF9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E7481990DD260029EF9E /* Foundation.framework */; };
+		ECA3E7691990DD260029EF9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E74C1990DD260029EF9E /* UIKit.framework */; };
+		ECA3E76A1990DD260029EF9E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3E74E1990DD260029EF9E /* CoreData.framework */; };
+		ECA3E7721990DD260029EF9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E7701990DD260029EF9E /* InfoPlist.strings */; };
+		ECA3E7741990DD260029EF9E /* clockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7731990DD260029EF9E /* clockTests.m */; };
+		ECA3E7811990DD9D0029EF9E /* AlartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E77F1990DD9D0029EF9E /* AlartViewController.m */; };
+		ECA3E7821990DD9D0029EF9E /* AlartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E7801990DD9D0029EF9E /* AlartViewController.xib */; };
+		ECA3E78A1990DE010029EF9E /* ClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7851990DE010029EF9E /* ClockTableViewCell.m */; };
+		ECA3E78B1990DE010029EF9E /* ClockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E7861990DE010029EF9E /* ClockTableViewCell.xib */; };
+		ECA3E78C1990DE010029EF9E /* ClockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7881990DE010029EF9E /* ClockTableViewController.m */; };
+		ECA3E78D1990DE010029EF9E /* ClockTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECA3E7891990DE010029EF9E /* ClockTableViewController.xib */; };
+		ECA3E7951990DE410029EF9E /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7901990DE410029EF9E /* NSString+Additions.m */; };
+		ECA3E7961990DE410029EF9E /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7921990DE410029EF9E /* UIColor+Additions.m */; };
+		ECA3E7971990DE410029EF9E /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA3E7941990DE410029EF9E /* UIView+Additions.m */; };
+		ECE2CB771991CE5D00960A12 /* sound.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB761991CE5D00960A12 /* sound.plist */; };
+		ECE2CB7C1991D10000960A12 /* ----01.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB781991D10000960A12 /* ----01.caf */; };
+		ECE2CB7D1991D10000960A12 /* ----06.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB791991D10000960A12 /* ----06.caf */; };
+		ECE2CB7E1991D10000960A12 /* ----07.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB7A1991D10000960A12 /* ----07.caf */; };
+		ECE2CB7F1991D10000960A12 /* ----10.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB7B1991D10000960A12 /* ----10.caf */; };
+		ECE2CB861992087B00960A12 /* MGCDPImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB821992087B00960A12 /* MGCDPImages.xcassets */; };
+		ECE2CB871992087B00960A12 /* MGConferenceDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2CB841992087B00960A12 /* MGConferenceDatePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA3E76B1990DD260029EF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA3E73D1990DD260029EF9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA3E7441990DD260029EF9E;
+			remoteInfo = clock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA3E7451990DD260029EF9E /* clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA3E7481990DD260029EF9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECA3E74A1990DD260029EF9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECA3E74C1990DD260029EF9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECA3E74E1990DD260029EF9E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ECA3E7521990DD260029EF9E /* clock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "clock-Info.plist"; sourceTree = "<group>"; };
+		ECA3E7541990DD260029EF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA3E7561990DD260029EF9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECA3E7581990DD260029EF9E /* clock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "clock-Prefix.pch"; sourceTree = "<group>"; };
+		ECA3E7591990DD260029EF9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECA3E75A1990DD260029EF9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECA3E75D1990DD260029EF9E /* clock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = clock.xcdatamodel; sourceTree = "<group>"; };
+		ECA3E75F1990DD260029EF9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECA3E7651990DD260029EF9E /* clockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA3E7661990DD260029EF9E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECA3E76F1990DD260029EF9E /* clockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "clockTests-Info.plist"; sourceTree = "<group>"; };
+		ECA3E7711990DD260029EF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA3E7731990DD260029EF9E /* clockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clockTests.m; sourceTree = "<group>"; };
+		ECA3E77E1990DD9D0029EF9E /* AlartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlartViewController.h; sourceTree = "<group>"; };
+		ECA3E77F1990DD9D0029EF9E /* AlartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlartViewController.m; sourceTree = "<group>"; };
+		ECA3E7801990DD9D0029EF9E /* AlartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlartViewController.xib; sourceTree = "<group>"; };
+		ECA3E7841990DE010029EF9E /* ClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableViewCell.h; sourceTree = "<group>"; };
+		ECA3E7851990DE010029EF9E /* ClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableViewCell.m; sourceTree = "<group>"; };
+		ECA3E7861990DE010029EF9E /* ClockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockTableViewCell.xib; sourceTree = "<group>"; };
+		ECA3E7871990DE010029EF9E /* ClockTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockTableViewController.h; sourceTree = "<group>"; };
+		ECA3E7881990DE010029EF9E /* ClockTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockTableViewController.m; sourceTree = "<group>"; };
+		ECA3E7891990DE010029EF9E /* ClockTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockTableViewController.xib; sourceTree = "<group>"; };
+		ECA3E78F1990DE410029EF9E /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		ECA3E7901990DE410029EF9E /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		ECA3E7911990DE410029EF9E /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		ECA3E7921990DE410029EF9E /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		ECA3E7931990DE410029EF9E /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		ECA3E7941990DE410029EF9E /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		ECE2CB761991CE5D00960A12 /* sound.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sound.plist; sourceTree = "<group>"; };
+		ECE2CB781991D10000960A12 /* ----01.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----01.caf"; sourceTree = "<group>"; };
+		ECE2CB791991D10000960A12 /* ----06.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----06.caf"; sourceTree = "<group>"; };
+		ECE2CB7A1991D10000960A12 /* ----07.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----07.caf"; sourceTree = "<group>"; };
+		ECE2CB7B1991D10000960A12 /* ----10.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "----10.caf"; sourceTree = "<group>"; };
+		ECE2CB821992087B00960A12 /* MGCDPImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MGCDPImages.xcassets; sourceTree = "<group>"; };
+		ECE2CB831992087B00960A12 /* MGConferenceDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGConferenceDatePicker.h; sourceTree = "<group>"; };
+		ECE2CB841992087B00960A12 /* MGConferenceDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGConferenceDatePicker.m; sourceTree = "<group>"; };
+		ECE2CB851992087B00960A12 /* MGConferenceDatePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGConferenceDatePickerDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA3E7421990DD260029EF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E74B1990DD260029EF9E /* CoreGraphics.framework in Frameworks */,
+				ECA3E74F1990DD260029EF9E /* CoreData.framework in Frameworks */,
+				ECA3E74D1990DD260029EF9E /* UIKit.framework in Frameworks */,
+				ECA3E7491990DD260029EF9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA3E7621990DD260029EF9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E7671990DD260029EF9E /* XCTest.framework in Frameworks */,
+				ECA3E76A1990DD260029EF9E /* CoreData.framework in Frameworks */,
+				ECA3E7691990DD260029EF9E /* UIKit.framework in Frameworks */,
+				ECA3E7681990DD260029EF9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA3E73C1990DD260029EF9E = {
+			isa = PBXGroup;
+			children = (
+				ECE2CB811992087B00960A12 /* MGConferenceDatePicker */,
+				ECE2CB801991FFD000960A12 /* DentyDatePicker */,
+				ECA3E78E1990DE410029EF9E /* category */,
+				ECA3E77D1990DD9D0029EF9E /* ExpandAlertView */,
+				ECA3E7831990DDEB0029EF9E /* clockTable */,
+				ECA3E7501990DD260029EF9E /* clock */,
+				ECA3E76D1990DD260029EF9E /* clockTests */,
+				ECA3E7471990DD260029EF9E /* Frameworks */,
+				ECA3E7461990DD260029EF9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA3E7461990DD260029EF9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E7451990DD260029EF9E /* clock.app */,
+				ECA3E7651990DD260029EF9E /* clockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA3E7471990DD260029EF9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E7481990DD260029EF9E /* Foundation.framework */,
+				ECA3E74A1990DD260029EF9E /* CoreGraphics.framework */,
+				ECA3E74C1990DD260029EF9E /* UIKit.framework */,
+				ECA3E74E1990DD260029EF9E /* CoreData.framework */,
+				ECA3E7661990DD260029EF9E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA3E7501990DD260029EF9E /* clock */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E7591990DD260029EF9E /* AppDelegate.h */,
+				ECA3E75A1990DD260029EF9E /* AppDelegate.m */,
+				ECA3E75F1990DD260029EF9E /* Images.xcassets */,
+				ECA3E75C1990DD260029EF9E /* clock.xcdatamodeld */,
+				ECA3E7511990DD260029EF9E /* Supporting Files */,
+			);
+			path = clock;
+			sourceTree = "<group>";
+		};
+		ECA3E7511990DD260029EF9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2CB781991D10000960A12 /* ----01.caf */,
+				ECE2CB791991D10000960A12 /* ----06.caf */,
+				ECE2CB7A1991D10000960A12 /* ----07.caf */,
+				ECE2CB7B1991D10000960A12 /* ----10.caf */,
+				ECE2CB761991CE5D00960A12 /* sound.plist */,
+				ECA3E7521990DD260029EF9E /* clock-Info.plist */,
+				ECA3E7531990DD260029EF9E /* InfoPlist.strings */,
+				ECA3E7561990DD260029EF9E /* main.m */,
+				ECA3E7581990DD260029EF9E /* clock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA3E76D1990DD260029EF9E /* clockTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E7731990DD260029EF9E /* clockTests.m */,
+				ECA3E76E1990DD260029EF9E /* Supporting Files */,
+			);
+			path = clockTests;
+			sourceTree = "<group>";
+		};
+		ECA3E76E1990DD260029EF9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E76F1990DD260029EF9E /* clockTests-Info.plist */,
+				ECA3E7701990DD260029EF9E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA3E77D1990DD9D0029EF9E /* ExpandAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E77E1990DD9D0029EF9E /* AlartViewController.h */,
+				ECA3E77F1990DD9D0029EF9E /* AlartViewController.m */,
+				ECA3E7801990DD9D0029EF9E /* AlartViewController.xib */,
+			);
+			path = ExpandAlertView;
+			sourceTree = SOURCE_ROOT;
+		};
+		ECA3E7831990DDEB0029EF9E /* clockTable */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E7841990DE010029EF9E /* ClockTableViewCell.h */,
+				ECA3E7851990DE010029EF9E /* ClockTableViewCell.m */,
+				ECA3E7861990DE010029EF9E /* ClockTableViewCell.xib */,
+				ECA3E7871990DE010029EF9E /* ClockTableViewController.h */,
+				ECA3E7881990DE010029EF9E /* ClockTableViewController.m */,
+				ECA3E7891990DE010029EF9E /* ClockTableViewController.xib */,
+			);
+			path = clockTable;
+			sourceTree = "<group>";
+		};
+		ECA3E78E1990DE410029EF9E /* category */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3E78F1990DE410029EF9E /* NSString+Additions.h */,
+				ECA3E7901990DE410029EF9E /* NSString+Additions.m */,
+				ECA3E7911990DE410029EF9E /* UIColor+Additions.h */,
+				ECA3E7921990DE410029EF9E /* UIColor+Additions.m */,
+				ECA3E7931990DE410029EF9E /* UIView+Additions.h */,
+				ECA3E7941990DE410029EF9E /* UIView+Additions.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		ECE2CB801991FFD000960A12 /* DentyDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DentyDatePicker;
+			sourceTree = "<group>";
+		};
+		ECE2CB811992087B00960A12 /* MGConferenceDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				ECE2CB821992087B00960A12 /* MGCDPImages.xcassets */,
+				ECE2CB831992087B00960A12 /* MGConferenceDatePicker.h */,
+				ECE2CB841992087B00960A12 /* MGConferenceDatePicker.m */,
+				ECE2CB851992087B00960A12 /* MGConferenceDatePickerDelegate.h */,
+			);
+			path = MGConferenceDatePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA3E7441990DD260029EF9E /* clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA3E7771990DD260029EF9E /* Build configuration list for PBXNativeTarget "clock" */;
+			buildPhases = (
+				ECA3E7411990DD260029EF9E /* Sources */,
+				ECA3E7421990DD260029EF9E /* Frameworks */,
+				ECA3E7431990DD260029EF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clock;
+			productName = clock;
+			productReference = ECA3E7451990DD260029EF9E /* clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA3E7641990DD260029EF9E /* clockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA3E77A1990DD260029EF9E /* Build configuration list for PBXNativeTarget "clockTests" */;
+			buildPhases = (
+				ECA3E7611990DD260029EF9E /* Sources */,
+				ECA3E7621990DD260029EF9E /* Frameworks */,
+				ECA3E7631990DD260029EF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA3E76C1990DD260029EF9E /* PBXTargetDependency */,
+			);
+			name = clockTests;
+			productName = clockTests;
+			productReference = ECA3E7651990DD260029EF9E /* clockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA3E73D1990DD260029EF9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = denty;
+				TargetAttributes = {
+					ECA3E7641990DD260029EF9E = {
+						TestTargetID = ECA3E7441990DD260029EF9E;
+					};
+				};
+			};
+			buildConfigurationList = ECA3E7401990DD260029EF9E /* Build configuration list for PBXProject "clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECA3E73C1990DD260029EF9E;
+			productRefGroup = ECA3E7461990DD260029EF9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA3E7441990DD260029EF9E /* clock */,
+				ECA3E7641990DD260029EF9E /* clockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA3E7431990DD260029EF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E7551990DD260029EF9E /* InfoPlist.strings in Resources */,
+				ECE2CB7E1991D10000960A12 /* ----07.caf in Resources */,
+				ECE2CB7C1991D10000960A12 /* ----01.caf in Resources */,
+				ECE2CB861992087B00960A12 /* MGCDPImages.xcassets in Resources */,
+				ECE2CB7F1991D10000960A12 /* ----10.caf in Resources */,
+				ECA3E78D1990DE010029EF9E /* ClockTableViewController.xib in Resources */,
+				ECE2CB771991CE5D00960A12 /* sound.plist in Resources */,
+				ECE2CB7D1991D10000960A12 /* ----06.caf in Resources */,
+				ECA3E7821990DD9D0029EF9E /* AlartViewController.xib in Resources */,
+				ECA3E78B1990DE010029EF9E /* ClockTableViewCell.xib in Resources */,
+				ECA3E7601990DD260029EF9E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA3E7631990DD260029EF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E7721990DD260029EF9E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA3E7411990DD260029EF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E7951990DE410029EF9E /* NSString+Additions.m in Sources */,
+				ECA3E78A1990DE010029EF9E /* ClockTableViewCell.m in Sources */,
+				ECA3E75B1990DD260029EF9E /* AppDelegate.m in Sources */,
+				ECA3E7971990DE410029EF9E /* UIView+Additions.m in Sources */,
+				ECA3E78C1990DE010029EF9E /* ClockTableViewController.m in Sources */,
+				ECA3E75E1990DD260029EF9E /* clock.xcdatamodeld in Sources */,
+				ECA3E7961990DE410029EF9E /* UIColor+Additions.m in Sources */,
+				ECE2CB871992087B00960A12 /* MGConferenceDatePicker.m in Sources */,
+				ECA3E7571990DD260029EF9E /* main.m in Sources */,
+				ECA3E7811990DD9D0029EF9E /* AlartViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA3E7611990DD260029EF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA3E7741990DD260029EF9E /* clockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA3E76C1990DD260029EF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA3E7441990DD260029EF9E /* clock */;
+			targetProxy = ECA3E76B1990DD260029EF9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA3E7531990DD260029EF9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA3E7541990DD260029EF9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECA3E7701990DD260029EF9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA3E7711990DD260029EF9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA3E7751990DD260029EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECA3E7761990DD260029EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA3E7781990DD260029EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clock/clock-Prefix.pch";
+				INFOPLIST_FILE = "clock/clock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECA3E7791990DD260029EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clock/clock-Prefix.pch";
+				INFOPLIST_FILE = "clock/clock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECA3E77B1990DD260029EF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/clock.app/clock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clock/clock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "clockTests/clockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECA3E77C1990DD260029EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/clock.app/clock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "clock/clock-Prefix.pch";
+				INFOPLIST_FILE = "clockTests/clockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA3E7401990DD260029EF9E /* Build configuration list for PBXProject "clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA3E7751990DD260029EF9E /* Debug */,
+				ECA3E7761990DD260029EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA3E7771990DD260029EF9E /* Build configuration list for PBXNativeTarget "clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA3E7781990DD260029EF9E /* Debug */,
+				ECA3E7791990DD260029EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA3E77A1990DD260029EF9E /* Build configuration list for PBXNativeTarget "clockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA3E77B1990DD260029EF9E /* Debug */,
+				ECA3E77C1990DD260029EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECA3E75C1990DD260029EF9E /* clock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECA3E75D1990DD260029EF9E /* clock.xcdatamodel */,
+			);
+			currentVersion = ECA3E75D1990DD260029EF9E /* clock.xcdatamodel */;
+			path = clock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECA3E73D1990DD260029EF9E /* Project object */;
+}
