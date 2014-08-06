@@ -42,6 +42,7 @@
     [positiveView setFrame:CGRectMake(0, 90, 140, 50)];
     [positiveView.layer setAnchorPoint:CGPointMake(0.5, 1)];
     [positiveView setBackgroundColor:[UIColor colorWithRed:0.20 green:0.28 blue:0.41 alpha:1]];
+//    [positiveView setBackgroundColor:[UIColor colorWithIntRed:241 intGreen:142 intBlue:124 alpha:1]];
     [positiveView.layer setZPosition:-1];
     
     UILabel *positiveLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 140, 50)];
@@ -56,6 +57,7 @@
     [negativeView setFrame:CGRectMake(140, 90, 140, 50)];
     [negativeView.layer setAnchorPoint:CGPointMake(0.5, 1)];
     [negativeView setBackgroundColor:[UIColor colorWithRed:0.26 green:0.33 blue:0.48 alpha:1]];
+//    [negativeView setBackgroundColor:[UIColor colorWithIntRed:240 intGreen:160 intBlue:120 alpha:1]];
     [negativeView.layer setZPosition:-1];
     
     UILabel *negativeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 140, 50)];
@@ -68,6 +70,7 @@
     
     UIView* titleHolder = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.titleView.frame.size.width, self.titleView.frame.size.height)];
     [titleHolder setBackgroundColor:[UIColor colorWithRed:0.20 green:0.25 blue:0.33 alpha:1]];
+//    [titleHolder setBackgroundColor:[UIColor colorWithIntRed:220 intGreen:118 intBlue:118 alpha:1]];
     titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 120)];
     [titleLabel setText:@"alertView"];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];

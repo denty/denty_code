@@ -40,7 +40,7 @@
     [self.view setBackgroundColor:[UIColor blackColor]];
     [self.clockTableView setBackgroundColor:[UIColor whiteColor]];
     [self.clockTableView setBackgroundColor:[UIColor blackColor]];
-    [self enableClock];
+//    [self enableClock];
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -112,13 +112,14 @@
     [self.clockTableView reloadData];
 }
 
-- (void)enableClock
+- (void)enableClock:(NSDate *)data
 {
     //发送通知
     UILocalNotification *notification=[[UILocalNotification alloc] init];
     if (notification!=nil) {
         NSDate *now=[NSDate new];
-        notification.fireDate=[now dateByAddingTimeInterval:10];//10秒后通知
+//        notification.fireDate=[now dateByAddingTimeInterval:10];//10秒后通知
+        notification.fireDate = data;
         notification.repeatInterval=0;//循环次数，kCFCalendarUnitWeekday一周一次
         notification.timeZone=[NSTimeZone defaultTimeZone];
         notification.applicationIconBadgeNumber=1; //应用的红色数字
@@ -155,6 +156,7 @@
 -(void)conferenceDatePicker:(MGConferenceDatePicker *)datePicker saveDate:(NSDate *)date {
     NSLog(@"%@",[date description]);
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self enableClock:date];
 }
 
 - (void)alertDeleteAction

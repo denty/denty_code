@@ -197,16 +197,16 @@ const float LBL_BORDER_OFFSET = 8.0;
                     @"Lunchtime",
                     @"Afternoon",
                     @"Evening",
-                    @"Dinnertime",
+                    @"Sleeptime",
                     @"Night"];
     
     _arrTimes = @[NOW,
-                  @"10:00 AM",
-                  @"1:00 PM",
-                  @"4:30 PM",
+                  @"8:00 AM",
+                  @"12:00 PM",
+                  @"2:30 PM",
                   @"7:00 PM",
                   @"8:30 PM",
-                  @"1:00 AM",
+                  @"12:00 PM ",
                   ];
     
     //Create array Meridians
