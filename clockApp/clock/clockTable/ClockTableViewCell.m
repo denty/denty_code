@@ -90,7 +90,8 @@
     else if (gesture.state == UIGestureRecognizerStateChanged)
     {
         locationPoint = [gesture translationInView:self.timeHolderView];
-        if (m_angel<0.1&&(locationPoint.x-m_beganPoint.x)<150) {
+        if ((locationPoint.x-m_beganPoint.x)<0&&(locationPoint.x-m_beganPoint.x)>-80) {
+            
             self.timeHolderView.layer.transform = CATransform3DMakeTranslation(locationPoint.x-m_beganPoint.x, 0, 0);
             self.editView.layer.transform = CATransform3DMakeTranslation(locationPoint.x-m_beganPoint.x, 0, 0);
             m_angel =-(locationPoint.x-m_beganPoint.x)/800;
@@ -99,8 +100,9 @@
             [self.iconView.layer setShadowRadius:self.iconView.layer.shadowRadius++];
             self.iconView.layer.transform = combinedTransform;
             self.iconView.layer.shouldRasterize = YES;
-        }else if ((locationPoint.x-m_beganPoint.x)>=150)
-        {
+
+        }
+        if ((locationPoint.x-m_beganPoint.x)<-80) {
             [self performSelector:@selector(delayEditAction) withObject:self afterDelay:0.5];
         }
     }
@@ -128,6 +130,6 @@
 
 - (void)delayEditAction
 {
-    [self.delegate editAction];
+    [self.delegate editActionWithIndex:self.index];
 }
 @end

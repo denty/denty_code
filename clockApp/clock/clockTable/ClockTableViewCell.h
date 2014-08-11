@@ -10,7 +10,7 @@
 
 @protocol ClockTableViewCellDelegate <NSObject>
 
-- (void)editAction;
+- (void)editActionWithIndex:(NSInteger) index;
 
 @end
 @interface ClockTableViewCell : UITableViewCell
@@ -18,5 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIView *iconView;
 @property (weak, nonatomic) IBOutlet UIView *editView;
+@property (assign,nonatomic) NSInteger index;
 @property (weak, nonatomic) id<ClockTableViewCellDelegate> delegate;
 @end

@@ -53,6 +53,12 @@
     [self saveContext];
 }
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    
+}
+
+
 - (void)saveContext
 {
     NSError *error = nil;

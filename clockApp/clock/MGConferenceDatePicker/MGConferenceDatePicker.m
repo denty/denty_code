@@ -176,7 +176,7 @@ const float LBL_BORDER_OFFSET = 8.0;
 @property (nonatomic, strong) UIButton *btPrev;
 @property (nonatomic, strong) UIButton *btNext;
 @property (nonatomic, strong) MGPickerButton *saveButton;
-
+@property (nonatomic, strong) MGPickerButton *cancelButton;
 @end
 
 
@@ -297,9 +297,13 @@ const float LBL_BORDER_OFFSET = 8.0;
     
     
     //Create save button
-    _saveButton = [[MGPickerButton alloc] initWithFrame:CGRectMake(10.0, 10.0, self.frame.size.width-20.0, SAVE_AREA_HEIGHT-20.0)];
+    _saveButton = [[MGPickerButton alloc] initWithFrame:CGRectMake(10.0, 10.0, (self.frame.size.width-40)/2, SAVE_AREA_HEIGHT-20.0)];
     [_saveButton setTitle:@"Save" forState:UIControlStateNormal];
     [_saveButton addTarget:self action:@selector(saveButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _cancelButton = [[MGPickerButton alloc] initWithFrame:CGRectMake(self.frame.size.width/2+10, 10, (self.frame.size.width-40)/2, SAVE_AREA_HEIGHT-20)];
+    [_cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    [_cancelButton addTarget:self action:@selector(cancelButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     //Create week day
     _lblWeekDay = [[UILabel alloc] initWithFrame:CGRectMake(60.0, PICKER_ORIGIN_Y-60.0, 200.0, 44.0)];
@@ -361,6 +365,7 @@ const float LBL_BORDER_OFFSET = 8.0;
     
     //Add button save
     [saveArea addSubview:_saveButton];
+    [saveArea addSubview:_cancelButton];
     
     //Set the time to now
     [self setTime:NOW];
@@ -381,6 +386,11 @@ const float LBL_BORDER_OFFSET = 8.0;
     if([_delegate respondsToSelector:@selector(conferenceDatePicker:saveDate:)])
         [_delegate conferenceDatePicker:self saveDate:date];
 }
+- (void)cancelButtonPressed:(id)sender{
+    if([_delegate respondsToSelector:@selector(conferenceDatePicker:saveDate:)])
+        [_delegate conferenceDatePicker:self saveDate:nil];
+}
+
 
 //Center the value in the bar selector
 - (void)centerValueForScrollView:(MGPickerScrollView *)scrollView {
@@ -422,6 +432,7 @@ const float LBL_BORDER_OFFSET = 8.0;
     }
     
     [_saveButton setEnabled:YES];
+    [_cancelButton setEnabled:YES];
 }
 
 //Return a date from a string
@@ -546,6 +557,7 @@ const float LBL_BORDER_OFFSET = 8.0;
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     
     [_saveButton setEnabled:NO];
+    [_cancelButton setEnabled:NO];
     
     MGPickerScrollView *sv = (MGPickerScrollView *)scrollView;
     

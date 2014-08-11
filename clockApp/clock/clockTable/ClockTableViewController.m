@@ -89,20 +89,28 @@
     if (indexPath.row == 3) {
         [cell.timeHolderView setBackgroundColor:[UIColor colorWithIntRed:243 intGreen:212 intBlue:148 alpha:1]];
 //        [cell.iconView setBackgroundColor:[UIColor colorWithIntRed:243 intGreen:212 intBlue:148 alpha:1]];
+//        [cell.timeLabel setText:@"set"];
+    }
         [cell.timeLabel setText:@"set"];
-    }
     cell.backgroundColor = [UIColor blackColor];
-    if (indexPath.row == 1&&shakeDone == NO) {
-        CAKeyframeAnimation *animation = [[CAKeyframeAnimation alloc] init];
-        [animation setDelegate:self];
-        animation.values = @[@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64)];
-        animation.duration = 0.25;
-        [animation setKeyPath:@"transform.rotation"];
-        animation.repeatCount = 10;
-        animation.autoreverses = YES;
-        [cell.timeLabel.layer addAnimation:animation forKey:@"shake"];
-        cell.layer.shouldRasterize = YES;
+    NSArray *schedulesArray = [SchedulesModel getSchedules];
+    for (Schedules *aSchedules in schedulesArray) {
+        if ([aSchedules.alertID isEqualToNumber:[NSNumber numberWithInteger:indexPath.row]]) {
+            [cell.timeLabel setText:aSchedules.stringTime];
+        }
     }
+//    if (indexPath.row == 1&&shakeDone == NO) {
+//        CAKeyframeAnimation *animation = [[CAKeyframeAnimation alloc] init];
+//        [animation setDelegate:self];
+//        animation.values = @[@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64)];
+//        animation.duration = 0.25;
+//        [animation setKeyPath:@"transform.rotation"];
+//        animation.repeatCount = 10;
+//        animation.autoreverses = YES;
+//        [cell.timeLabel.layer addAnimation:animation forKey:@"shake"];
+//        cell.layer.shouldRasterize = YES;
+//    }
+    cell.index = indexPath.row;
     return cell;
 }
 
@@ -117,12 +125,12 @@
     //发送通知
     UILocalNotification *notification=[[UILocalNotification alloc] init];
     if (notification!=nil) {
-        NSDate *now=[NSDate new];
+//        NSDate *now=[NSDate new];
 //        notification.fireDate=[now dateByAddingTimeInterval:10];//10秒后通知
         notification.fireDate = data;
-        notification.repeatInterval=0;//循环次数，kCFCalendarUnitWeekday一周一次
+        notification.repeatInterval=kCFCalendarUnitDay;//循环次数，kCFCalendarUnitWeekday一周一次
         notification.timeZone=[NSTimeZone defaultTimeZone];
-        notification.applicationIconBadgeNumber=1; //应用的红色数字
+//        notification.applicationIconBadgeNumber=1; //应用的红色数字
         notification.soundName= @"----01.caf";//声音，可以换成alarm.soundName = @"myMusic.caf"
         //去掉下面2行就不会弹出提示框
         notification.alertBody=@"通知内容";//提示信息 弹出提示框
@@ -136,12 +144,13 @@
     }
 }
 
-- (void)editAction
+- (void)editActionWithIndex:(NSInteger)index
 {
     if (editDone) {
         editDone = NO;
         AlartViewController *aAlartViewController = [[AlartViewController alloc] init];
         aAlartViewController.delegate = self;
+        aAlartViewController.index = index;
         __weak UIViewController *weakSelf = self;
         [aAlartViewController showView:weakSelf];
     }
@@ -154,23 +163,47 @@
 
 //Delegate
 -(void)conferenceDatePicker:(MGConferenceDatePicker *)datePicker saveDate:(NSDate *)date {
-    NSLog(@"%@",[date description]);
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [self enableClock:date];
+    if (date == nil) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else
+    {
+        NSLog(@"%@",[date description]);
+        [self dismissViewControllerAnimated:YES completion:nil];
+        NSDateFormatter *dateformatter=[[NSDateFormatter alloc] init];
+        [dateformatter setDateFormat:@"HH:mm"];
+        NSString * ringTime=[dateformatter stringFromDate:date];
+        [SchedulesModel addSchedulesWithDate:date RingTime:ringTime AlertID:datePicker.index Enable:YES];
+        
+        [self enableClock:date];
+        [self.clockTableView reloadData];
+    }
 }
 
-- (void)alertDeleteAction
+- (void)alertDeleteActionWithIndex:(NSInteger)index
 {
-
+    [SchedulesModel deleteSchedulesWithAlertID:index];
+    NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    for (UILocalNotification* notification in notificationArray)
+    {
+        if (notification.userInfo)
+        {
+            if ([[notification.userInfo objectForKey:@"AlertID"] integerValue] == index)
+            {
+                [[UIApplication sharedApplication] cancelLocalNotification:notification];
+            }
+        }        
+    }
+    [self.clockTableView reloadData];
 }
 
-- (void)alertEditAction
+- (void)alertEditActionWithIndex:(NSInteger)index
 {
     //New view controller
     [self.view setBackgroundColor:[UIColor blackColor]];
     UIViewController *pickerViewController = [[UIViewController alloc] init];
     //Init the datePicker view and set self as delegate
     MGConferenceDatePicker *datePicker = [[MGConferenceDatePicker alloc] initWithFrame:self.view.bounds];
+    datePicker.index = index;
     [datePicker setDelegate:self];
     //OPTIONAL: Choose the background color
     [datePicker setBackgroundColor:[UIColor whiteColor]];

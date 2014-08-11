@@ -11,11 +11,12 @@
 @protocol AlartViewExpandableDelegate <NSObject>
 
 - (void)functionComplete;
-- (void)alertDeleteAction;
-- (void)alertEditAction;
+- (void)alertDeleteActionWithIndex:(NSInteger) index;
+- (void)alertEditActionWithIndex:(NSInteger) index;
 
 @end
 @interface AlartViewController : UIViewController
+@property (assign,nonatomic) NSInteger index;
 @property (nonatomic,strong) UIView *titleView;
 @property (weak,nonatomic)  id<AlartViewExpandableDelegate> delegate;
 - (void)showView:(UIViewController *)VC;

@@ -29,7 +29,7 @@
 
 //Data Picker
 @interface MGConferenceDatePicker : UIView <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
-
+@property (nonatomic, assign) NSInteger index;
 @property (nonatomic, weak) id <MGConferenceDatePickerDelegate>delegate;
 @property (nonatomic, strong, readonly) NSDate *selectedDate;
 

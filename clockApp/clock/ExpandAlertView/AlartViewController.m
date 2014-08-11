@@ -47,9 +47,10 @@
     
     UILabel *positiveLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 140, 50)];
     positiveLabel.layer.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);
-    [positiveLabel setText:@"positive"];
+    [positiveLabel setText:@"Delete"];
     [positiveLabel setTextAlignment:NSTextAlignmentCenter];
     [positiveLabel setTextColor:[UIColor lightTextColor]];
+    [positiveLabel setTag:1];
     [positiveView addSubview:positiveLabel];
     [self.titleView addSubview:positiveView];
     
@@ -62,9 +63,10 @@
     
     UILabel *negativeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 140, 50)];
     negativeLabel.layer.transform = CATransform3DMakeRotation(M_PI, 1, 0, 0);
-    [negativeLabel setText:@"negative"];
+    [negativeLabel setText:@"Edit"];
     [negativeLabel setTextAlignment:NSTextAlignmentCenter];
     [negativeLabel setTextColor:[UIColor lightTextColor]];
+    [negativeLabel setTag:1];
     [negativeView addSubview:negativeLabel];
     [self.titleView addSubview:negativeView];
     
@@ -72,7 +74,7 @@
     [titleHolder setBackgroundColor:[UIColor colorWithRed:0.20 green:0.25 blue:0.33 alpha:1]];
 //    [titleHolder setBackgroundColor:[UIColor colorWithIntRed:220 intGreen:118 intBlue:118 alpha:1]];
     titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 280, 120)];
-    [titleLabel setText:@"alertView"];
+    [titleLabel setText:@"Edit Mode"];
     [titleLabel setTextAlignment:NSTextAlignmentCenter];
     [titleLabel setTextColor:[UIColor lightTextColor]];
     [titleHolder addSubview:titleLabel];
@@ -173,7 +175,7 @@
         }
         else if([anim isEqual:[self.titleView.layer animationForKey:@"rotate"]])
         {
-            [titleLabel setText:@"Are you sure  ？"];
+            [titleLabel setText:@"Are you sure?"];
         }
         else if ([anim isEqual:[positiveView.layer animationForKey:@"close"]])
         {
@@ -202,7 +204,7 @@
         }
         else if ([anim isEqual:[self.titleView.layer animationForKey:@"surerotate"]])
         {
-            [titleLabel setText:@"success！"];
+            [titleLabel setText:@"success!"];
             [self performSelector:@selector(cancelAction) withObject:self afterDelay:1];
         }
     }
@@ -247,7 +249,7 @@ CA_EXTERN CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, f
         else
         {
             [self cancelAction];
-            [self.delegate alertEditAction];
+            [self.delegate alertEditActionWithIndex:self.index];
         }
     }
     else if([positiveView.layer.presentationLayer hitTest:touchPoint])
@@ -265,7 +267,7 @@ CA_EXTERN CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, f
             animation.removedOnCompletion = NO;
             animation.fillMode = kCAFillModeForwards;
             [positiveView.layer addAnimation:animation forKey:@"close"];
-            [self.delegate alertDeleteAction];
+            [self.delegate alertDeleteActionWithIndex:self.index];
         }else
         {
             CATransform3D trans = CATransform3DPerspect(CATransform3DMakeRotation(-M_PI-0.0001, 0, 1, 0), CGPointMake(0, 0), 200) ;
@@ -276,6 +278,8 @@ CA_EXTERN CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, f
             animation.duration = 0.5;
             animation.removedOnCompletion = NO;
             [self.titleView.layer addAnimation:animation forKey:@"rotate"];
+            [(UILabel *)[negativeView viewWithTag:1] setText:@"Cancel"];
+            [(UILabel *)[positiveView viewWithTag:1] setText:@"Sure"];
         }
     }
 }

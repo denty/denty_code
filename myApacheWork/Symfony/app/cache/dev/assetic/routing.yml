@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/broydenty/personalCode/denty_code/myApacheWork/Symfony/app/config/routing_dev.yml
