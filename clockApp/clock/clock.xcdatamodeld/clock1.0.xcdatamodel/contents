@@ -4,9 +4,10 @@
         <attribute name="alertID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="enable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="shake" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="stringTime" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Schedules" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Schedules" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>

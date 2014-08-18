@@ -156,17 +156,26 @@
 //     [sublayer2 addAnimation:animGroup forKey:nil];
 //***********************************************************************************************************************************
     //3D动画实现
-    CATransform3D rotationTransform  = CATransform3DMakeRotation(-M_PI/4, 0.5,0,0);
-    CABasicAnimation* animation;
-    animation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    animation.toValue = [NSValue valueWithCATransform3D:rotationTransform];
-    animation.duration = 1;
-    animation.autoreverses = YES;
-    animation.cumulative = YES;
-//    animation.repeatCount = 1;
+//    CATransform3D rotationTransform  = CATransform3DMakeRotation(-M_PI/4, 0.5,0,0);
+//    CABasicAnimation* animation;
+//    animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+//    animation.toValue = [NSValue valueWithCATransform3D:rotationTransform];
+//    animation.duration = 1;
+//    animation.autoreverses = YES;
+//    animation.cumulative = YES;
+////    animation.repeatCount = 1;
+//    [sublayer2 addAnimation:animation forKey:nil];
+    
+    CABasicAnimation *animation;
+    animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(0, 300)];
+    [animation setDelegate: self];
+    [animation setRemovedOnCompletion:NO];
+    [animation setFillMode:kCAFillModeForwards];
     [sublayer2 addAnimation:animation forKey:nil];
+    
 }
-- (void)animationDidStart:(CAAnimation *)anim
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
     
 }

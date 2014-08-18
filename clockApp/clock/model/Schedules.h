@@ -16,5 +16,6 @@
 @property (nonatomic, retain) NSNumber * alertID;
 @property (nonatomic, retain) NSString * stringTime;
 @property (nonatomic, retain) NSNumber * enable;
+@property (nonatomic, retain) NSNumber * shake;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ClockTableViewController.h"
+#import "SchedulesModel.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -56,8 +57,9 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     
-}
+    [SchedulesModel addSchedulesWithDate:nil RingTime:nil AlertID:[[notification.userInfo objectForKey:@"AlertID"] integerValue] Enable:YES Shake:YES];
 
+}
 
 - (void)saveContext
 {

@@ -11,6 +11,6 @@
 #import "AppDelegate.h"
 @interface SchedulesModel : NSObject
 +(NSArray*)getSchedules;
-+(BOOL)addSchedulesWithDate:(NSDate *) ringDate RingTime:(NSString *) ringTime AlertID:(NSInteger) alertID Enable:(BOOL) enable;
++(BOOL)addSchedulesWithDate:(NSDate *) ringDate RingTime:(NSString *) ringTime AlertID:(NSInteger) alertID Enable:(BOOL) enable Shake:(BOOL) shake;
 +(BOOL)deleteSchedulesWithAlertID:(NSInteger) alertID;
 @end

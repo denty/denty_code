@@ -118,9 +118,9 @@
 {
 //    CommitViewController *aCommitViewController = [[CommitViewController alloc] init];
 //    [self.navigationController pushViewController:aCommitViewController animated:YES];
-//    AnimationViewController *aAnimationViewController = [[AnimationViewController alloc] init];
-//    [self.navigationController pushViewController:aAnimationViewController animated:YES];
-    ClockTableViewController *aClockTableViewController = [[ClockTableViewController alloc] init];
-    [self.navigationController pushViewController:aClockTableViewController animated:YES];
+    AnimationViewController *aAnimationViewController = [[AnimationViewController alloc] init];
+    [self.navigationController pushViewController:aAnimationViewController animated:YES];
+//    ClockTableViewController *aClockTableViewController = [[ClockTableViewController alloc] init];
+//    [self.navigationController pushViewController:aClockTableViewController animated:YES];
 }
 @end

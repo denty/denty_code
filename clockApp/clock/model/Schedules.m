@@ -15,5 +15,5 @@
 @dynamic alertID;
 @dynamic stringTime;
 @dynamic enable;
-
+@dynamic shake;
 @end

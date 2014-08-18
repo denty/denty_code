@@ -49,6 +49,7 @@
         [self.iconView.layer setShadowColor:[UIColor blackColor].CGColor];
         [self.iconView.layer setShadowPath:[[UIBezierPath bezierPathWithRect:self.iconView.bounds] CGPath]];
         
+        
         [self bringSubviewToFront:self.timeHolderView];
         UIView *coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.iconView.width, self.iconView.height)];
         [coverView setBackgroundColor:[UIColor blackColor]];
@@ -57,6 +58,7 @@
         m_posiztion=self.iconView.layer.position;
         m_timeposiztion = self.timeHolderView.layer.position;
         [self.iconView addSubview:coverView];
+        
     }
     return self;
 }
@@ -103,7 +105,7 @@
 
         }
         if ((locationPoint.x-m_beganPoint.x)<-80) {
-            [self performSelector:@selector(delayEditAction) withObject:self afterDelay:0.5];
+            [self performSelector:@selector(delayEditAction) withObject:self afterDelay:1.5];
         }
     }
     else if (gesture.state == UIGestureRecognizerStateEnded)

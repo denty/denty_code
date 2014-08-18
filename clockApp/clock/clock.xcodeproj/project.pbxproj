@@ -40,6 +40,7 @@
 		ECE2CB7F1991D10000960A12 /* ----10.caf in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB7B1991D10000960A12 /* ----10.caf */; };
 		ECE2CB861992087B00960A12 /* MGCDPImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE2CB821992087B00960A12 /* MGCDPImages.xcassets */; };
 		ECE2CB871992087B00960A12 /* MGConferenceDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE2CB841992087B00960A12 /* MGConferenceDatePicker.m */; };
+		ECE411081999A5EF0056E66E /* hookView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE411071999A5EF0056E66E /* hookView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		ECE2CB831992087B00960A12 /* MGConferenceDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGConferenceDatePicker.h; sourceTree = "<group>"; };
 		ECE2CB841992087B00960A12 /* MGConferenceDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGConferenceDatePicker.m; sourceTree = "<group>"; };
 		ECE2CB851992087B00960A12 /* MGConferenceDatePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGConferenceDatePickerDelegate.h; sourceTree = "<group>"; };
+		ECE411061999A5EF0056E66E /* hookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hookView.h; sourceTree = "<group>"; };
+		ECE411071999A5EF0056E66E /* hookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hookView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 		ECA3E73C1990DD260029EF9E = {
 			isa = PBXGroup;
 			children = (
+				ECE411051999A5BB0056E66E /* unity */,
 				ECA6973E19988E4400D25B3E /* model */,
 				ECD613731994D2C70070C6A4 /* clock.xcdatamodeld */,
 				ECE2CB811992087B00960A12 /* MGConferenceDatePicker */,
@@ -276,6 +280,15 @@
 			path = MGConferenceDatePicker;
 			sourceTree = "<group>";
 		};
+		ECE411051999A5BB0056E66E /* unity */ = {
+			isa = PBXGroup;
+			children = (
+				ECE411061999A5EF0056E66E /* hookView.h */,
+				ECE411071999A5EF0056E66E /* hookView.m */,
+			);
+			path = unity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,6 +397,7 @@
 				ECA3E78A1990DE010029EF9E /* ClockTableViewCell.m in Sources */,
 				ECA3E75B1990DD260029EF9E /* AppDelegate.m in Sources */,
 				ECD613751994D2C70070C6A4 /* clock.xcdatamodeld in Sources */,
+				ECE411081999A5EF0056E66E /* hookView.m in Sources */,
 				ECA3E7971990DE410029EF9E /* UIView+Additions.m in Sources */,
 				ECA6974119988E4400D25B3E /* Schedules.m in Sources */,
 				ECA3E78C1990DE010029EF9E /* ClockTableViewController.m in Sources */,

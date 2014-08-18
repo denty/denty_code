@@ -56,6 +56,7 @@ class SecuredController extends Controller
     public function helloAction($name)
     {
         return array('name' => $name);
+
     }
 
     /**

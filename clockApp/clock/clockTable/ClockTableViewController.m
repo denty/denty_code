@@ -97,19 +97,19 @@
     for (Schedules *aSchedules in schedulesArray) {
         if ([aSchedules.alertID isEqualToNumber:[NSNumber numberWithInteger:indexPath.row]]) {
             [cell.timeLabel setText:aSchedules.stringTime];
+            if ([aSchedules.shake isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+                    CAKeyframeAnimation *animation = [[CAKeyframeAnimation alloc] init];
+                    [animation setDelegate:self];
+                    animation.values = @[@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64)];
+                    animation.duration = 0.25;
+                    [animation setKeyPath:@"transform.rotation"];
+                    animation.repeatCount = 10;
+                    animation.autoreverses = YES;
+                    [cell.timeLabel.layer addAnimation:animation forKey:@"shake"];
+                    cell.layer.shouldRasterize = YES;
+            }
         }
     }
-//    if (indexPath.row == 1&&shakeDone == NO) {
-//        CAKeyframeAnimation *animation = [[CAKeyframeAnimation alloc] init];
-//        [animation setDelegate:self];
-//        animation.values = @[@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64),@(M_PI/64),@(-M_PI/64)];
-//        animation.duration = 0.25;
-//        [animation setKeyPath:@"transform.rotation"];
-//        animation.repeatCount = 10;
-//        animation.autoreverses = YES;
-//        [cell.timeLabel.layer addAnimation:animation forKey:@"shake"];
-//        cell.layer.shouldRasterize = YES;
-//    }
     cell.index = indexPath.row;
     return cell;
 }
@@ -120,7 +120,7 @@
     [self.clockTableView reloadData];
 }
 
-- (void)enableClock:(NSDate *)data
+- (void)enableClock:(NSDate *)data WithID:(NSInteger) alertID
 {
     //发送通知
     UILocalNotification *notification=[[UILocalNotification alloc] init];
@@ -137,7 +137,7 @@
         notification.alertAction = @"打开";  //提示框按钮
 //        notification.hasAction = NO; //是否显示额外的按钮，为no时alertAction消失
         
-        NSDictionary *infoDict = [NSDictionary dictionaryWithObject:@"someValue" forKey:@"someKey"];
+        NSDictionary *infoDict = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%d",alertID] forKey:@"AlertID"];
         notification.userInfo = infoDict; //添加额外的信息
         
         [[UIApplication sharedApplication] scheduleLocalNotification:notification];
@@ -172,9 +172,9 @@
         NSDateFormatter *dateformatter=[[NSDateFormatter alloc] init];
         [dateformatter setDateFormat:@"HH:mm"];
         NSString * ringTime=[dateformatter stringFromDate:date];
-        [SchedulesModel addSchedulesWithDate:date RingTime:ringTime AlertID:datePicker.index Enable:YES];
+        [SchedulesModel addSchedulesWithDate:date RingTime:ringTime AlertID:datePicker.index Enable:YES Shake:NO];
         
-        [self enableClock:date];
+        [self enableClock:date WithID:datePicker.index];
         [self.clockTableView reloadData];
     }
 }

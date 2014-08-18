@@ -31,7 +31,7 @@
     return schedulesArray;
 }
 
-+(BOOL)addSchedulesWithDate:(NSDate *) ringDate RingTime:(NSString *) ringTime AlertID:(NSInteger) alertID Enable:(BOOL) enable
++(BOOL)addSchedulesWithDate:(NSDate *) ringDate RingTime:(NSString *) ringTime AlertID:(NSInteger) alertID Enable:(BOOL) enable Shake:(BOOL)shake
 {
     NSManagedObjectContext *context;
     context = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
@@ -47,17 +47,24 @@
     }
     if (isExist)
     {//更新
-        existSchedules.stringTime = ringTime;
-        existSchedules.date = ringDate;
-        existSchedules.enable = [NSNumber numberWithBool:enable];
+        if (ringDate) {
+            existSchedules.date = ringDate;
+            existSchedules.stringTime = ringTime;
+            existSchedules.date = ringDate;
+            existSchedules.enable = [NSNumber numberWithBool:enable];
+        }
+        existSchedules.shake = [NSNumber numberWithBool:shake];
     }
     else
     {//新增
         Schedules *aSchedules = [NSEntityDescription insertNewObjectForEntityForName:@"Schedules" inManagedObjectContext:context];
-        aSchedules.date = ringDate;
-        aSchedules.alertID = [NSNumber numberWithInteger:alertID];
-        aSchedules.stringTime = ringTime;
-        aSchedules.enable = [NSNumber numberWithBool:enable];
+
+            aSchedules.date = ringDate;
+            aSchedules.alertID = [NSNumber numberWithInteger:alertID];
+            aSchedules.stringTime = ringTime;
+            aSchedules.enable = [NSNumber numberWithBool:enable];
+
+        aSchedules.shake = [NSNumber numberWithBool:shake];
     }
     NSError *error;
     if (![context save:&error]) {
