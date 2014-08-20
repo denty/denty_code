@@ -16,7 +16,7 @@ if (!$con)
 {
     mysql_select_db("denty",$con);
     echo"connect ok";
-     $result = mysql_query("select * from user",$con);
+     $result = mysql_query("select name from user",$con);
     if($result == null)
     {
         print_r("null");
@@ -24,8 +24,9 @@ if (!$con)
     {
         print_r("have data");
     }
-    $array = mysql_fetch_array($result)；
+    $array = mysql_fetch_array($result);
     print_r($array);
+//    print_r($array.ob_get_length());
 }
 
 // some code
