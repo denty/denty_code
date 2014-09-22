@@ -125,9 +125,9 @@
     {
         NSLog(@"%d",[m_panGesture numberOfTouches]);
         locationPoint = [m_panGesture translationInView:previousImageView];
-        if (locationPoint.x-m_beganPoint.x+m_center.x<160&&locationPoint.x>0) {
+//        if (locationPoint.x-m_beganPoint.x+m_center.x<160&&locationPoint.x>0) {
             previousImageView.centerX = locationPoint.x-m_beganPoint.x+m_center.x;
-        }
+//        }
         NSLog(@"%f",locationPoint.x);
     }else
     {

@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECCB302E19C7D1F800958E3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB302D19C7D1F800958E3B /* Foundation.framework */; };
+		ECCB303019C7D1F800958E3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB302F19C7D1F800958E3B /* CoreGraphics.framework */; };
+		ECCB303219C7D1F800958E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB303119C7D1F800958E3B /* UIKit.framework */; };
+		ECCB303419C7D1F800958E3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB303319C7D1F800958E3B /* CoreData.framework */; };
+		ECCB303A19C7D1F800958E3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECCB303819C7D1F800958E3B /* InfoPlist.strings */; };
+		ECCB303C19C7D1F800958E3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB303B19C7D1F800958E3B /* main.m */; };
+		ECCB304019C7D1F800958E3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB303F19C7D1F800958E3B /* AppDelegate.m */; };
+		ECCB304319C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECCB304119C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodeld */; };
+		ECCB304519C7D1F800958E3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCB304419C7D1F800958E3B /* Images.xcassets */; };
+		ECCB304C19C7D1F800958E3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB304B19C7D1F800958E3B /* XCTest.framework */; };
+		ECCB304D19C7D1F800958E3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB302D19C7D1F800958E3B /* Foundation.framework */; };
+		ECCB304E19C7D1F800958E3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB303119C7D1F800958E3B /* UIKit.framework */; };
+		ECCB304F19C7D1F800958E3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCB303319C7D1F800958E3B /* CoreData.framework */; };
+		ECCB305719C7D1F800958E3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECCB305519C7D1F800958E3B /* InfoPlist.strings */; };
+		ECCB305919C7D1F800958E3B /* ios7_statusBar_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB305819C7D1F800958E3B /* ios7_statusBar_TestTests.m */; };
+		ECCB306419C7D22300958E3B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCB306319C7D22300958E3B /* RootViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECCB305019C7D1F800958E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECCB302219C7D1F800958E3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECCB302919C7D1F800958E3B;
+			remoteInfo = ios7_statusBar_Test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECCB302A19C7D1F800958E3B /* ios7_statusBar_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios7_statusBar_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCB302D19C7D1F800958E3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECCB302F19C7D1F800958E3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECCB303119C7D1F800958E3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECCB303319C7D1F800958E3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ECCB303719C7D1F800958E3B /* ios7_statusBar_Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios7_statusBar_Test-Info.plist"; sourceTree = "<group>"; };
+		ECCB303919C7D1F800958E3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECCB303B19C7D1F800958E3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECCB303D19C7D1F800958E3B /* ios7_statusBar_Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios7_statusBar_Test-Prefix.pch"; sourceTree = "<group>"; };
+		ECCB303E19C7D1F800958E3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECCB303F19C7D1F800958E3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECCB304219C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios7_statusBar_Test.xcdatamodel; sourceTree = "<group>"; };
+		ECCB304419C7D1F800958E3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECCB304A19C7D1F800958E3B /* ios7_statusBar_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios7_statusBar_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCB304B19C7D1F800958E3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECCB305419C7D1F800958E3B /* ios7_statusBar_TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios7_statusBar_TestTests-Info.plist"; sourceTree = "<group>"; };
+		ECCB305619C7D1F800958E3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECCB305819C7D1F800958E3B /* ios7_statusBar_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios7_statusBar_TestTests.m; sourceTree = "<group>"; };
+		ECCB306219C7D22300958E3B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		ECCB306319C7D22300958E3B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECCB302719C7D1F800958E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB303019C7D1F800958E3B /* CoreGraphics.framework in Frameworks */,
+				ECCB303419C7D1F800958E3B /* CoreData.framework in Frameworks */,
+				ECCB303219C7D1F800958E3B /* UIKit.framework in Frameworks */,
+				ECCB302E19C7D1F800958E3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCB304719C7D1F800958E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB304C19C7D1F800958E3B /* XCTest.framework in Frameworks */,
+				ECCB304F19C7D1F800958E3B /* CoreData.framework in Frameworks */,
+				ECCB304E19C7D1F800958E3B /* UIKit.framework in Frameworks */,
+				ECCB304D19C7D1F800958E3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECCB302119C7D1F800958E3B = {
+			isa = PBXGroup;
+			children = (
+				ECCB303519C7D1F800958E3B /* ios7_statusBar_Test */,
+				ECCB305219C7D1F800958E3B /* ios7_statusBar_TestTests */,
+				ECCB302C19C7D1F800958E3B /* Frameworks */,
+				ECCB302B19C7D1F800958E3B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECCB302B19C7D1F800958E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB302A19C7D1F800958E3B /* ios7_statusBar_Test.app */,
+				ECCB304A19C7D1F800958E3B /* ios7_statusBar_TestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECCB302C19C7D1F800958E3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB302D19C7D1F800958E3B /* Foundation.framework */,
+				ECCB302F19C7D1F800958E3B /* CoreGraphics.framework */,
+				ECCB303119C7D1F800958E3B /* UIKit.framework */,
+				ECCB303319C7D1F800958E3B /* CoreData.framework */,
+				ECCB304B19C7D1F800958E3B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECCB303519C7D1F800958E3B /* ios7_statusBar_Test */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB306219C7D22300958E3B /* RootViewController.h */,
+				ECCB306319C7D22300958E3B /* RootViewController.m */,
+				ECCB303E19C7D1F800958E3B /* AppDelegate.h */,
+				ECCB303F19C7D1F800958E3B /* AppDelegate.m */,
+				ECCB304419C7D1F800958E3B /* Images.xcassets */,
+				ECCB304119C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodeld */,
+				ECCB303619C7D1F800958E3B /* Supporting Files */,
+			);
+			path = ios7_statusBar_Test;
+			sourceTree = "<group>";
+		};
+		ECCB303619C7D1F800958E3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB303719C7D1F800958E3B /* ios7_statusBar_Test-Info.plist */,
+				ECCB303819C7D1F800958E3B /* InfoPlist.strings */,
+				ECCB303B19C7D1F800958E3B /* main.m */,
+				ECCB303D19C7D1F800958E3B /* ios7_statusBar_Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECCB305219C7D1F800958E3B /* ios7_statusBar_TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB305819C7D1F800958E3B /* ios7_statusBar_TestTests.m */,
+				ECCB305319C7D1F800958E3B /* Supporting Files */,
+			);
+			path = ios7_statusBar_TestTests;
+			sourceTree = "<group>";
+		};
+		ECCB305319C7D1F800958E3B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECCB305419C7D1F800958E3B /* ios7_statusBar_TestTests-Info.plist */,
+				ECCB305519C7D1F800958E3B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECCB302919C7D1F800958E3B /* ios7_statusBar_Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCB305C19C7D1F800958E3B /* Build configuration list for PBXNativeTarget "ios7_statusBar_Test" */;
+			buildPhases = (
+				ECCB302619C7D1F800958E3B /* Sources */,
+				ECCB302719C7D1F800958E3B /* Frameworks */,
+				ECCB302819C7D1F800958E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios7_statusBar_Test;
+			productName = ios7_statusBar_Test;
+			productReference = ECCB302A19C7D1F800958E3B /* ios7_statusBar_Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECCB304919C7D1F800958E3B /* ios7_statusBar_TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCB305F19C7D1F800958E3B /* Build configuration list for PBXNativeTarget "ios7_statusBar_TestTests" */;
+			buildPhases = (
+				ECCB304619C7D1F800958E3B /* Sources */,
+				ECCB304719C7D1F800958E3B /* Frameworks */,
+				ECCB304819C7D1F800958E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECCB305119C7D1F800958E3B /* PBXTargetDependency */,
+			);
+			name = ios7_statusBar_TestTests;
+			productName = ios7_statusBar_TestTests;
+			productReference = ECCB304A19C7D1F800958E3B /* ios7_statusBar_TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECCB302219C7D1F800958E3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = denty;
+				TargetAttributes = {
+					ECCB304919C7D1F800958E3B = {
+						TestTargetID = ECCB302919C7D1F800958E3B;
+					};
+				};
+			};
+			buildConfigurationList = ECCB302519C7D1F800958E3B /* Build configuration list for PBXProject "ios7_statusBar_Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECCB302119C7D1F800958E3B;
+			productRefGroup = ECCB302B19C7D1F800958E3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECCB302919C7D1F800958E3B /* ios7_statusBar_Test */,
+				ECCB304919C7D1F800958E3B /* ios7_statusBar_TestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECCB302819C7D1F800958E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB303A19C7D1F800958E3B /* InfoPlist.strings in Resources */,
+				ECCB304519C7D1F800958E3B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCB304819C7D1F800958E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB305719C7D1F800958E3B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECCB302619C7D1F800958E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB304019C7D1F800958E3B /* AppDelegate.m in Sources */,
+				ECCB304319C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodeld in Sources */,
+				ECCB306419C7D22300958E3B /* RootViewController.m in Sources */,
+				ECCB303C19C7D1F800958E3B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCB304619C7D1F800958E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECCB305919C7D1F800958E3B /* ios7_statusBar_TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECCB305119C7D1F800958E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECCB302919C7D1F800958E3B /* ios7_statusBar_Test */;
+			targetProxy = ECCB305019C7D1F800958E3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECCB303819C7D1F800958E3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCB303919C7D1F800958E3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECCB305519C7D1F800958E3B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCB305619C7D1F800958E3B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECCB305A19C7D1F800958E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECCB305B19C7D1F800958E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECCB305D19C7D1F800958E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios7_statusBar_Test/ios7_statusBar_Test-Prefix.pch";
+				INFOPLIST_FILE = "ios7_statusBar_Test/ios7_statusBar_Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECCB305E19C7D1F800958E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios7_statusBar_Test/ios7_statusBar_Test-Prefix.pch";
+				INFOPLIST_FILE = "ios7_statusBar_Test/ios7_statusBar_Test-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECCB306019C7D1F800958E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios7_statusBar_Test.app/ios7_statusBar_Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios7_statusBar_Test/ios7_statusBar_Test-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ios7_statusBar_TestTests/ios7_statusBar_TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECCB306119C7D1F800958E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ios7_statusBar_Test.app/ios7_statusBar_Test";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ios7_statusBar_Test/ios7_statusBar_Test-Prefix.pch";
+				INFOPLIST_FILE = "ios7_statusBar_TestTests/ios7_statusBar_TestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECCB302519C7D1F800958E3B /* Build configuration list for PBXProject "ios7_statusBar_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCB305A19C7D1F800958E3B /* Debug */,
+				ECCB305B19C7D1F800958E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECCB305C19C7D1F800958E3B /* Build configuration list for PBXNativeTarget "ios7_statusBar_Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCB305D19C7D1F800958E3B /* Debug */,
+				ECCB305E19C7D1F800958E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECCB305F19C7D1F800958E3B /* Build configuration list for PBXNativeTarget "ios7_statusBar_TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCB306019C7D1F800958E3B /* Debug */,
+				ECCB306119C7D1F800958E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECCB304119C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECCB304219C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodel */,
+			);
+			currentVersion = ECCB304219C7D1F800958E3B /* ios7_statusBar_Test.xcdatamodel */;
+			path = ios7_statusBar_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECCB302219C7D1F800958E3B /* Project object */;
+}

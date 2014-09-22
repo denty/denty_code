@@ -76,7 +76,7 @@
 
 - (void)pushAction
 {
-    UIGraphicsBeginImageContextWithOptions(self.view.frame.size, YES, 0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.view.size.width/2, self.view.size.height/2), YES, 0);
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *currentImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();

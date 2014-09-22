@@ -58,7 +58,7 @@
         m_posiztion=self.iconView.layer.position;
         m_timeposiztion = self.timeHolderView.layer.position;
         [self.iconView addSubview:coverView];
-        
+       
     }
     return self;
 }
@@ -101,7 +101,7 @@
             CATransform3D combinedTransform = CATransform3DConcat(CATransform3DPerspect(rotate, CGPointMake(0, 0), 200), CATransform3DMakeTranslation(locationPoint.x-m_beganPoint.x, 0, 0));
             [self.iconView.layer setShadowRadius:self.iconView.layer.shadowRadius++];
             self.iconView.layer.transform = combinedTransform;
-            self.iconView.layer.shouldRasterize = YES;
+//            self.iconView.layer.shouldRasterize = YES;
 
         }
         if ((locationPoint.x-m_beganPoint.x)<-80) {
