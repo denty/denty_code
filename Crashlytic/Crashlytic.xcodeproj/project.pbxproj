@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECEA40FB1A0B199F001536AB /* libBreakpad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEA40FA1A0B199F001536AB /* libBreakpad.a */; };
+		ECF274AB1A08663000BE2179 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF274AA1A08663000BE2179 /* main.m */; };
+		ECF274AE1A08663000BE2179 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF274AD1A08663000BE2179 /* AppDelegate.m */; };
+		ECF274B11A08663000BE2179 /* Crashlytic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECF274AF1A08663000BE2179 /* Crashlytic.xcdatamodeld */; };
+		ECF274B41A08663000BE2179 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF274B31A08663000BE2179 /* ViewController.m */; };
+		ECF274B91A08663000BE2179 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF274B81A08663000BE2179 /* Images.xcassets */; };
+		ECF274BC1A08663000BE2179 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF274BA1A08663000BE2179 /* LaunchScreen.xib */; };
+		ECF274C81A08663000BE2179 /* CrashlyticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF274C71A08663000BE2179 /* CrashlyticTests.m */; };
+		ECF9EC5F1A086F7B006D5725 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF9EC5D1A086F7B006D5725 /* Crashlytics.framework */; };
+		ECF9EC601A086F7B006D5725 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF9EC5E1A086F7B006D5725 /* Fabric.framework */; };
+		ECF9EC641A0870FB006D5725 /* CrashWithC.c in Sources */ = {isa = PBXBuildFile; fileRef = ECF9EC621A0870FB006D5725 /* CrashWithC.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECEA41151A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B8C5B5111166531A00D34F4E;
+			remoteInfo = dump_syms;
+		};
+		ECEA41171A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B89E0E741166575200DD08C9;
+			remoteInfo = macho_dump;
+		};
+		ECEA41191A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB024116BDFFF00407530;
+			remoteInfo = gtestmockall;
+		};
+		ECEA411B1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB14B116CF4A700407530;
+			remoteInfo = byte_cursor_unittest;
+		};
+		ECEA411D1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B89E0E9511665A6400DD08C9;
+			remoteInfo = macho_reader_unittest;
+		};
+		ECEA411F1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB007116BDE8300407530;
+			remoteInfo = stabs_reader_unittest;
+		};
+		ECEA41211A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB135116CF30F00407530;
+			remoteInfo = bytereader_unittest;
+		};
+		ECEA41231A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FAF2F116A591E00407530;
+			remoteInfo = dwarf2reader_cfi_unittest;
+		};
+		ECEA41251A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB0DF116CEEA800407530;
+			remoteInfo = dwarf2diehandler_unittest;
+		};
+		ECEA41271A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB10A116CF07900407530;
+			remoteInfo = dwarf_cu_to_module_unittest;
+		};
+		ECEA41291A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB0F2116CEF1900407530;
+			remoteInfo = dwarf_line_to_module_unittest;
+		};
+		ECEA412B1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB11F116CF27F00407530;
+			remoteInfo = dwarf_cfi_to_module_unittest;
+		};
+		ECEA412D1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B84A91F4116CF784006C210E;
+			remoteInfo = stabs_to_module_unittest;
+		};
+		ECEA412F1A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B88FB0B9116CEABF00407530;
+			remoteInfo = module_unittest;
+		};
+		ECEA41311A0B1B4A001536AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D21F97D211CBA0F200239E38;
+			remoteInfo = test_assembler_unittest;
+		};
+		ECF274C21A08663000BE2179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF2749D1A08663000BE2179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF274A41A08663000BE2179;
+			remoteInfo = Crashlytic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECEA40FA1A0B199F001536AB /* libBreakpad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBreakpad.a; sourceTree = "<group>"; };
+		ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dump_syms.xcodeproj; path = "../../../google-breakpad-read-only/src/tools/mac/dump_syms/dump_syms.xcodeproj"; sourceTree = "<group>"; };
+		ECF274A51A08663000BE2179 /* Crashlytic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crashlytic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF274A91A08663000BE2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF274AA1A08663000BE2179 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECF274AC1A08663000BE2179 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECF274AD1A08663000BE2179 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECF274B01A08663000BE2179 /* Crashlytic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crashlytic.xcdatamodel; sourceTree = "<group>"; };
+		ECF274B21A08663000BE2179 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECF274B31A08663000BE2179 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECF274B81A08663000BE2179 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECF274BB1A08663000BE2179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ECF274C11A08663000BE2179 /* CrashlyticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashlyticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF274C61A08663000BE2179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF274C71A08663000BE2179 /* CrashlyticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashlyticTests.m; sourceTree = "<group>"; };
+		ECF9EC5D1A086F7B006D5725 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		ECF9EC5E1A086F7B006D5725 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		ECF9EC621A0870FB006D5725 /* CrashWithC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CrashWithC.c; sourceTree = "<group>"; };
+		ECF9EC631A0870FB006D5725 /* CrashWithC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashWithC.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF274A21A08663000BE2179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECEA40FB1A0B199F001536AB /* libBreakpad.a in Frameworks */,
+				ECF9EC5F1A086F7B006D5725 /* Crashlytics.framework in Frameworks */,
+				ECF9EC601A086F7B006D5725 /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF274BE1A08663000BE2179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECEA41031A0B1B4A001536AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA41161A0B1B4A001536AB /* dump_syms */,
+				ECEA41181A0B1B4A001536AB /* macho_dump */,
+				ECEA411A1A0B1B4A001536AB /* libgtestmockall.a */,
+				ECEA411C1A0B1B4A001536AB /* byte_cursor_unittest */,
+				ECEA411E1A0B1B4A001536AB /* macho_reader_unittest */,
+				ECEA41201A0B1B4A001536AB /* stabs_reader_unittest */,
+				ECEA41221A0B1B4A001536AB /* bytereader_unittest */,
+				ECEA41241A0B1B4A001536AB /* dwarf2reader_cfi_unittest */,
+				ECEA41261A0B1B4A001536AB /* dwarf2diehandler_unittest */,
+				ECEA41281A0B1B4A001536AB /* dwarf_cu_to_module_unittest */,
+				ECEA412A1A0B1B4A001536AB /* dwarf_line_to_module_unittest */,
+				ECEA412C1A0B1B4A001536AB /* dwarf_cfi_to_module_unittest */,
+				ECEA412E1A0B1B4A001536AB /* stabs_to_module_unittest */,
+				ECEA41301A0B1B4A001536AB /* module_unittest */,
+				ECEA41321A0B1B4A001536AB /* test_assembler_unittest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF2749C1A08663000BE2179 = {
+			isa = PBXGroup;
+			children = (
+				ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */,
+				ECEA40FA1A0B199F001536AB /* libBreakpad.a */,
+				ECF274A71A08663000BE2179 /* Crashlytic */,
+				ECF274C41A08663000BE2179 /* CrashlyticTests */,
+				ECF274A61A08663000BE2179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF274A61A08663000BE2179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF274A51A08663000BE2179 /* Crashlytic.app */,
+				ECF274C11A08663000BE2179 /* CrashlyticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF274A71A08663000BE2179 /* Crashlytic */ = {
+			isa = PBXGroup;
+			children = (
+				ECF9EC621A0870FB006D5725 /* CrashWithC.c */,
+				ECF9EC631A0870FB006D5725 /* CrashWithC.h */,
+				ECF9EC5D1A086F7B006D5725 /* Crashlytics.framework */,
+				ECF9EC5E1A086F7B006D5725 /* Fabric.framework */,
+				ECF274AC1A08663000BE2179 /* AppDelegate.h */,
+				ECF274AD1A08663000BE2179 /* AppDelegate.m */,
+				ECF274B21A08663000BE2179 /* ViewController.h */,
+				ECF274B31A08663000BE2179 /* ViewController.m */,
+				ECF274B81A08663000BE2179 /* Images.xcassets */,
+				ECF274BA1A08663000BE2179 /* LaunchScreen.xib */,
+				ECF274AF1A08663000BE2179 /* Crashlytic.xcdatamodeld */,
+				ECF274A81A08663000BE2179 /* Supporting Files */,
+			);
+			path = Crashlytic;
+			sourceTree = "<group>";
+		};
+		ECF274A81A08663000BE2179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF274A91A08663000BE2179 /* Info.plist */,
+				ECF274AA1A08663000BE2179 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECF274C41A08663000BE2179 /* CrashlyticTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF274C71A08663000BE2179 /* CrashlyticTests.m */,
+				ECF274C51A08663000BE2179 /* Supporting Files */,
+			);
+			path = CrashlyticTests;
+			sourceTree = "<group>";
+		};
+		ECF274C51A08663000BE2179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF274C61A08663000BE2179 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF274A41A08663000BE2179 /* Crashlytic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF274CB1A08663000BE2179 /* Build configuration list for PBXNativeTarget "Crashlytic" */;
+			buildPhases = (
+				ECF274A11A08663000BE2179 /* Sources */,
+				ECF274A21A08663000BE2179 /* Frameworks */,
+				ECF274A31A08663000BE2179 /* Resources */,
+				ECF274D11A086DFE00BE2179 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crashlytic;
+			productName = Crashlytic;
+			productReference = ECF274A51A08663000BE2179 /* Crashlytic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF274C01A08663000BE2179 /* CrashlyticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF274CE1A08663000BE2179 /* Build configuration list for PBXNativeTarget "CrashlyticTests" */;
+			buildPhases = (
+				ECF274BD1A08663000BE2179 /* Sources */,
+				ECF274BE1A08663000BE2179 /* Frameworks */,
+				ECF274BF1A08663000BE2179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF274C31A08663000BE2179 /* PBXTargetDependency */,
+			);
+			name = CrashlyticTests;
+			productName = CrashlyticTests;
+			productReference = ECF274C11A08663000BE2179 /* CrashlyticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF2749D1A08663000BE2179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = denty;
+				TargetAttributes = {
+					ECF274A41A08663000BE2179 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					ECF274C01A08663000BE2179 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = ECF274A41A08663000BE2179;
+					};
+				};
+			};
+			buildConfigurationList = ECF274A01A08663000BE2179 /* Build configuration list for PBXProject "Crashlytic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF2749C1A08663000BE2179;
+			productRefGroup = ECF274A61A08663000BE2179 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ECEA41031A0B1B4A001536AB /* Products */;
+					ProjectRef = ECEA41021A0B1B4A001536AB /* dump_syms.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				ECF274A41A08663000BE2179 /* Crashlytic */,
+				ECF274C01A08663000BE2179 /* CrashlyticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ECEA41161A0B1B4A001536AB /* dump_syms */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dump_syms;
+			remoteRef = ECEA41151A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41181A0B1B4A001536AB /* macho_dump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = macho_dump;
+			remoteRef = ECEA41171A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA411A1A0B1B4A001536AB /* libgtestmockall.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtestmockall.a;
+			remoteRef = ECEA41191A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA411C1A0B1B4A001536AB /* byte_cursor_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = byte_cursor_unittest;
+			remoteRef = ECEA411B1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA411E1A0B1B4A001536AB /* macho_reader_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = macho_reader_unittest;
+			remoteRef = ECEA411D1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41201A0B1B4A001536AB /* stabs_reader_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stabs_reader_unittest;
+			remoteRef = ECEA411F1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41221A0B1B4A001536AB /* bytereader_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = bytereader_unittest;
+			remoteRef = ECEA41211A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41241A0B1B4A001536AB /* dwarf2reader_cfi_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwarf2reader_cfi_unittest;
+			remoteRef = ECEA41231A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41261A0B1B4A001536AB /* dwarf2diehandler_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwarf2diehandler_unittest;
+			remoteRef = ECEA41251A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41281A0B1B4A001536AB /* dwarf_cu_to_module_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwarf_cu_to_module_unittest;
+			remoteRef = ECEA41271A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA412A1A0B1B4A001536AB /* dwarf_line_to_module_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwarf_line_to_module_unittest;
+			remoteRef = ECEA41291A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA412C1A0B1B4A001536AB /* dwarf_cfi_to_module_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwarf_cfi_to_module_unittest;
+			remoteRef = ECEA412B1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA412E1A0B1B4A001536AB /* stabs_to_module_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = stabs_to_module_unittest;
+			remoteRef = ECEA412D1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41301A0B1B4A001536AB /* module_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = module_unittest;
+			remoteRef = ECEA412F1A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ECEA41321A0B1B4A001536AB /* test_assembler_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_assembler_unittest;
+			remoteRef = ECEA41311A0B1B4A001536AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF274A31A08663000BE2179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF274BC1A08663000BE2179 /* LaunchScreen.xib in Resources */,
+				ECF274B91A08663000BE2179 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF274BF1A08663000BE2179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ECF274D11A086DFE00BE2179 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run eae4c6b288dd4ef0a1888dddc90528b4cb9a2527 3d6f8ed78b6f55bb8d5e9705480797127a1b449fb513f37bfa8cb6f41c732529";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF274A11A08663000BE2179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF274B11A08663000BE2179 /* Crashlytic.xcdatamodeld in Sources */,
+				ECF274AE1A08663000BE2179 /* AppDelegate.m in Sources */,
+				ECF9EC641A0870FB006D5725 /* CrashWithC.c in Sources */,
+				ECF274B41A08663000BE2179 /* ViewController.m in Sources */,
+				ECF274AB1A08663000BE2179 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF274BD1A08663000BE2179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF274C81A08663000BE2179 /* CrashlyticTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF274C31A08663000BE2179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF274A41A08663000BE2179 /* Crashlytic */;
+			targetProxy = ECF274C21A08663000BE2179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF274BA1A08663000BE2179 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF274BB1A08663000BE2179 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF274C91A08663000BE2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECF274CA1A08663000BE2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF274CC1A08663000BE2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crashlytic",
+				);
+				INFOPLIST_FILE = Crashlytic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECF274CD1A08663000BE2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Crashlytic",
+				);
+				INFOPLIST_FILE = Crashlytic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECF274CF1A08663000BE2179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrashlyticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crashlytic.app/Crashlytic";
+			};
+			name = Debug;
+		};
+		ECF274D01A08663000BE2179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrashlyticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crashlytic.app/Crashlytic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF274A01A08663000BE2179 /* Build configuration list for PBXProject "Crashlytic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF274C91A08663000BE2179 /* Debug */,
+				ECF274CA1A08663000BE2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF274CB1A08663000BE2179 /* Build configuration list for PBXNativeTarget "Crashlytic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF274CC1A08663000BE2179 /* Debug */,
+				ECF274CD1A08663000BE2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF274CE1A08663000BE2179 /* Build configuration list for PBXNativeTarget "CrashlyticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF274CF1A08663000BE2179 /* Debug */,
+				ECF274D01A08663000BE2179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECF274AF1A08663000BE2179 /* Crashlytic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECF274B01A08663000BE2179 /* Crashlytic.xcdatamodel */,
+			);
+			currentVersion = ECF274B01A08663000BE2179 /* Crashlytic.xcdatamodel */;
+			path = Crashlytic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECF2749D1A08663000BE2179 /* Project object */;
+}
